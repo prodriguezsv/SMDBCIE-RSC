@@ -9,7 +9,7 @@ import jade.util.leap.*;
 /**
 * Protege name: Descriptor
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public interface Descriptor extends jade.content.Concept, Serializable {
    // bean stuff
@@ -23,12 +23,6 @@ public interface Descriptor extends jade.content.Concept, Serializable {
    public Attribute getAttribute();
 
    /**
-   * Protege name: structure
-   */
-   public void setStructure(Object value);
-   public Object getStructure();
-
-   /**
    * Protege name: score
    */
    public void addScore(Object elem);
@@ -37,5 +31,11 @@ public interface Descriptor extends jade.content.Concept, Serializable {
    public Iterator getAllScore();
    public List getScore();
    public void setScore(List l);
+
+   /**
+   * Protege name: structure
+   */
+   public void setStructure(Object value);
+   public Object getStructure();
 
 }

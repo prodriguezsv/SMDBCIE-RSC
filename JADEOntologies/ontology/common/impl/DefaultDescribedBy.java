@@ -8,11 +8,11 @@ import jade.util.leap.*;
 import ontology.common.*;
 
 /**
-* Protege name: SSHeuristicDescriptor
+* Protege name: DescribedBy
 * @author ontology bean generator
 * @version 2009/09/16, 12:02:11
 */
-public class DefaultSSHeuristicDescriptor implements SSHeuristicDescriptor, Serializable {
+public class DefaultDescribedBy implements DescribedBy, Serializable {
    // bean stuff
    protected PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
@@ -29,11 +29,11 @@ public class DefaultSSHeuristicDescriptor implements SSHeuristicDescriptor, Seri
 
   private String _internalInstanceName = null;
 
-  public DefaultSSHeuristicDescriptor() {
+  public DefaultDescribedBy() {
     this._internalInstanceName = "";
   }
 
-  public DefaultSSHeuristicDescriptor(String instance_name) {
+  public DefaultDescribedBy(String instance_name) {
     this._internalInstanceName = instance_name;
   }
 
@@ -73,17 +73,5 @@ public class DefaultSSHeuristicDescriptor implements SSHeuristicDescriptor, Seri
    public Iterator getAllScore() {return score.iterator(); }
    public List getScore() {return score; }
    public void setScore(List l) {score = l; }
-
-   /**
-   * Protege name: structure
-   */
-   private Object structure;
-   public void setStructure(Object value) { 
-     pcs.firePropertyChange("structure", (this.structure==null?new Object():this.structure), value);
-    this.structure=value;
-   }
-   public Object getStructure() {
-     return this.structure;
-   }
 
 }

@@ -6,25 +6,13 @@ import java.beans.PropertyChangeListener;
 
 
 /**
-* Protege name: RangeValue
+* Protege name: RVHeuristicDescriptor
 * @author ontology bean generator
 * @version 2009/09/16, 12:02:11
 */
-public interface RangeValue extends Value, Serializable {
+public interface RVHeuristicDescriptor extends QuantitativeHeuristicDescriptor, Serializable {
    // bean stuff
    public void addPropertyChangeListener(PropertyChangeListener pcl);
    public void removePropertyChangeListener(PropertyChangeListener pcl);
-
-   /**
-   * Protege name: lowerBound
-   */
-   public void setLowerBound(float value);
-   public float getLowerBound();
-
-   /**
-   * Protege name: upperBound
-   */
-   public void setUpperBound(float value);
-   public float getUpperBound();
 
 }

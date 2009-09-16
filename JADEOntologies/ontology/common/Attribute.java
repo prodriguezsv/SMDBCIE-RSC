@@ -10,22 +10,12 @@ import jade.util.leap.*;
 * It's a subclass of a defined term
 * Protege name: Attribute
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public interface Attribute extends DefinedTerm, Serializable {
    // bean stuff
    public void addPropertyChangeListener(PropertyChangeListener pcl);
    public void removePropertyChangeListener(PropertyChangeListener pcl);
-
-   /**
-   * Protege name: apliesTo
-   */
-   public void addApliesTo(Object elem);
-   public boolean removeApliesTo(Object elem);
-   public void clearAllApliesTo();
-   public Iterator getAllApliesTo();
-   public List getApliesTo();
-   public void setApliesTo(List l);
 
    /**
    * Protege name: describedBy
@@ -36,5 +26,15 @@ public interface Attribute extends DefinedTerm, Serializable {
    public Iterator getAllDescribedBy();
    public List getDescribedBy();
    public void setDescribedBy(List l);
+
+   /**
+   * Protege name: apliesTo
+   */
+   public void addApliesTo(Structure elem);
+   public boolean removeApliesTo(Structure elem);
+   public void clearAllApliesTo();
+   public Iterator getAllApliesTo();
+   public List getApliesTo();
+   public void setApliesTo(List l);
 
 }

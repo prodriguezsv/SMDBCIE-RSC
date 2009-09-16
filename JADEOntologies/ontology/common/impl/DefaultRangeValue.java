@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: RangeValue
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public class DefaultRangeValue implements RangeValue, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    }
 
 
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,18 @@ public class DefaultRangeValue implements RangeValue, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: lowerBound
+   */
+   private float lowerBound;
+   public void setLowerBound(float value) { 
+     pcs.firePropertyChange("lowerBound", ""+this.lowerBound, ""+value);
+    this.lowerBound=value;
+   }
+   public float getLowerBound() {
+     return this.lowerBound;
+   }
 
    /**
    * Protege name: measuringUnit
@@ -73,18 +85,6 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    public Iterator getAllDescribes() {return describes.iterator(); }
    public List getDescribes() {return describes; }
    public void setDescribes(List l) {describes = l; }
-
-   /**
-   * Protege name: lowerBound
-   */
-   private float lowerBound;
-   public void setLowerBound(float value) { 
-     pcs.firePropertyChange("lowerBound", ""+this.lowerBound, ""+value);
-    this.lowerBound=value;
-   }
-   public float getLowerBound() {
-     return this.lowerBound;
-   }
 
    /**
    * Protege name: upperBound

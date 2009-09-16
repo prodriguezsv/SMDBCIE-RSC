@@ -8,11 +8,11 @@ import jade.util.leap.*;
 import ontology.common.*;
 
 /**
-* Protege name: SSHeuristicDescriptor
+* Protege name: RVHeuristicDescriptor
 * @author ontology bean generator
 * @version 2009/09/16, 12:02:11
 */
-public class DefaultSSHeuristicDescriptor implements SSHeuristicDescriptor, Serializable {
+public class DefaultRVHeuristicDescriptor implements RVHeuristicDescriptor, Serializable {
    // bean stuff
    protected PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
@@ -29,11 +29,11 @@ public class DefaultSSHeuristicDescriptor implements SSHeuristicDescriptor, Seri
 
   private String _internalInstanceName = null;
 
-  public DefaultSSHeuristicDescriptor() {
+  public DefaultRVHeuristicDescriptor() {
     this._internalInstanceName = "";
   }
 
-  public DefaultSSHeuristicDescriptor(String instance_name) {
+  public DefaultRVHeuristicDescriptor(String instance_name) {
     this._internalInstanceName = instance_name;
   }
 

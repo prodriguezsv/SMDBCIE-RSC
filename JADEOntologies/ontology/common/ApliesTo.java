@@ -8,11 +8,23 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: ApliesTo
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public interface ApliesTo extends jade.content.Predicate, Serializable {
    // bean stuff
    public void addPropertyChangeListener(PropertyChangeListener pcl);
    public void removePropertyChangeListener(PropertyChangeListener pcl);
+
+   /**
+   * Protege name: attribute
+   */
+   public void setAttribute(Attribute value);
+   public Attribute getAttribute();
+
+   /**
+   * Protege name: descriptiveElement
+   */
+   public void setDescriptiveElement(Object value);
+   public Object getDescriptiveElement();
 
 }

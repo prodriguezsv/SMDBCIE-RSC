@@ -15,10 +15,10 @@ import edu.stanford.smi.protegex.owl.model.OWLModel;
 
 /** file: KbBasedBeanFactory.java
  * @author ontology bean generator
- * @version 2009/09/15, 18:06:25
+ * @version 2009/09/16, 12:02:11
  */
 public class KbBasedBeanFactory {
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   private KnowledgeBase kb = null;
   private OWLModel owlModel = null;
@@ -55,12 +55,12 @@ public class KbBasedBeanFactory {
   }
 
   /**
-   * Protege name: EnvironmentalCategory
+   * Protege name: RVHeuristicDescriptor
   */
-  public EnvironmentalCategory getEnvironmentalCategory(String instanceName) throws KbBasedBeanFactoryException{
+  public RVHeuristicDescriptor getRVHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (EnvironmentalCategory)jadeInstance;
+      return (RVHeuristicDescriptor)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -68,62 +68,7 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    EnvironmentalCategory javaInst = new DefaultEnvironmentalCategory(instanceName);
-
-    beanInstances.put(instanceName, javaInst);
-
-    //javaInst set all properties
-
-
-    tempStringValue = getStringValue( protegeInst, kb.getSlot( "definition" ) );
-    if (tempStringValue != null) {
-      javaInst.setDefinition(tempStringValue);
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "owns" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addOwns( (Attribute) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-        }
-        else {
-          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"owns\" in instance " + instanceName);
-        }
-      }
-    }
-
-    tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
-    if (tempStringValue != null) {
-      javaInst.setTerm(tempStringValue);
-    }
-
-    return javaInst;
-  }
-
-  /**
-   * Protege name: SSCharacterDescriptor
-  */
-  public SSCharacterDescriptor getSSCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
-    Object jadeInstance = beanInstances.get(instanceName);
-    if (jadeInstance != null)
-      return (SSCharacterDescriptor)jadeInstance;
-
-    Instance protegeInst = kb.getInstance( instanceName );
-
-    if (protegeInst == null) {
-      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
-    }
-
-    SSCharacterDescriptor javaInst = new DefaultSSCharacterDescriptor(instanceName);
+    RVHeuristicDescriptor javaInst = new DefaultRVHeuristicDescriptor(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
@@ -148,19 +93,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -177,48 +109,6 @@ public class KbBasedBeanFactory {
       }
     }
 
-    return javaInst;
-  }
-
-  /**
-   * Protege name: MSCharacterDescriptor
-  */
-  public MSCharacterDescriptor getMSCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
-    Object jadeInstance = beanInstances.get(instanceName);
-    if (jadeInstance != null)
-      return (MSCharacterDescriptor)jadeInstance;
-
-    Instance protegeInst = kb.getInstance( instanceName );
-
-    if (protegeInst == null) {
-      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
-    }
-
-    MSCharacterDescriptor javaInst = new DefaultMSCharacterDescriptor(instanceName);
-
-    beanInstances.put(instanceName, javaInst);
-
-    //javaInst set all properties
-
-
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
-    if (tempInstanceValue != null) {
-        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setAttribute( (Attribute) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-        }
-        else {
-          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
-        }
-    }
-
     tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
     if (tempInstanceValue != null) {
           try {
@@ -230,93 +120,6 @@ public class KbBasedBeanFactory {
           } catch (KbBasedBeanFactoryException e) {
             e.printStackTrace();
           }
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addScore( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-      }
-    }
-
-    return javaInst;
-  }
-
-  /**
-   * Protege name: SVCharacterDescriptor
-  */
-  public SVCharacterDescriptor getSVCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
-    Object jadeInstance = beanInstances.get(instanceName);
-    if (jadeInstance != null)
-      return (SVCharacterDescriptor)jadeInstance;
-
-    Instance protegeInst = kb.getInstance( instanceName );
-
-    if (protegeInst == null) {
-      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
-    }
-
-    SVCharacterDescriptor javaInst = new DefaultSVCharacterDescriptor(instanceName);
-
-    beanInstances.put(instanceName, javaInst);
-
-    //javaInst set all properties
-
-
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
-    if (tempInstanceValue != null) {
-        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setAttribute( (Attribute) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-        }
-        else {
-          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
-        }
-    }
-
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addScore( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-      }
     }
 
     return javaInst;
@@ -361,19 +164,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -390,16 +180,29 @@ public class KbBasedBeanFactory {
       }
     }
 
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
     return javaInst;
   }
 
   /**
-   * Protege name: SSHeuristicDescriptor
+   * Protege name: SVCharacterDescriptor
   */
-  public SSHeuristicDescriptor getSSHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+  public SVCharacterDescriptor getSVCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (SSHeuristicDescriptor)jadeInstance;
+      return (SVCharacterDescriptor)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -407,7 +210,7 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    SSHeuristicDescriptor javaInst = new DefaultSSHeuristicDescriptor(instanceName);
+    SVCharacterDescriptor javaInst = new DefaultSVCharacterDescriptor(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
@@ -432,6 +235,22 @@ public class KbBasedBeanFactory {
         }
     }
 
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addScore( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
     tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
     if (tempInstanceValue != null) {
           try {
@@ -443,6 +262,48 @@ public class KbBasedBeanFactory {
           } catch (KbBasedBeanFactoryException e) {
             e.printStackTrace();
           }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: QualitativeHeuristicDescriptor
+  */
+  public QualitativeHeuristicDescriptor getQualitativeHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (QualitativeHeuristicDescriptor)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    QualitativeHeuristicDescriptor javaInst = new DefaultQualitativeHeuristicDescriptor(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
     }
 
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
@@ -459,6 +320,90 @@ public class KbBasedBeanFactory {
             e.printStackTrace();
           }
       }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: HeuristicDescriptor
+  */
+  public HeuristicDescriptor getHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (HeuristicDescriptor)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    HeuristicDescriptor javaInst = new DefaultHeuristicDescriptor(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
+    }
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addScore( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
     }
 
     return javaInst;
@@ -503,6 +448,22 @@ public class KbBasedBeanFactory {
         }
     }
 
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addScore( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
     tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
     if (tempInstanceValue != null) {
           try {
@@ -514,6 +475,48 @@ public class KbBasedBeanFactory {
           } catch (KbBasedBeanFactoryException e) {
             e.printStackTrace();
           }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: SSHeuristicDescriptor
+  */
+  public SSHeuristicDescriptor getSSHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (SSHeuristicDescriptor)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    SSHeuristicDescriptor javaInst = new DefaultSSHeuristicDescriptor(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
     }
 
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
@@ -530,6 +533,19 @@ public class KbBasedBeanFactory {
             e.printStackTrace();
           }
       }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
     }
 
     return javaInst;
@@ -574,6 +590,22 @@ public class KbBasedBeanFactory {
         }
     }
 
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addScore( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
     tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
     if (tempInstanceValue != null) {
           try {
@@ -585,6 +617,48 @@ public class KbBasedBeanFactory {
           } catch (KbBasedBeanFactoryException e) {
             e.printStackTrace();
           }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: QuantitativeHeuristicDescriptor
+  */
+  public QuantitativeHeuristicDescriptor getQuantitativeHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (QuantitativeHeuristicDescriptor)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    QuantitativeHeuristicDescriptor javaInst = new DefaultQuantitativeHeuristicDescriptor(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
     }
 
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
@@ -601,6 +675,74 @@ public class KbBasedBeanFactory {
             e.printStackTrace();
           }
       }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: EnvironmentalCategory
+  */
+  public EnvironmentalCategory getEnvironmentalCategory(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (EnvironmentalCategory)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    EnvironmentalCategory javaInst = new DefaultEnvironmentalCategory(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "owns" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addOwns( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"owns\" in instance " + instanceName);
+        }
+      }
+    }
+
+    tempStringValue = getStringValue( protegeInst, kb.getSlot( "definition" ) );
+    if (tempStringValue != null) {
+      javaInst.setDefinition(tempStringValue);
+    }
+
+    tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
+    if (tempStringValue != null) {
+      javaInst.setTerm(tempStringValue);
     }
 
     return javaInst;
@@ -628,11 +770,6 @@ public class KbBasedBeanFactory {
     //javaInst set all properties
 
 
-    tempStringValue = getStringValue( protegeInst, kb.getSlot( "definition" ) );
-    if (tempStringValue != null) {
-      javaInst.setDefinition(tempStringValue);
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "owns" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -652,6 +789,11 @@ public class KbBasedBeanFactory {
           throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"owns\" in instance " + instanceName);
         }
       }
+    }
+
+    tempStringValue = getStringValue( protegeInst, kb.getSlot( "definition" ) );
+    if (tempStringValue != null) {
+      javaInst.setDefinition(tempStringValue);
     }
 
     tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
@@ -739,11 +881,6 @@ public class KbBasedBeanFactory {
       javaInst.setDefinition(tempStringValue);
     }
 
-    tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
-    if (tempStringValue != null) {
-      javaInst.setTerm(tempStringValue);
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describes" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -763,6 +900,11 @@ public class KbBasedBeanFactory {
           throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"describes\" in instance " + instanceName);
         }
       }
+    }
+
+    tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
+    if (tempStringValue != null) {
+      javaInst.setTerm(tempStringValue);
     }
 
     return javaInst;
@@ -807,19 +949,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -836,175 +965,6 @@ public class KbBasedBeanFactory {
       }
     }
 
-    return javaInst;
-  }
-
-  /**
-   * It's a subclass of a defined term
-   * Protege name: Attribute
-  */
-  public Attribute getAttribute(String instanceName) throws KbBasedBeanFactoryException{
-    Object jadeInstance = beanInstances.get(instanceName);
-    if (jadeInstance != null)
-      return (Attribute)jadeInstance;
-
-    Instance protegeInst = kb.getInstance( instanceName );
-
-    if (protegeInst == null) {
-      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
-    }
-
-    Attribute javaInst = new DefaultAttribute(instanceName);
-
-    beanInstances.put(instanceName, javaInst);
-
-    //javaInst set all properties
-
-
-    tempStringValue = getStringValue( protegeInst, kb.getSlot( "definition" ) );
-    if (tempStringValue != null) {
-      javaInst.setDefinition(tempStringValue);
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "apliesTo" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addApliesTo( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-      }
-    }
-
-    tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
-    if (tempStringValue != null) {
-      javaInst.setTerm(tempStringValue);
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describedBy" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addDescribedBy( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-      }
-    }
-
-    return javaInst;
-  }
-
-  /**
-   * Protege name: RangeValue
-  */
-  public RangeValue getRangeValue(String instanceName) throws KbBasedBeanFactoryException{
-    Object jadeInstance = beanInstances.get(instanceName);
-    if (jadeInstance != null)
-      return (RangeValue)jadeInstance;
-
-    Instance protegeInst = kb.getInstance( instanceName );
-
-    if (protegeInst == null) {
-      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
-    }
-
-    RangeValue javaInst = new DefaultRangeValue(instanceName);
-
-    beanInstances.put(instanceName, javaInst);
-
-    //javaInst set all properties
-
-
-    tempSymbolValue = getStringValue( protegeInst, kb.getSlot( "measuringUnit" ) );
-    if (tempSymbolValue != null) {
-      javaInst.setMeasuringUnit(tempSymbolValue);
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describes" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addDescribes( (Attribute) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-        }
-        else {
-          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"describes\" in instance " + instanceName);
-        }
-      }
-    }
-
-    tempFloatValue = getFloatValue( protegeInst, kb.getSlot( "lowerBound" ) );
-    if (tempFloatValue != null) {
-      javaInst.setLowerBound(tempFloatValue);
-    }
-
-    tempFloatValue = getFloatValue( protegeInst, kb.getSlot( "upperBound" ) );
-    if (tempFloatValue != null) {
-      javaInst.setUpperBound(tempFloatValue);
-    }
-
-    return javaInst;
-  }
-
-  /**
-   * Protege name: QualitativeCharacterDescriptor
-  */
-  public QualitativeCharacterDescriptor getQualitativeCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
-    Object jadeInstance = beanInstances.get(instanceName);
-    if (jadeInstance != null)
-      return (QualitativeCharacterDescriptor)jadeInstance;
-
-    Instance protegeInst = kb.getInstance( instanceName );
-
-    if (protegeInst == null) {
-      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
-    }
-
-    QualitativeCharacterDescriptor javaInst = new DefaultQualitativeCharacterDescriptor(instanceName);
-
-    beanInstances.put(instanceName, javaInst);
-
-    //javaInst set all properties
-
-
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
-    if (tempInstanceValue != null) {
-        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setAttribute( (Attribute) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-        }
-        else {
-          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
-        }
-    }
-
     tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
     if (tempInstanceValue != null) {
           try {
@@ -1016,22 +976,6 @@ public class KbBasedBeanFactory {
           } catch (KbBasedBeanFactoryException e) {
             e.printStackTrace();
           }
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.addScore( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-      }
     }
 
     return javaInst;
@@ -1076,19 +1020,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -1105,16 +1036,30 @@ public class KbBasedBeanFactory {
       }
     }
 
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
     return javaInst;
   }
 
   /**
-   * Protege name: HeuristicDescriptor
+   * It's a subclass of a defined term
+   * Protege name: Attribute
   */
-  public HeuristicDescriptor getHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+  public Attribute getAttribute(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (HeuristicDescriptor)jadeInstance;
+      return (Attribute)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -1122,7 +1067,193 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    HeuristicDescriptor javaInst = new DefaultHeuristicDescriptor(instanceName);
+    Attribute javaInst = new DefaultAttribute(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describedBy" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addDescribedBy( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
+    tempStringValue = getStringValue( protegeInst, kb.getSlot( "definition" ) );
+    if (tempStringValue != null) {
+      javaInst.setDefinition(tempStringValue);
+    }
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "apliesTo" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+        if (tempInstanceValue.hasType(kb.getCls("Structure") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addApliesTo( (Structure) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"apliesTo\" in instance " + instanceName);
+        }
+      }
+    }
+
+    tempStringValue = getStringValue( protegeInst, kb.getSlot( "term" ) );
+    if (tempStringValue != null) {
+      javaInst.setTerm(tempStringValue);
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: SingleValue
+  */
+  public SingleValue getSingleValue(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (SingleValue)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    SingleValue javaInst = new DefaultSingleValue(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempFloatValue = getFloatValue( protegeInst, kb.getSlot( "value" ) );
+    if (tempFloatValue != null) {
+      javaInst.setValue(tempFloatValue);
+    }
+
+    tempSymbolValue = getStringValue( protegeInst, kb.getSlot( "measuringUnit" ) );
+    if (tempSymbolValue != null) {
+      javaInst.setMeasuringUnit(tempSymbolValue);
+    }
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describes" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addDescribes( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"describes\" in instance " + instanceName);
+        }
+      }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: RangeValue
+  */
+  public RangeValue getRangeValue(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (RangeValue)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    RangeValue javaInst = new DefaultRangeValue(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempFloatValue = getFloatValue( protegeInst, kb.getSlot( "lowerBound" ) );
+    if (tempFloatValue != null) {
+      javaInst.setLowerBound(tempFloatValue);
+    }
+
+    tempSymbolValue = getStringValue( protegeInst, kb.getSlot( "measuringUnit" ) );
+    if (tempSymbolValue != null) {
+      javaInst.setMeasuringUnit(tempSymbolValue);
+    }
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describes" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addDescribes( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"describes\" in instance " + instanceName);
+        }
+      }
+    }
+
+    tempFloatValue = getFloatValue( protegeInst, kb.getSlot( "upperBound" ) );
+    if (tempFloatValue != null) {
+      javaInst.setUpperBound(tempFloatValue);
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: MSCharacterDescriptor
+  */
+  public MSCharacterDescriptor getMSCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (MSCharacterDescriptor)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    MSCharacterDescriptor javaInst = new DefaultMSCharacterDescriptor(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
@@ -1147,19 +1278,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -1174,6 +1292,19 @@ public class KbBasedBeanFactory {
             e.printStackTrace();
           }
       }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
     }
 
     return javaInst;
@@ -1218,19 +1349,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -1247,16 +1365,29 @@ public class KbBasedBeanFactory {
       }
     }
 
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
     return javaInst;
   }
 
   /**
-   * Protege name: QuantitativeHeuristicDescriptor
+   * Protege name: QualitativeCharacterDescriptor
   */
-  public QuantitativeHeuristicDescriptor getQuantitativeHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+  public QualitativeCharacterDescriptor getQualitativeCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (QuantitativeHeuristicDescriptor)jadeInstance;
+      return (QualitativeCharacterDescriptor)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -1264,7 +1395,7 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    QuantitativeHeuristicDescriptor javaInst = new DefaultQuantitativeHeuristicDescriptor(instanceName);
+    QualitativeCharacterDescriptor javaInst = new DefaultQualitativeCharacterDescriptor(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
@@ -1289,19 +1420,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -1318,16 +1436,29 @@ public class KbBasedBeanFactory {
       }
     }
 
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
     return javaInst;
   }
 
   /**
-   * Protege name: QualitativeHeuristicDescriptor
+   * Protege name: SSCharacterDescriptor
   */
-  public QualitativeHeuristicDescriptor getQualitativeHeuristicDescriptor(String instanceName) throws KbBasedBeanFactoryException{
+  public SSCharacterDescriptor getSSCharacterDescriptor(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (QualitativeHeuristicDescriptor)jadeInstance;
+      return (SSCharacterDescriptor)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -1335,7 +1466,7 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    QualitativeHeuristicDescriptor javaInst = new DefaultQualitativeHeuristicDescriptor(instanceName);
+    SSCharacterDescriptor javaInst = new DefaultSSCharacterDescriptor(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
@@ -1360,19 +1491,6 @@ public class KbBasedBeanFactory {
         }
     }
 
-    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
-    if (tempInstanceValue != null) {
-          try {
-            Object referredBean = getJadeInstanceFor(tempInstanceValue);
-
-            if (referredBean != null) {
-              javaInst.setStructure( (Object) referredBean);
-            }
-          } catch (KbBasedBeanFactoryException e) {
-            e.printStackTrace();
-          }
-    }
-
     tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
     if (tempInstanceValues != null) {
       for (Instance instValue : tempInstanceValues) {
@@ -1387,6 +1505,19 @@ public class KbBasedBeanFactory {
             e.printStackTrace();
           }
       }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "structure" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setStructure( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
     }
 
     return javaInst;
@@ -1428,12 +1559,12 @@ public class KbBasedBeanFactory {
   }
 
   /**
-   * Protege name: SingleValue
+   * Protege name: ApliesTo
   */
-  public SingleValue getSingleValue(String instanceName) throws KbBasedBeanFactoryException{
+  public ApliesTo getApliesTo(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (SingleValue)jadeInstance;
+      return (ApliesTo)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -1441,42 +1572,42 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    SingleValue javaInst = new DefaultSingleValue(instanceName);
+    ApliesTo javaInst = new DefaultApliesTo(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
     //javaInst set all properties
 
 
-    tempSymbolValue = getStringValue( protegeInst, kb.getSlot( "measuringUnit" ) );
-    if (tempSymbolValue != null) {
-      javaInst.setMeasuringUnit(tempSymbolValue);
-    }
-
-    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "describes" ) );
-    if (tempInstanceValues != null) {
-      for (Instance instValue : tempInstanceValues) {
-        tempInstanceValue = instValue;
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
         if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
           try {
             Object referredBean = getJadeInstanceFor(tempInstanceValue);
 
             if (referredBean != null) {
-              javaInst.addDescribes( (Attribute) referredBean);
+              javaInst.setAttribute( (Attribute) referredBean);
             }
           } catch (KbBasedBeanFactoryException e) {
             e.printStackTrace();
           }
         }
         else {
-          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"describes\" in instance " + instanceName);
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
         }
-      }
     }
 
-    tempFloatValue = getFloatValue( protegeInst, kb.getSlot( "value" ) );
-    if (tempFloatValue != null) {
-      javaInst.setValue(tempFloatValue);
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "descriptiveElement" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setDescriptiveElement( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
     }
 
     return javaInst;
@@ -1503,16 +1634,47 @@ public class KbBasedBeanFactory {
     //javaInst set all properties
 
 
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
+    }
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "descriptiveElement" ) );
+    if (tempInstanceValue != null) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setDescriptiveElement( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+    }
+
     return javaInst;
   }
 
   /**
-   * Protege name: ApliesTo
+   * Protege name: Describes
   */
-  public ApliesTo getApliesTo(String instanceName) throws KbBasedBeanFactoryException{
+  public Describes getDescribes(String instanceName) throws KbBasedBeanFactoryException{
     Object jadeInstance = beanInstances.get(instanceName);
     if (jadeInstance != null)
-      return (ApliesTo)jadeInstance;
+      return (Describes)jadeInstance;
 
     Instance protegeInst = kb.getInstance( instanceName );
 
@@ -1520,31 +1682,123 @@ public class KbBasedBeanFactory {
       throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
     }
 
-    ApliesTo javaInst = new DefaultApliesTo(instanceName);
+    Describes javaInst = new DefaultDescribes(instanceName);
 
     beanInstances.put(instanceName, javaInst);
 
     //javaInst set all properties
 
 
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
+    }
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addScore( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
+    return javaInst;
+  }
+
+  /**
+   * Protege name: DescribedBy
+  */
+  public DescribedBy getDescribedBy(String instanceName) throws KbBasedBeanFactoryException{
+    Object jadeInstance = beanInstances.get(instanceName);
+    if (jadeInstance != null)
+      return (DescribedBy)jadeInstance;
+
+    Instance protegeInst = kb.getInstance( instanceName );
+
+    if (protegeInst == null) {
+      throw new KbBasedBeanFactoryException("Invalid Protege instance name: " + instanceName + ". No Jade instance was created.");
+    }
+
+    DescribedBy javaInst = new DefaultDescribedBy(instanceName);
+
+    beanInstances.put(instanceName, javaInst);
+
+    //javaInst set all properties
+
+
+    tempInstanceValue = getInstanceValue( protegeInst, kb.getSlot( "attribute" ) );
+    if (tempInstanceValue != null) {
+        if (tempInstanceValue.hasType(kb.getCls("Attribute") )) {
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.setAttribute( (Attribute) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+        }
+        else {
+          throw new KbBasedBeanFactoryException("Invalid type for instance " + tempInstanceValue + " referred by slot \"attribute\" in instance " + instanceName);
+        }
+    }
+
+    tempInstanceValues = getInstanceValues( protegeInst, kb.getSlot( "score" ) );
+    if (tempInstanceValues != null) {
+      for (Instance instValue : tempInstanceValues) {
+        tempInstanceValue = instValue;
+          try {
+            Object referredBean = getJadeInstanceFor(tempInstanceValue);
+
+            if (referredBean != null) {
+              javaInst.addScore( (Object) referredBean);
+            }
+          } catch (KbBasedBeanFactoryException e) {
+            e.printStackTrace();
+          }
+      }
+    }
+
     return javaInst;
   }
 
   //Typed access methods to slot values
-  private static Instance getInstanceValue(Instance theInst, Slot theSlot) {
-    return (Instance)theInst.getOwnSlotValue(theSlot);
-  }
-
-  private static java.util.ArrayList<Instance> getInstanceValues(Instance theInst, Slot theSlot) {
-    return new java.util.ArrayList<Instance>(theInst.getOwnSlotValues(theSlot));
+  private static Float getFloatValue(Instance theInst, Slot theSlot) {
+    return (Float)theInst.getOwnSlotValue(theSlot);
   }
 
   private static String getStringValue(Instance theInst, Slot theSlot) {
     return (String)theInst.getOwnSlotValue(theSlot);
   }
 
-  private static Float getFloatValue(Instance theInst, Slot theSlot) {
-    return (Float)theInst.getOwnSlotValue(theSlot);
+  private static Instance getInstanceValue(Instance theInst, Slot theSlot) {
+    return (Instance)theInst.getOwnSlotValue(theSlot);
+  }
+
+  private static java.util.ArrayList<Instance> getInstanceValues(Instance theInst, Slot theSlot) {
+    return new java.util.ArrayList<Instance>(theInst.getOwnSlotValues(theSlot));
   }
 
   private static String getStringValue(Instance theInst, Slot theSlot) {
@@ -1579,30 +1833,33 @@ public class KbBasedBeanFactory {
   }
 
   static {
-    typeToMethodName.put("EnvironmentalCategory", "getEnvironmentalCategory");
-    typeToMethodName.put("SSCharacterDescriptor", "getSSCharacterDescriptor");
-    typeToMethodName.put("MSCharacterDescriptor", "getMSCharacterDescriptor");
-    typeToMethodName.put("SVCharacterDescriptor", "getSVCharacterDescriptor");
+    typeToMethodName.put("RVHeuristicDescriptor", "getRVHeuristicDescriptor");
     typeToMethodName.put("RVCharacterDescriptor", "getRVCharacterDescriptor");
-    typeToMethodName.put("SSHeuristicDescriptor", "getSSHeuristicDescriptor");
+    typeToMethodName.put("SVCharacterDescriptor", "getSVCharacterDescriptor");
+    typeToMethodName.put("QualitativeHeuristicDescriptor", "getQualitativeHeuristicDescriptor");
+    typeToMethodName.put("HeuristicDescriptor", "getHeuristicDescriptor");
     typeToMethodName.put("MSHeuristicDescriptor", "getMSHeuristicDescriptor");
+    typeToMethodName.put("SSHeuristicDescriptor", "getSSHeuristicDescriptor");
     typeToMethodName.put("SVHeuristicDescriptor", "getSVHeuristicDescriptor");
+    typeToMethodName.put("QuantitativeHeuristicDescriptor", "getQuantitativeHeuristicDescriptor");
+    typeToMethodName.put("EnvironmentalCategory", "getEnvironmentalCategory");
     typeToMethodName.put("Structure", "getStructure");
     typeToMethodName.put("Value", "getValue");
     typeToMethodName.put("State", "getState");
     typeToMethodName.put("Descriptor", "getDescriptor");
-    typeToMethodName.put("Attribute", "getAttribute");
-    typeToMethodName.put("RangeValue", "getRangeValue");
-    typeToMethodName.put("QualitativeCharacterDescriptor", "getQualitativeCharacterDescriptor");
     typeToMethodName.put("CharacterDescriptor", "getCharacterDescriptor");
-    typeToMethodName.put("HeuristicDescriptor", "getHeuristicDescriptor");
-    typeToMethodName.put("QuantitativeCharacterDescriptor", "getQuantitativeCharacterDescriptor");
-    typeToMethodName.put("QuantitativeHeuristicDescriptor", "getQuantitativeHeuristicDescriptor");
-    typeToMethodName.put("QualitativeHeuristicDescriptor", "getQualitativeHeuristicDescriptor");
-    typeToMethodName.put("DefinedTerm", "getDefinedTerm");
+    typeToMethodName.put("Attribute", "getAttribute");
     typeToMethodName.put("SingleValue", "getSingleValue");
-    typeToMethodName.put("Owns", "getOwns");
+    typeToMethodName.put("RangeValue", "getRangeValue");
+    typeToMethodName.put("MSCharacterDescriptor", "getMSCharacterDescriptor");
+    typeToMethodName.put("QuantitativeCharacterDescriptor", "getQuantitativeCharacterDescriptor");
+    typeToMethodName.put("QualitativeCharacterDescriptor", "getQualitativeCharacterDescriptor");
+    typeToMethodName.put("SSCharacterDescriptor", "getSSCharacterDescriptor");
+    typeToMethodName.put("DefinedTerm", "getDefinedTerm");
     typeToMethodName.put("ApliesTo", "getApliesTo");
+    typeToMethodName.put("Owns", "getOwns");
+    typeToMethodName.put("Describes", "getDescribes");
+    typeToMethodName.put("DescribedBy", "getDescribedBy");
   }
 
 }

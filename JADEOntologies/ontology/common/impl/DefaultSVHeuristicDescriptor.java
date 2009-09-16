@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: SVHeuristicDescriptor
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public class DefaultSVHeuristicDescriptor implements SVHeuristicDescriptor, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultSVHeuristicDescriptor implements SVHeuristicDescriptor, Seri
    }
 
 
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   private String _internalInstanceName = null;
 
@@ -54,18 +54,6 @@ public class DefaultSVHeuristicDescriptor implements SVHeuristicDescriptor, Seri
    }
 
    /**
-   * Protege name: structure
-   */
-   private Object structure;
-   public void setStructure(Object value) { 
-     pcs.firePropertyChange("structure", (this.structure==null?new Object():this.structure), value);
-    this.structure=value;
-   }
-   public Object getStructure() {
-     return this.structure;
-   }
-
-   /**
    * Protege name: score
    */
    private List score = new ArrayList();
@@ -85,5 +73,17 @@ public class DefaultSVHeuristicDescriptor implements SVHeuristicDescriptor, Seri
    public Iterator getAllScore() {return score.iterator(); }
    public List getScore() {return score; }
    public void setScore(List l) {score = l; }
+
+   /**
+   * Protege name: structure
+   */
+   private Object structure;
+   public void setStructure(Object value) { 
+     pcs.firePropertyChange("structure", (this.structure==null?new Object():this.structure), value);
+    this.structure=value;
+   }
+   public Object getStructure() {
+     return this.structure;
+   }
 
 }

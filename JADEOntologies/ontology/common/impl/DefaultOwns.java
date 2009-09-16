@@ -9,7 +9,7 @@ import ontology.common.*;
 /**
 * Protege name: Owns
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public class DefaultOwns implements Owns, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultOwns implements Owns, Serializable {
    }
 
 
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   private String _internalInstanceName = null;
 
@@ -39,5 +39,29 @@ public class DefaultOwns implements Owns, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: attribute
+   */
+   private Attribute attribute;
+   public void setAttribute(Attribute value) { 
+     pcs.firePropertyChange("attribute", (this.attribute==null?new Attribute():this.attribute), value);
+    this.attribute=value;
+   }
+   public Attribute getAttribute() {
+     return this.attribute;
+   }
+
+   /**
+   * Protege name: descriptiveElement
+   */
+   private Object descriptiveElement;
+   public void setDescriptiveElement(Object value) { 
+     pcs.firePropertyChange("descriptiveElement", (this.descriptiveElement==null?new Object():this.descriptiveElement), value);
+    this.descriptiveElement=value;
+   }
+   public Object getDescriptiveElement() {
+     return this.descriptiveElement;
+   }
 
 }

@@ -4,13 +4,14 @@ import java.io.Serializable;
 import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
 
+import jade.util.leap.*;
 
 /**
-* Protege name: Owns
+* Protege name: Describes
 * @author ontology bean generator
 * @version 2009/09/16, 12:02:11
 */
-public interface Owns extends jade.content.Predicate, Serializable {
+public interface Describes extends jade.content.Predicate, Serializable {
    // bean stuff
    public void addPropertyChangeListener(PropertyChangeListener pcl);
    public void removePropertyChangeListener(PropertyChangeListener pcl);
@@ -22,9 +23,13 @@ public interface Owns extends jade.content.Predicate, Serializable {
    public Attribute getAttribute();
 
    /**
-   * Protege name: descriptiveElement
+   * Protege name: score
    */
-   public void setDescriptiveElement(Object value);
-   public Object getDescriptiveElement();
+   public void addScore(Object elem);
+   public boolean removeScore(Object elem);
+   public void clearAllScore();
+   public Iterator getAllScore();
+   public List getScore();
+   public void setScore(List l);
 
 }

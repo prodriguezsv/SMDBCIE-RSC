@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: RVCharacterDescriptor
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public interface RVCharacterDescriptor extends QuantitativeCharacterDescriptor, Serializable {
    // bean stuff

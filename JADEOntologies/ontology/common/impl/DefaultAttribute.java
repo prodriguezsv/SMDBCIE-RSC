@@ -11,7 +11,7 @@ import ontology.common.*;
 * It's a subclass of a defined term
 * Protege name: Attribute
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public class DefaultAttribute implements Attribute, Serializable {
    // bean stuff
@@ -26,7 +26,7 @@ public class DefaultAttribute implements Attribute, Serializable {
    }
 
 
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   private String _internalInstanceName = null;
 
@@ -41,6 +41,27 @@ public class DefaultAttribute implements Attribute, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: describedBy
+   */
+   private List describedBy = new ArrayList();
+   public void addDescribedBy(Object elem) { 
+     describedBy.add(elem);
+     pcs.firePropertyChange("describedBy", oldList, this.describedBy);
+   }
+   public boolean removeDescribedBy(Object elem) {
+     boolean result = describedBy.remove(elem);
+     pcs.firePropertyChange("describedBy", oldList, this.describedBy);
+     return result;
+   }
+   public void clearAllDescribedBy() {
+     describedBy.clear();
+     pcs.firePropertyChange("describedBy", oldList, this.describedBy);
+   }
+   public Iterator getAllDescribedBy() {return describedBy.iterator(); }
+   public List getDescribedBy() {return describedBy; }
+   public void setDescribedBy(List l) {describedBy = l; }
 
    /**
    * Protege name: definition
@@ -58,11 +79,11 @@ public class DefaultAttribute implements Attribute, Serializable {
    * Protege name: apliesTo
    */
    private List apliesTo = new ArrayList();
-   public void addApliesTo(Object elem) { 
+   public void addApliesTo(Structure elem) { 
      apliesTo.add(elem);
      pcs.firePropertyChange("apliesTo", oldList, this.apliesTo);
    }
-   public boolean removeApliesTo(Object elem) {
+   public boolean removeApliesTo(Structure elem) {
      boolean result = apliesTo.remove(elem);
      pcs.firePropertyChange("apliesTo", oldList, this.apliesTo);
      return result;
@@ -86,26 +107,5 @@ public class DefaultAttribute implements Attribute, Serializable {
    public String getTerm() {
      return this.term;
    }
-
-   /**
-   * Protege name: describedBy
-   */
-   private List describedBy = new ArrayList();
-   public void addDescribedBy(Object elem) { 
-     describedBy.add(elem);
-     pcs.firePropertyChange("describedBy", oldList, this.describedBy);
-   }
-   public boolean removeDescribedBy(Object elem) {
-     boolean result = describedBy.remove(elem);
-     pcs.firePropertyChange("describedBy", oldList, this.describedBy);
-     return result;
-   }
-   public void clearAllDescribedBy() {
-     describedBy.clear();
-     pcs.firePropertyChange("describedBy", oldList, this.describedBy);
-   }
-   public Iterator getAllDescribedBy() {return describedBy.iterator(); }
-   public List getDescribedBy() {return describedBy; }
-   public void setDescribedBy(List l) {describedBy = l; }
 
 }

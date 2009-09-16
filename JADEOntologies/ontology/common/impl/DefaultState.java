@@ -11,7 +11,7 @@ import ontology.common.*;
 * It's a subclass of a defined term
 * Protege name: State
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public class DefaultState implements State, Serializable {
    // bean stuff
@@ -26,7 +26,7 @@ public class DefaultState implements State, Serializable {
    }
 
 
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   private String _internalInstanceName = null;
 
@@ -55,18 +55,6 @@ public class DefaultState implements State, Serializable {
    }
 
    /**
-   * Protege name: term
-   */
-   private String term;
-   public void setTerm(String value) { 
-     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
-    this.term=value;
-   }
-   public String getTerm() {
-     return this.term;
-   }
-
-   /**
    * Protege name: describes
    */
    private List describes = new ArrayList();
@@ -86,5 +74,17 @@ public class DefaultState implements State, Serializable {
    public Iterator getAllDescribes() {return describes.iterator(); }
    public List getDescribes() {return describes; }
    public void setDescribes(List l) {describes = l; }
+
+   /**
+   * Protege name: term
+   */
+   private String term;
+   public void setTerm(String value) { 
+     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
+    this.term=value;
+   }
+   public String getTerm() {
+     return this.term;
+   }
 
 }

@@ -4,11 +4,11 @@ package ontology.common;
 
 /** file: KbBasedBeanFactoryException.java
  * @author ontology bean generator
- * @version 2009/09/15, 18:06:25
+ * @version 2009/09/16, 12:02:11
  */
 public class KbBasedBeanFactoryException extends Exception { 
 
-  private static final long serialVersionUID = -2693500281773954763L;
+  private static final long serialVersionUID = 50810507811552110L;
 
   public KbBasedBeanFactoryException(String msg) {
     super(msg);

@@ -9,7 +9,7 @@ import jade.util.leap.*;
 /**
 * Protege name: Value
 * @author ontology bean generator
-* @version 2009/09/15, 18:06:25
+* @version 2009/09/16, 12:02:11
 */
 public interface Value extends jade.content.Concept, Serializable {
    // bean stuff
