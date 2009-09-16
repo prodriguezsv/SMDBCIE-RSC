@@ -1,4 +1,4 @@
-; Mon Jul 27 14:09:26 GMT-06:00 2009
+; Wed Sep 16 09:54:40 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -19,7 +19,11 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([Character] of  %3AJADE-CLASS
+([Attribute] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([CharacterDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -31,35 +35,31 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([DescriptionElement] of  %3AJADE-CLASS
+([DescribedBy] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([EnvironmentalFactor] of  %3AJADE-CLASS
+([Describes] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([Generic] of  %3AJADE-CLASS
+([Descriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([IsComposedBy] of  %3AJADE-CLASS
+([EnvironmentalCategory] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([IsPartOf] of  %3AJADE-CLASS
+([HeuristicDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([IsSubpropertyOf] of  %3AJADE-CLASS
+([MSCharacterDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([IsSuperpropertyOf] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
-
-([Modifier] of  %3AJADE-CLASS
+([MSHeuristicDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -80,23 +80,19 @@
 	(%3AONTOLOGYNAME "SpeciesID")
 	(%3APACKAGE "speciesidontology"))
 
-([Property] of  %3AJADE-CLASS
+([QualitativeCharacterDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([QualitativeCharacter] of  %3AJADE-CLASS
+([QualitativeHeuristicDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([QualitativeFactor] of  %3AJADE-CLASS
+([QuantitativeCharacterDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([QuantitativeCharacter] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
-
-([QuantitativeFactor] of  %3AJADE-CLASS
+([QuantitativeHeuristicDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -104,13 +100,17 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([Region] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
-
 ([resolvers] of  %3AJADE-SLOT
 
 	(%3AJADE-UNNAMED-SLOT FALSE))
+
+([RVCharacterDescriptor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([RVHeuristicDescriptor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([SimpleJADEAbstractOntology_00014] of  %3ASTANDARD-FACET
 
@@ -124,11 +124,15 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([State] of  %3AJADE-CLASS
+([SSCharacterDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([StateGroup] of  %3AJADE-CLASS
+([SSHeuristicDescriptor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([State] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -136,7 +140,11 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([Type] of  %3AJADE-CLASS
+([SVCharacterDescriptor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([SVHeuristicDescriptor] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
