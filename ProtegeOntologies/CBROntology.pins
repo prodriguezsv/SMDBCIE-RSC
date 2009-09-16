@@ -1,0 +1,52 @@
+; Fri Jul 24 21:50:43 GMT-06:00 2009
+; 
+;+ (version "3.3")
+;+ (build "Build 418")
+
+([Adapt] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Case] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsNegative] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsPositive] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsSimilarTo] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsSolution] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsTheMostSilimarTo] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Problema] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Resolve] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Retain] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Retrieve] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Solution] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))

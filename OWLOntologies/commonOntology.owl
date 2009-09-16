@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.owl-ontologies.com/unnamed.owl#"
+  xml:base="http://www.owl-ontologies.com/unnamed.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="JADE-CLASS">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-CLASS</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:Class>
+  <owl:Class rdf:ID="JADE-SLOT">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-SLOT</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="apliesTo">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="owns"/>
+    </owl:inverseOf>
+    <rdfs:range>
+      <JADE-CLASS rdf:ID="Structure">
+        <owl:equivalentClass>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <JADE-CLASS rdf:ID="Attribute">
+                    <rdfs:subClassOf>
+                      <JADE-CLASS rdf:ID="DefinedTerm">
+                        <rdfs:subClassOf>
+                          <JADE-CLASS rdf:ID="Concept">
+                            <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+                            >true</JADE-IGNORE>
+                            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >The common ancestor for all concepts (i.e. types of entity such as Person, Address...) in an ontology</rdfs:comment>
+                          </JADE-CLASS>
+                        </rdfs:subClassOf>
+                      </JADE-CLASS>
+                    </rdfs:subClassOf>
+                    <owl:equivalentClass>
+                      <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                          <owl:Restriction>
+                            <owl:someValuesFrom>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <JADE-CLASS rdf:about="#Structure">
+                                    <rdfs:subClassOf rdf:resource="#DefinedTerm"/>
+                                  </JADE-CLASS>
+                                  <JADE-CLASS rdf:ID="EnvironmentalCategory">
+                                    <owl:equivalentClass>
+                                      <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                          <owl:Restriction>
+                                            <owl:someValuesFrom rdf:resource="#Attribute"/>
+                                            <owl:onProperty>
+                                              <owl:ObjectProperty rdf:about="#owns"/>
+                                            </owl:onProperty>
+                                          </owl:Restriction>
+                                          <owl:Restriction>
+                                            <owl:allValuesFrom rdf:resource="#Attribute"/>
+                                            <owl:onProperty>
+                                              <owl:ObjectProperty rdf:about="#owns"/>
+                                            </owl:onProperty>
+                                          </owl:Restriction>
+                                        </owl:intersectionOf>
+                                      </owl:Class>
+                                    </owl:equivalentClass>
+                                    <rdfs:subClassOf rdf:resource="#DefinedTerm"/>
+                                  </JADE-CLASS>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:someValuesFrom>
+                            <owl:onProperty rdf:resource="#apliesTo"/>
+                          </owl:Restriction>
+                          <owl:Restriction>
+                            <owl:someValuesFrom>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <JADE-CLASS rdf:ID="State">
+                                    <rdfs:subClassOf rdf:resource="#DefinedTerm"/>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:onProperty>
+                                          <owl:ObjectProperty rdf:ID="describes"/>
+                                        </owl:onProperty>
+                                        <owl:someValuesFrom rdf:resource="#Attribute"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </JADE-CLASS>
+                                  <JADE-CLASS rdf:ID="Value">
+                                    <rdfs:subClassOf rdf:resource="#Concept"/>
+                                    <JADE-IGNORE rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#boolean"
+                                    >false</JADE-IGNORE>
+                                    <owl:disjointWith>
+                                      <JADE-CLASS rdf:ID="AgentAction">
+                                        <JADE-IGNORE rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#boolean"
+                                        >true</JADE-IGNORE>
+                                        <owl:disjointWith>
+                                          <JADE-CLASS rdf:ID="AID">
+                                            <JADE-IGNORE rdf:datatype=
+                                            "http://www.w3.org/2001/XMLSchema#boolean"
+                                            >true</JADE-IGNORE>
+                                            <rdfs:subClassOf rdf:resource="#Concept"/>
+                                            <owl:disjointWith rdf:resource="#AgentAction"/>
+                                            <owl:disjointWith>
+                                              <JADE-CLASS rdf:ID="Descriptor">
+                                                <JADE-IGNORE rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >false</JADE-IGNORE>
+                                                <owl:disjointWith rdf:resource="#AgentAction"/>
+                                                <owl:disjointWith rdf:resource="#AID"/>
+                                                <owl:disjointWith rdf:resource="#Value"/>
+                                                <rdfs:subClassOf rdf:resource="#Concept"/>
+                                              </JADE-CLASS>
+                                            </owl:disjointWith>
+                                            <owl:disjointWith rdf:resource="#Value"/>
+                                          </JADE-CLASS>
+                                        </owl:disjointWith>
+                                        <owl:disjointWith rdf:resource="#Descriptor"/>
+                                        <owl:disjointWith rdf:resource="#Value"/>
+                                        <rdfs:comment rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#string"
+                                        >The common ancestor for all actions in an ontology (e.g. Sell, Buy...)</rdfs:comment>
+                                        <rdfs:subClassOf rdf:resource="#Concept"/>
+                                      </JADE-CLASS>
+                                    </owl:disjointWith>
+                                    <owl:disjointWith rdf:resource="#AID"/>
+                                    <owl:disjointWith rdf:resource="#Descriptor"/>
+                                  </JADE-CLASS>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:someValuesFrom>
+                            <owl:onProperty>
+                              <owl:ObjectProperty rdf:ID="describedBy"/>
+                            </owl:onProperty>
+                          </owl:Restriction>
+                          <owl:Restriction>
+                            <owl:onProperty rdf:resource="#apliesTo"/>
+                            <owl:allValuesFrom>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <JADE-CLASS rdf:about="#Structure"/>
+                                  <JADE-CLASS rdf:about="#EnvironmentalCategory"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:allValuesFrom>
+                          </owl:Restriction>
+                          <owl:Restriction>
+                            <owl:onProperty>
+                              <owl:ObjectProperty rdf:about="#describedBy"/>
+                            </owl:onProperty>
+                            <owl:allValuesFrom>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <JADE-CLASS rdf:about="#State"/>
+                                  <JADE-CLASS rdf:about="#Value"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:allValuesFrom>
+                          </owl:Restriction>
+                        </owl:intersectionOf>
+                      </owl:Class>
+                    </owl:equivalentClass>
+                  </JADE-CLASS>
+                </owl:someValuesFrom>
+                <owl:onProperty>
+                  <owl:ObjectProperty rdf:about="#owns"/>
+                </owl:onProperty>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:allValuesFrom rdf:resource="#Attribute"/>
+                <owl:onProperty>
+                  <owl:ObjectProperty rdf:about="#owns"/>
+                </owl:onProperty>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:equivalentClass>
+      </JADE-CLASS>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#owns">
+    <owl:inverseOf rdf:resource="#apliesTo"/>
+    <rdfs:domain rdf:resource="#Structure"/>
+    <rdfs:range rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#describes">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#describedBy"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <JADE-CLASS rdf:about="#State"/>
+          <JADE-CLASS rdf:about="#Value"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#describedBy">
+    <owl:inverseOf rdf:resource="#describes"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <JADE-CLASS rdf:about="#Value"/>
+          <JADE-CLASS rdf:about="#State"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="resolvers">
+    <JADE-UNNAMED-SLOT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</JADE-UNNAMED-SLOT>
+    <rdfs:domain rdf:resource="#AID"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="addresses">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AID"/>
+    <JADE-UNNAMED-SLOT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</JADE-UNNAMED-SLOT>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="definition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#DefinedTerm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="JADE-UNNAMED-SLOT">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#JADE-SLOT"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-UNNAMED-SLOT</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="lowerBound">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <JADE-CLASS rdf:ID="RangeValue">
+        <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</JADE-IGNORE>
+        <owl:disjointWith>
+          <JADE-CLASS rdf:ID="SingleValue">
+            <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</JADE-IGNORE>
+            <owl:disjointWith rdf:resource="#RangeValue"/>
+            <rdfs:subClassOf rdf:resource="#Value"/>
+          </JADE-CLASS>
+        </owl:disjointWith>
+        <rdfs:subClassOf rdf:resource="#Value"/>
+      </JADE-CLASS>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="JADE-IGNORE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-IGNORE</rdfs:label>
+    <rdfs:domain rdf:resource="#JADE-CLASS"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="name">
+    <JADE-UNNAMED-SLOT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</JADE-UNNAMED-SLOT>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AID"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="#SingleValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="term">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#DefinedTerm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="JADE-JAVA-BASE-CLASS">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-JAVA-BASE-CLASS</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#JADE-CLASS"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="property">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="upperBound">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#RangeValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="agente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="structure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="measuringUnit">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Value"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="JADE-NAME">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#JADE-CLASS"/>
+          <owl:Class rdf:about="#JADE-SLOT"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-NAME</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="JADE-JAVA-CODE">
+    <rdfs:domain rdf:resource="#JADE-CLASS"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >:JADE-JAVA-CODE</rdfs:label>
+  </owl:FunctionalProperty>
+  <JADE-CLASS rdf:ID="Predicate">
+    <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</JADE-IGNORE>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The common ancestor for all predicates in an ontology (e.g. FatherOf...)</rdfs:comment>
+  </JADE-CLASS>
+  <JADE-CLASS rdf:ID="CharacterDescriptor">
+    <owl:disjointWith>
+      <JADE-CLASS rdf:ID="HeuristicDescriptor">
+        <owl:disjointWith rdf:resource="#CharacterDescriptor"/>
+        <rdfs:subClassOf rdf:resource="#Descriptor"/>
+        <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</JADE-IGNORE>
+      </JADE-CLASS>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#Descriptor"/>
+    <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</JADE-IGNORE>
+  </JADE-CLASS>
+  <JADE-CLASS rdf:ID="QuantitativeFactor">
+    <owl:disjointWith>
+      <JADE-CLASS rdf:ID="QualitativeFactor">
+        <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</JADE-IGNORE>
+        <owl:disjointWith rdf:resource="#QuantitativeFactor"/>
+        <rdfs:subClassOf rdf:resource="#HeuristicDescriptor"/>
+      </JADE-CLASS>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#HeuristicDescriptor"/>
+    <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</JADE-IGNORE>
+  </JADE-CLASS>
+  <JADE-CLASS rdf:ID="QuantitativeCharacterDescriptor">
+    <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</JADE-IGNORE>
+    <rdfs:subClassOf rdf:resource="#CharacterDescriptor"/>
+    <owl:disjointWith>
+      <JADE-CLASS rdf:ID="QualitativeCharacterDescriptor">
+        <JADE-IGNORE rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</JADE-IGNORE>
+        <rdfs:subClassOf rdf:resource="#CharacterDescriptor"/>
+        <owl:disjointWith rdf:resource="#QuantitativeCharacterDescriptor"/>
+      </JADE-CLASS>
+    </owl:disjointWith>
+  </JADE-CLASS>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3, Build 418)  http://protege.stanford.edu -->

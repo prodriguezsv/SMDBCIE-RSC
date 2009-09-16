@@ -1,0 +1,3218 @@
+; Mon Jul 27 14:09:26 GMT-06:00 2009
+; 
+;+ (version "3.3")
+;+ (build "Build 418")
+
+([ANNOTATED_INSTANCE_WIDGET] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([ANNOTATION_TEXT_WIDGET] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_20140]
+		[commonOntology_ProjectKB_Instance_20141]
+		[commonOntology_ProjectKB_Instance_20142]
+		[commonOntology_ProjectKB_Instance_20143]
+		[commonOntology_ProjectKB_Instance_20144]
+		[commonOntology_ProjectKB_Instance_20145]
+		[commonOntology_ProjectKB_Instance_20146]
+		[commonOntology_ProjectKB_Instance_20147]
+		[commonOntology_ProjectKB_Instance_20148]))
+
+([CLSES_TAB] of  Widget
+
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([commonOntology_ProjectKB_Instance_0] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_1])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([commonOntology_ProjectKB_Instance_1] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_11])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([commonOntology_ProjectKB_Instance_10140] of  Widget
+
+	(is_hidden FALSE)
+	(name "DefinedTerm")
+	(property_list [commonOntology_ProjectKB_Instance_10141])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10141] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10142]
+		[commonOntology_ProjectKB_Instance_10143]
+		[commonOntology_ProjectKB_Instance_10145]))
+
+([commonOntology_ProjectKB_Instance_10142] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_10692]
+		[commonOntology_ProjectKB_Instance_10693]))
+
+([commonOntology_ProjectKB_Instance_10143] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "term")
+	(property_list [commonOntology_ProjectKB_Instance_10144])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10144] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10145] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "definition")
+	(property_list [commonOntology_ProjectKB_Instance_10146])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10146] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10147] of  Widget
+
+	(is_hidden FALSE)
+	(name "Structure")
+	(property_list [commonOntology_ProjectKB_Instance_10150])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10150] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10151]
+		[commonOntology_ProjectKB_Instance_10152]
+		[commonOntology_ProjectKB_Instance_10154]
+		[commonOntology_ProjectKB_Instance_10156]
+		[commonOntology_ProjectKB_Instance_10158]
+		[commonOntology_ProjectKB_Instance_10162]
+		[commonOntology_ProjectKB_Instance_10166]))
+
+([commonOntology_ProjectKB_Instance_10151] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10152] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "term")
+	(property_list [commonOntology_ProjectKB_Instance_10153])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10153] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10154] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "definition")
+	(property_list [commonOntology_ProjectKB_Instance_10155])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10155] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10156] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "type")
+	(property_list [commonOntology_ProjectKB_Instance_10157])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([commonOntology_ProjectKB_Instance_10157] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10158] of  Widget
+
+	(height 200)
+	(is_hidden FALSE)
+	(label "Part of")
+	(name "partOf")
+	(property_list [commonOntology_ProjectKB_Instance_10159])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 240)
+	(x 260)
+	(y 180))
+
+([commonOntology_ProjectKB_Instance_10159] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10160]
+		[commonOntology_ProjectKB_Instance_10161]
+		[commonOntology_ProjectKB_Instance_10605]
+		[commonOntology_ProjectKB_Instance_10606]
+		[commonOntology_ProjectKB_Instance_10607]
+		[commonOntology_ProjectKB_Instance_10608]
+		[commonOntology_ProjectKB_Instance_10609]
+		[commonOntology_ProjectKB_Instance_10610]
+		[commonOntology_ProjectKB_Instance_10611]
+		[commonOntology_ProjectKB_Instance_10612]
+		[commonOntology_ProjectKB_Instance_10613]
+		[commonOntology_ProjectKB_Instance_10614]
+		[commonOntology_ProjectKB_Instance_10615]
+		[commonOntology_ProjectKB_Instance_10616]))
+
+([commonOntology_ProjectKB_Instance_10160] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10161] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10162] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "owns")
+	(property_list [commonOntology_ProjectKB_Instance_10163])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 240)
+	(x 260)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10163] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10164]
+		[commonOntology_ProjectKB_Instance_10165]))
+
+([commonOntology_ProjectKB_Instance_10164] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10165] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10166] of  Widget
+
+	(height 200)
+	(is_hidden FALSE)
+	(label "Composed by")
+	(name "composedBy")
+	(property_list [commonOntology_ProjectKB_Instance_10167])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([commonOntology_ProjectKB_Instance_10167] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_20383]
+		[commonOntology_ProjectKB_Instance_20384]))
+
+([commonOntology_ProjectKB_Instance_10176] of  Widget
+
+	(is_hidden FALSE)
+	(name "Property")
+	(property_list [commonOntology_ProjectKB_Instance_10179])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10179] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10180]
+		[commonOntology_ProjectKB_Instance_10181]
+		[commonOntology_ProjectKB_Instance_10183]
+		[commonOntology_ProjectKB_Instance_10185]
+		[commonOntology_ProjectKB_Instance_10189]
+		[commonOntology_ProjectKB_Instance_10193]
+		[commonOntology_ProjectKB_Instance_10197]))
+
+([commonOntology_ProjectKB_Instance_10180] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_20366]
+		[commonOntology_ProjectKB_Instance_20367]))
+
+([commonOntology_ProjectKB_Instance_10181] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "term")
+	(property_list [commonOntology_ProjectKB_Instance_10182])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10182] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10183] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "definition")
+	(property_list [commonOntology_ProjectKB_Instance_10184])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10184] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10185] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Subproperty of")
+	(name "subpropertyOf")
+	(property_list [commonOntology_ProjectKB_Instance_10186])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([commonOntology_ProjectKB_Instance_10186] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10187]
+		[commonOntology_ProjectKB_Instance_10188]
+		[commonOntology_ProjectKB_Instance_10569]
+		[commonOntology_ProjectKB_Instance_10570]
+		[commonOntology_ProjectKB_Instance_10571]
+		[commonOntology_ProjectKB_Instance_10572]
+		[commonOntology_ProjectKB_Instance_10573]
+		[commonOntology_ProjectKB_Instance_10574]
+		[commonOntology_ProjectKB_Instance_10575]
+		[commonOntology_ProjectKB_Instance_10576]
+		[commonOntology_ProjectKB_Instance_10577]
+		[commonOntology_ProjectKB_Instance_10578]
+		[commonOntology_ProjectKB_Instance_10579]
+		[commonOntology_ProjectKB_Instance_10580]))
+
+([commonOntology_ProjectKB_Instance_10187] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10188] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10189] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Superproperty of")
+	(name "superpropertyOf")
+	(property_list [commonOntology_ProjectKB_Instance_10190])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 210)
+	(x 390)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10190] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10191]
+		[commonOntology_ProjectKB_Instance_10192]
+		[commonOntology_ProjectKB_Instance_10581]
+		[commonOntology_ProjectKB_Instance_10582]
+		[commonOntology_ProjectKB_Instance_10583]
+		[commonOntology_ProjectKB_Instance_10584]
+		[commonOntology_ProjectKB_Instance_10585]
+		[commonOntology_ProjectKB_Instance_10586]
+		[commonOntology_ProjectKB_Instance_10587]
+		[commonOntology_ProjectKB_Instance_10588]
+		[commonOntology_ProjectKB_Instance_10589]
+		[commonOntology_ProjectKB_Instance_10590]
+		[commonOntology_ProjectKB_Instance_10591]
+		[commonOntology_ProjectKB_Instance_10592]))
+
+([commonOntology_ProjectKB_Instance_10191] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10192] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10193] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Described by")
+	(name "describedBy")
+	(property_list [commonOntology_ProjectKB_Instance_10194])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([commonOntology_ProjectKB_Instance_10194] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_20350]
+		[commonOntology_ProjectKB_Instance_20351]))
+
+([commonOntology_ProjectKB_Instance_10197] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Aplies to")
+	(name "apliesTo")
+	(property_list [commonOntology_ProjectKB_Instance_10198])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 190)
+	(x 200)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10198] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_20364]
+		[commonOntology_ProjectKB_Instance_20365]
+		[commonOntology_ProjectKB_Instance_20368]
+		[commonOntology_ProjectKB_Instance_20369]
+		[commonOntology_ProjectKB_Instance_20370]
+		[commonOntology_ProjectKB_Instance_20371]
+		[commonOntology_ProjectKB_Instance_20372]
+		[commonOntology_ProjectKB_Instance_20373]
+		[commonOntology_ProjectKB_Instance_20374]
+		[commonOntology_ProjectKB_Instance_20375]
+		[commonOntology_ProjectKB_Instance_20376]
+		[commonOntology_ProjectKB_Instance_20377]
+		[commonOntology_ProjectKB_Instance_20378]
+		[commonOntology_ProjectKB_Instance_20379]))
+
+([commonOntology_ProjectKB_Instance_10204] of  Widget
+
+	(is_hidden FALSE)
+	(name "State")
+	(property_list [commonOntology_ProjectKB_Instance_10207])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10207] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10208]
+		[commonOntology_ProjectKB_Instance_10209]
+		[commonOntology_ProjectKB_Instance_10211]
+		[commonOntology_ProjectKB_Instance_10213]))
+
+([commonOntology_ProjectKB_Instance_10208] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10209] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "term")
+	(property_list [commonOntology_ProjectKB_Instance_10210])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10210] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10211] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "definition")
+	(property_list [commonOntology_ProjectKB_Instance_10212])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10212] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10213] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(name "describes")
+	(property_list [commonOntology_ProjectKB_Instance_10214])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 130))
+
+([commonOntology_ProjectKB_Instance_10214] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10215]
+		[commonOntology_ProjectKB_Instance_10216]))
+
+([commonOntology_ProjectKB_Instance_10215] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10216] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10217] of  Widget
+
+	(is_hidden FALSE)
+	(name "Modifier")
+	(property_list [commonOntology_ProjectKB_Instance_10220])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10220] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10221]
+		[commonOntology_ProjectKB_Instance_10222]
+		[commonOntology_ProjectKB_Instance_10224]))
+
+([commonOntology_ProjectKB_Instance_10221] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10222] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "term")
+	(property_list [commonOntology_ProjectKB_Instance_10223])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10223] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10224] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "definition")
+	(property_list [commonOntology_ProjectKB_Instance_10225])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10225] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10295] of  Widget
+
+	(is_hidden FALSE)
+	(name "StateGroup")
+	(property_list [commonOntology_ProjectKB_Instance_10296])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10296] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10297]
+		[commonOntology_ProjectKB_Instance_10298]
+		[commonOntology_ProjectKB_Instance_10300]))
+
+([commonOntology_ProjectKB_Instance_10297] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10298] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [commonOntology_ProjectKB_Instance_10299])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10299] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10300] of  Widget
+
+	(height 190)
+	(is_hidden FALSE)
+	(label "Aplies to")
+	(name "apliesTo")
+	(property_list [commonOntology_ProjectKB_Instance_10301])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10301] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10302]
+		[commonOntology_ProjectKB_Instance_10303]
+		[commonOntology_ProjectKB_Instance_10533]
+		[commonOntology_ProjectKB_Instance_10534]
+		[commonOntology_ProjectKB_Instance_10535]
+		[commonOntology_ProjectKB_Instance_10536]
+		[commonOntology_ProjectKB_Instance_10537]
+		[commonOntology_ProjectKB_Instance_10538]
+		[commonOntology_ProjectKB_Instance_10539]
+		[commonOntology_ProjectKB_Instance_10540]
+		[commonOntology_ProjectKB_Instance_10541]
+		[commonOntology_ProjectKB_Instance_10542]
+		[commonOntology_ProjectKB_Instance_10543]
+		[commonOntology_ProjectKB_Instance_10544]))
+
+([commonOntology_ProjectKB_Instance_10302] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10303] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10304] of  Widget
+
+	(is_hidden FALSE)
+	(name "Value")
+	(property_list [commonOntology_ProjectKB_Instance_10305])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10305] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10306]
+		[commonOntology_ProjectKB_Instance_10307]
+		[commonOntology_ProjectKB_Instance_10311]))
+
+([commonOntology_ProjectKB_Instance_10306] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_10313]
+		[commonOntology_ProjectKB_Instance_10314]))
+
+([commonOntology_ProjectKB_Instance_10307] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "describes")
+	(property_list [commonOntology_ProjectKB_Instance_10308])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10308] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10311] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "measuringUnit")
+	(property_list [commonOntology_ProjectKB_Instance_10312])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10312] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10313] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_10314] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_10315] of  Widget
+
+	(is_hidden FALSE)
+	(name "SingleValue")
+	(property_list [commonOntology_ProjectKB_Instance_10318])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10318] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10319]
+		[commonOntology_ProjectKB_Instance_10322]
+		[commonOntology_ProjectKB_Instance_10324]
+		[commonOntology_ProjectKB_Instance_10326]))
+
+([commonOntology_ProjectKB_Instance_10319] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_10320]
+		[commonOntology_ProjectKB_Instance_10321]))
+
+([commonOntology_ProjectKB_Instance_10320] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_10321] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_10322] of  Widget
+
+	(height 190)
+	(is_hidden FALSE)
+	(name "describes")
+	(property_list [commonOntology_ProjectKB_Instance_10323])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 270)
+	(x 0)
+	(y 70))
+
+([commonOntology_ProjectKB_Instance_10323] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10348]
+		[commonOntology_ProjectKB_Instance_10349]))
+
+([commonOntology_ProjectKB_Instance_10324] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Measuring unit")
+	(name "measuringUnit")
+	(property_list [commonOntology_ProjectKB_Instance_10325])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 130)
+	(x 140)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10325] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10525]
+		[commonOntology_ProjectKB_Instance_10526]))
+
+([commonOntology_ProjectKB_Instance_10326] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [commonOntology_ProjectKB_Instance_10327])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 120)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10327] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10328] of  Widget
+
+	(is_hidden FALSE)
+	(name "RangeValue")
+	(property_list [commonOntology_ProjectKB_Instance_10331])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10331] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10332]
+		[commonOntology_ProjectKB_Instance_10335]
+		[commonOntology_ProjectKB_Instance_10337]
+		[commonOntology_ProjectKB_Instance_10339]
+		[commonOntology_ProjectKB_Instance_10341]))
+
+([commonOntology_ProjectKB_Instance_10332] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_10333]
+		[commonOntology_ProjectKB_Instance_10334]))
+
+([commonOntology_ProjectKB_Instance_10333] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_10334] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_10335] of  Widget
+
+	(height 220)
+	(is_hidden FALSE)
+	(name "describes")
+	(property_list [commonOntology_ProjectKB_Instance_10336])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 300)
+	(x 0)
+	(y 70))
+
+([commonOntology_ProjectKB_Instance_10336] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10353]
+		[commonOntology_ProjectKB_Instance_10354]))
+
+([commonOntology_ProjectKB_Instance_10337] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Measuring unit")
+	(name "measuringUnit")
+	(property_list [commonOntology_ProjectKB_Instance_10338])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10338] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10527]
+		[commonOntology_ProjectKB_Instance_10528]))
+
+([commonOntology_ProjectKB_Instance_10339] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Lower bound")
+	(name "lowerBound")
+	(property_list [commonOntology_ProjectKB_Instance_10340])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10340] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10531]
+		[commonOntology_ProjectKB_Instance_10532]))
+
+([commonOntology_ProjectKB_Instance_10341] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Upper bound")
+	(name "upperBound")
+	(property_list [commonOntology_ProjectKB_Instance_10342])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 100)
+	(x 100)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10342] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10529]
+		[commonOntology_ProjectKB_Instance_10530]))
+
+([commonOntology_ProjectKB_Instance_10348] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10349] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10353] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10354] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10358] of  Widget
+
+	(is_hidden FALSE)
+	(name "Character")
+	(property_list [commonOntology_ProjectKB_Instance_10359])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10359] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10360]
+		[commonOntology_ProjectKB_Instance_10361]
+		[commonOntology_ProjectKB_Instance_10365]))
+
+([commonOntology_ProjectKB_Instance_10360] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_10474]
+		[commonOntology_ProjectKB_Instance_10475]))
+
+([commonOntology_ProjectKB_Instance_10361] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "registeredProperty")
+	(property_list [commonOntology_ProjectKB_Instance_10362])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10362] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10365] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "registeredStructure")
+	(property_list [commonOntology_ProjectKB_Instance_10366])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10366] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10369] of  Widget
+
+	(is_hidden FALSE)
+	(name "QualitativeCharacter")
+	(property_list [commonOntology_ProjectKB_Instance_10370])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10370] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10371]
+		[commonOntology_ProjectKB_Instance_10372]
+		[commonOntology_ProjectKB_Instance_10376]
+		[commonOntology_ProjectKB_Instance_10380]))
+
+([commonOntology_ProjectKB_Instance_10371] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10372] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Property")
+	(name "registeredProperty")
+	(property_list [commonOntology_ProjectKB_Instance_10373])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 260)
+	(x 0)
+	(y 70))
+
+([commonOntology_ProjectKB_Instance_10373] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10374]
+		[commonOntology_ProjectKB_Instance_10375]
+		[commonOntology_ProjectKB_Instance_10399]
+		[commonOntology_ProjectKB_Instance_10400]
+		[commonOntology_ProjectKB_Instance_10401]
+		[commonOntology_ProjectKB_Instance_10402]
+		[commonOntology_ProjectKB_Instance_10403]
+		[commonOntology_ProjectKB_Instance_10404]
+		[commonOntology_ProjectKB_Instance_10405]
+		[commonOntology_ProjectKB_Instance_10406]
+		[commonOntology_ProjectKB_Instance_10407]
+		[commonOntology_ProjectKB_Instance_10408]
+		[commonOntology_ProjectKB_Instance_10409]
+		[commonOntology_ProjectKB_Instance_10410]))
+
+([commonOntology_ProjectKB_Instance_10374] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10375] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10376] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Structure")
+	(name "registeredStructure")
+	(property_list [commonOntology_ProjectKB_Instance_10377])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 260)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10377] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10378]
+		[commonOntology_ProjectKB_Instance_10379]
+		[commonOntology_ProjectKB_Instance_10423]
+		[commonOntology_ProjectKB_Instance_10424]
+		[commonOntology_ProjectKB_Instance_10425]
+		[commonOntology_ProjectKB_Instance_10426]
+		[commonOntology_ProjectKB_Instance_10427]
+		[commonOntology_ProjectKB_Instance_10428]
+		[commonOntology_ProjectKB_Instance_10429]
+		[commonOntology_ProjectKB_Instance_10430]
+		[commonOntology_ProjectKB_Instance_10431]
+		[commonOntology_ProjectKB_Instance_10432]
+		[commonOntology_ProjectKB_Instance_10433]
+		[commonOntology_ProjectKB_Instance_10434]))
+
+([commonOntology_ProjectKB_Instance_10378] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10379] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10380] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "State")
+	(name "registeredState")
+	(property_list [commonOntology_ProjectKB_Instance_10381])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 260)
+	(x 0)
+	(y 140))
+
+([commonOntology_ProjectKB_Instance_10381] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10382]
+		[commonOntology_ProjectKB_Instance_10383]
+		[commonOntology_ProjectKB_Instance_10411]
+		[commonOntology_ProjectKB_Instance_10412]
+		[commonOntology_ProjectKB_Instance_10413]
+		[commonOntology_ProjectKB_Instance_10414]
+		[commonOntology_ProjectKB_Instance_10415]
+		[commonOntology_ProjectKB_Instance_10416]
+		[commonOntology_ProjectKB_Instance_10417]
+		[commonOntology_ProjectKB_Instance_10418]
+		[commonOntology_ProjectKB_Instance_10419]
+		[commonOntology_ProjectKB_Instance_10420]
+		[commonOntology_ProjectKB_Instance_10421]
+		[commonOntology_ProjectKB_Instance_10422]))
+
+([commonOntology_ProjectKB_Instance_10382] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10383] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10384] of  Widget
+
+	(is_hidden FALSE)
+	(name "QuantitativeCharacter")
+	(property_list [commonOntology_ProjectKB_Instance_10385])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10385] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10386]
+		[commonOntology_ProjectKB_Instance_10387]
+		[commonOntology_ProjectKB_Instance_10391]
+		[commonOntology_ProjectKB_Instance_10395]))
+
+([commonOntology_ProjectKB_Instance_10386] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10387] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Property")
+	(name "registeredProperty")
+	(property_list [commonOntology_ProjectKB_Instance_10388])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 260)
+	(x 0)
+	(y 70))
+
+([commonOntology_ProjectKB_Instance_10388] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10389]
+		[commonOntology_ProjectKB_Instance_10390]
+		[commonOntology_ProjectKB_Instance_10462]
+		[commonOntology_ProjectKB_Instance_10463]
+		[commonOntology_ProjectKB_Instance_10464]
+		[commonOntology_ProjectKB_Instance_10465]
+		[commonOntology_ProjectKB_Instance_10466]
+		[commonOntology_ProjectKB_Instance_10467]
+		[commonOntology_ProjectKB_Instance_10468]
+		[commonOntology_ProjectKB_Instance_10469]
+		[commonOntology_ProjectKB_Instance_10470]
+		[commonOntology_ProjectKB_Instance_10471]
+		[commonOntology_ProjectKB_Instance_10472]
+		[commonOntology_ProjectKB_Instance_10473]))
+
+([commonOntology_ProjectKB_Instance_10389] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10390] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10391] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Structure")
+	(name "registeredStructure")
+	(property_list [commonOntology_ProjectKB_Instance_10392])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 260)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10392] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10393]
+		[commonOntology_ProjectKB_Instance_10394]
+		[commonOntology_ProjectKB_Instance_10450]
+		[commonOntology_ProjectKB_Instance_10451]
+		[commonOntology_ProjectKB_Instance_10452]
+		[commonOntology_ProjectKB_Instance_10453]
+		[commonOntology_ProjectKB_Instance_10454]
+		[commonOntology_ProjectKB_Instance_10455]
+		[commonOntology_ProjectKB_Instance_10456]
+		[commonOntology_ProjectKB_Instance_10457]
+		[commonOntology_ProjectKB_Instance_10458]
+		[commonOntology_ProjectKB_Instance_10459]
+		[commonOntology_ProjectKB_Instance_10460]
+		[commonOntology_ProjectKB_Instance_10461]))
+
+([commonOntology_ProjectKB_Instance_10393] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10394] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10395] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Value")
+	(name "registeredValue")
+	(property_list [commonOntology_ProjectKB_Instance_10396])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 260)
+	(x 0)
+	(y 140))
+
+([commonOntology_ProjectKB_Instance_10396] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10397]
+		[commonOntology_ProjectKB_Instance_10398]
+		[commonOntology_ProjectKB_Instance_10438]
+		[commonOntology_ProjectKB_Instance_10439]
+		[commonOntology_ProjectKB_Instance_10440]
+		[commonOntology_ProjectKB_Instance_10441]
+		[commonOntology_ProjectKB_Instance_10442]
+		[commonOntology_ProjectKB_Instance_10443]
+		[commonOntology_ProjectKB_Instance_10444]
+		[commonOntology_ProjectKB_Instance_10445]
+		[commonOntology_ProjectKB_Instance_10446]
+		[commonOntology_ProjectKB_Instance_10447]
+		[commonOntology_ProjectKB_Instance_10448]
+		[commonOntology_ProjectKB_Instance_10449]))
+
+([commonOntology_ProjectKB_Instance_10397] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10398] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10399] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10400] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10401] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10402] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10403] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10404] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10405] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10406] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10407] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10408] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10409] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10410] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10411] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10412] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10413] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10414] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10415] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10416] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10417] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10418] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10419] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10420] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10421] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10422] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10423] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10424] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10425] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10426] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10427] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10428] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10429] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10430] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10431] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10432] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10433] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10434] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10438] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10439] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10440] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10441] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10442] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10443] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10444] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10445] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10446] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10447] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10448] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10449] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10450] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10451] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10452] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10453] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10454] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10455] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10456] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10457] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10458] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10459] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10460] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10461] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10462] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10463] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10464] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10465] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10466] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10467] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10468] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10469] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10470] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10471] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10472] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10473] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10474] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_10475] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_10476] of  Widget
+
+	(is_hidden FALSE)
+	(name "EnvironmentalFactor")
+	(property_list [commonOntology_ProjectKB_Instance_10477])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10477] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10478]
+		[commonOntology_ProjectKB_Instance_10479]))
+
+([commonOntology_ProjectKB_Instance_10478] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[commonOntology_ProjectKB_Instance_10523]
+		[commonOntology_ProjectKB_Instance_10524]))
+
+([commonOntology_ProjectKB_Instance_10479] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [commonOntology_ProjectKB_Instance_10480])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10480] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10481] of  Widget
+
+	(is_hidden FALSE)
+	(name "QualitativeFactor")
+	(property_list [commonOntology_ProjectKB_Instance_10482])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10482] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10483]
+		[commonOntology_ProjectKB_Instance_10484]
+		[commonOntology_ProjectKB_Instance_10486]))
+
+([commonOntology_ProjectKB_Instance_10483] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10484] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [commonOntology_ProjectKB_Instance_10485])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10485] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10486] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "State")
+	(name "registeredState")
+	(property_list [commonOntology_ProjectKB_Instance_10487])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10487] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10488]
+		[commonOntology_ProjectKB_Instance_10489]
+		[commonOntology_ProjectKB_Instance_10490]
+		[commonOntology_ProjectKB_Instance_10491]
+		[commonOntology_ProjectKB_Instance_10492]
+		[commonOntology_ProjectKB_Instance_10493]
+		[commonOntology_ProjectKB_Instance_10494]
+		[commonOntology_ProjectKB_Instance_10495]
+		[commonOntology_ProjectKB_Instance_10496]
+		[commonOntology_ProjectKB_Instance_10497]
+		[commonOntology_ProjectKB_Instance_10498]
+		[commonOntology_ProjectKB_Instance_10499]
+		[commonOntology_ProjectKB_Instance_10500]
+		[commonOntology_ProjectKB_Instance_10501]))
+
+([commonOntology_ProjectKB_Instance_10488] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10489] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10490] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10491] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10492] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10493] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10494] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10495] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10496] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10497] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10498] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10499] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10500] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10501] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10502] of  Widget
+
+	(is_hidden FALSE)
+	(name "QuantitativeFactor")
+	(property_list [commonOntology_ProjectKB_Instance_10503])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([commonOntology_ProjectKB_Instance_10503] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10504]
+		[commonOntology_ProjectKB_Instance_10505]
+		[commonOntology_ProjectKB_Instance_10507]))
+
+([commonOntology_ProjectKB_Instance_10504] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_10505] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [commonOntology_ProjectKB_Instance_10506])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([commonOntology_ProjectKB_Instance_10506] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_10507] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Value")
+	(name "registeredValue")
+	(property_list [commonOntology_ProjectKB_Instance_10508])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([commonOntology_ProjectKB_Instance_10508] of  Property_List
+
+	(properties
+		[commonOntology_ProjectKB_Instance_10509]
+		[commonOntology_ProjectKB_Instance_10510]
+		[commonOntology_ProjectKB_Instance_10511]
+		[commonOntology_ProjectKB_Instance_10512]
+		[commonOntology_ProjectKB_Instance_10513]
+		[commonOntology_ProjectKB_Instance_10514]
+		[commonOntology_ProjectKB_Instance_10515]
+		[commonOntology_ProjectKB_Instance_10516]
+		[commonOntology_ProjectKB_Instance_10517]
+		[commonOntology_ProjectKB_Instance_10518]
+		[commonOntology_ProjectKB_Instance_10519]
+		[commonOntology_ProjectKB_Instance_10520]
+		[commonOntology_ProjectKB_Instance_10521]
+		[commonOntology_ProjectKB_Instance_10522]))
+
+([commonOntology_ProjectKB_Instance_10509] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10510] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10511] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10512] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10513] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10514] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10515] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10516] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10517] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10518] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10519] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10520] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10521] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10522] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10523] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_10524] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_10525] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10526] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10527] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10528] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10529] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10530] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10531] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10532] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10533] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10534] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10535] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10536] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10537] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10538] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10539] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10540] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10541] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10542] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10543] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10544] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10569] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10570] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10571] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10572] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10573] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10574] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10575] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10576] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10577] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10578] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10579] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10580] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10581] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10582] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10583] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10584] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10585] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10586] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10587] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10588] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10589] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10590] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10591] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10592] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10605] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_10606] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10607] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_10608] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10609] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_10610] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_10611] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10612] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_10613] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10614] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_10615] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_10616] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_10692] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_10693] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_11] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_11404] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_11405] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_11406] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_11407] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_12] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_13])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([commonOntology_ProjectKB_Instance_13] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_130] of  String
+
+	(name "SearchTab_Query"))
+
+([commonOntology_ProjectKB_Instance_14] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_15])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([commonOntology_ProjectKB_Instance_15] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_16] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_17])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([commonOntology_ProjectKB_Instance_17] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_18] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_19])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([commonOntology_ProjectKB_Instance_19] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_2] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_3])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([commonOntology_ProjectKB_Instance_20] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_21])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
+
+([commonOntology_ProjectKB_Instance_20140] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([commonOntology_ProjectKB_Instance_20141] of  String
+
+	(name "DefinedTerm")
+	(string_value "term"))
+
+([commonOntology_ProjectKB_Instance_20142] of  String
+
+	(name "RangeValue")
+	(string_value "lowerBound{+-+}upperBound{+}measuringUnit"))
+
+([commonOntology_ProjectKB_Instance_20143] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([commonOntology_ProjectKB_Instance_20144] of  String
+
+	(name "SingleValue")
+	(string_value "value{+}measuringUnit"))
+
+([commonOntology_ProjectKB_Instance_20145] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([commonOntology_ProjectKB_Instance_20146] of  String
+
+	(name "QuantitativeCharacter")
+	(string_value "{%28}registeredStructure{%3B+}registeredProperty{%3B+}registeredValue{%29}"))
+
+([commonOntology_ProjectKB_Instance_20147] of  String
+
+	(name "QualitativeCharacter")
+	(string_value "{%28}registeredStructure{%3B+}registeredProperty{%3B+}registeredState{%29}"))
+
+([commonOntology_ProjectKB_Instance_20148] of  String
+
+	(name "StateGroup")
+	(string_value "name"))
+
+([commonOntology_ProjectKB_Instance_20149] of  Map
+)
+
+([commonOntology_ProjectKB_Instance_20150] of  Map_Entry
+
+	(key "InstanceGraphWidget.commonOntology_Instance_2.composedBy")
+	(key_class "java.lang.String")
+	(value "commonOntology_ProjectKB_Instance_20149")
+	(value_class "java.util.Map"))
+
+([commonOntology_ProjectKB_Instance_20151] of  Map
+
+	(entries
+		[commonOntology_ProjectKB_Instance_20152]
+		[commonOntology_ProjectKB_Instance_20153]))
+
+([commonOntology_ProjectKB_Instance_20152] of  Map_Entry
+
+	(key "commonOntology_Instance_1")
+	(key_class "java.lang.String")
+	(value "60 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([commonOntology_ProjectKB_Instance_20153] of  Map_Entry
+
+	(key "commonOntology_Instance_2")
+	(key_class "java.lang.String")
+	(value "280 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([commonOntology_ProjectKB_Instance_20154] of  Map_Entry
+
+	(key "InstanceGraphWidget.commonOntology_Instance_0.composedBy")
+	(key_class "java.lang.String")
+	(value "commonOntology_ProjectKB_Instance_20151")
+	(value_class "java.util.Map"))
+
+([commonOntology_ProjectKB_Instance_20155] of  Map
+)
+
+([commonOntology_ProjectKB_Instance_20156] of  Map_Entry
+
+	(key "InstanceGraphWidget.commonOntology_Instance_1.composedBy")
+	(key_class "java.lang.String")
+	(value "commonOntology_ProjectKB_Instance_20155")
+	(value_class "java.util.Map"))
+
+([commonOntology_ProjectKB_Instance_20350] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_20351] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_20364] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_20365] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_20366] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([commonOntology_ProjectKB_Instance_20367] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([commonOntology_ProjectKB_Instance_20368] of  String
+
+	(name "tooltip_text"))
+
+([commonOntology_ProjectKB_Instance_20369] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([commonOntology_ProjectKB_Instance_20370] of  String
+
+	(name "ButtonDescription-View Instance"))
+
+([commonOntology_ProjectKB_Instance_20371] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_20372] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([commonOntology_ProjectKB_Instance_20373] of  String
+
+	(name "ButtonDescription-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_20374] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_20375] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([commonOntology_ProjectKB_Instance_20376] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_20377] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([commonOntology_ProjectKB_Instance_20378] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_20379] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
+
+([commonOntology_ProjectKB_Instance_20383] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([commonOntology_ProjectKB_Instance_20384] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([commonOntology_ProjectKB_Instance_21] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_21549] of  Map
+
+	(entries
+		[commonOntology_ProjectKB_Instance_20150]
+		[commonOntology_ProjectKB_Instance_20154]
+		[commonOntology_ProjectKB_Instance_20156])
+	(referenced_maps
+		[commonOntology_ProjectKB_Instance_20155]
+		[commonOntology_ProjectKB_Instance_20151]
+		[commonOntology_ProjectKB_Instance_20149]))
+
+([commonOntology_ProjectKB_Instance_21558] of  Property_List
+
+	(name "layout properties"))
+
+([commonOntology_ProjectKB_Instance_21559] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_21560] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_21561] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_21562] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_22] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_23])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([commonOntology_ProjectKB_Instance_23] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_24] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_25])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([commonOntology_ProjectKB_Instance_25] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_26] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_27])
+	(widget_class_name "nl.uva.psy.swi.beangenerator.OntologyBeanGeneratorTab"))
+
+([commonOntology_ProjectKB_Instance_27] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_28] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_29])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([commonOntology_ProjectKB_Instance_29] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_3] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_30] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_31])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([commonOntology_ProjectKB_Instance_31] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_32] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_33])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
+
+([commonOntology_ProjectKB_Instance_33] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_34] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_35])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([commonOntology_ProjectKB_Instance_35] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_36] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_37])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([commonOntology_ProjectKB_Instance_37] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_38] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_39])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([commonOntology_ProjectKB_Instance_39] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_4] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_5])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([commonOntology_ProjectKB_Instance_40] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_41])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([commonOntology_ProjectKB_Instance_41] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_42] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_43])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([commonOntology_ProjectKB_Instance_43] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_44] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_45])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([commonOntology_ProjectKB_Instance_45] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_46] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_47])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([commonOntology_ProjectKB_Instance_47] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_48] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_49])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([commonOntology_ProjectKB_Instance_49] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_5] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_50] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_51])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([commonOntology_ProjectKB_Instance_51] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_52] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_53])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([commonOntology_ProjectKB_Instance_53] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_54] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_55])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([commonOntology_ProjectKB_Instance_55] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_56] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_57])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([commonOntology_ProjectKB_Instance_57] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_58] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_59])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([commonOntology_ProjectKB_Instance_59] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_6] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_7])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([commonOntology_ProjectKB_Instance_60] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_61])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([commonOntology_ProjectKB_Instance_61] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_62] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_63])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([commonOntology_ProjectKB_Instance_63] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_64] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_65])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([commonOntology_ProjectKB_Instance_65] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_66] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_67])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([commonOntology_ProjectKB_Instance_67] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_68] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_69])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([commonOntology_ProjectKB_Instance_69] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_7] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_70] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_71])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([commonOntology_ProjectKB_Instance_71] of  Property_List
+)
+
+([commonOntology_ProjectKB_Instance_8] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [commonOntology_ProjectKB_Instance_9])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([commonOntology_ProjectKB_Instance_9] of  Property_List
+)
+
+([CREATION_TIMESTAMP_WIDGET] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([CREATOR_WIDGET] of  Widget
+
+	(name ":CREATOR"))
+
+([FORMS_TAB] of  Widget
+
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [INSTANCE_ANNOTATION_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCE_ANNOTATION_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[ANNOTATED_INSTANCE_WIDGET]
+		[CREATOR_WIDGET]
+		[CREATION_TIMESTAMP_WIDGET]
+		[ANNOTATION_TEXT_WIDGET]))
+
+([INSTANCES_TAB] of  Widget
+
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_194749_Instance_141] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECTED-BINARY-RELATION")
+	(property_list [KB_194749_Instance_142])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_194749_Instance_142] of  Property_List
+
+	(properties [KB_194749_Instance_145]))
+
+([KB_194749_Instance_145] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_194749_Instance_146]
+		[KB_194749_Instance_147]))
+
+([KB_194749_Instance_146] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_194749_Instance_147] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<all>>"))
+
+([KB_717227_Instance_0] of  String
+
+	(name "classes_file_name")
+	(string_value "commonOntology.pont"))
+
+([KB_717227_Instance_1] of  String
+
+	(name "instances_file_name")
+	(string_value "commonOntology.pins"))
+
+([LAYOUT_PROPERTIES] of  Property_List
+
+	(name "layout properties")
+	(properties [VERTICAL_STRETCHER]))
+
+([PAL_DESCRIPTION_WIDGET] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [commonOntology_ProjectKB_Instance_21560])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [PAL_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PAL_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [commonOntology_ProjectKB_Instance_21559])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([PAL_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[PAL_NAME_WIDGET]
+		[PAL_RANGE_WIDGET]
+		[PAL_DESCRIPTION_WIDGET]
+		[PAL_STATEMENT_WIDGET]
+		[commonOntology_ProjectKB_Instance_21558]))
+
+([PAL_RANGE_WIDGET] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(property_list [commonOntology_ProjectKB_Instance_21561])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([PAL_STATEMENT_WIDGET] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(property_list [commonOntology_ProjectKB_Instance_21562])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[PAL_FORM_WIDGET]
+		[commonOntology_ProjectKB_Instance_10304]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[KB_194749_Instance_141]
+		[commonOntology_ProjectKB_Instance_10217]
+		[commonOntology_ProjectKB_Instance_10140]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[commonOntology_ProjectKB_Instance_10328]
+		[commonOntology_ProjectKB_Instance_10315]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[commonOntology_ProjectKB_Instance_10358]
+		[STANDARD_FACET_FORM_WIDGET]
+		[commonOntology_ProjectKB_Instance_10384]
+		[commonOntology_ProjectKB_Instance_10204]
+		[commonOntology_ProjectKB_Instance_10369]
+		[commonOntology_ProjectKB_Instance_10481]
+		[commonOntology_ProjectKB_Instance_10295]
+		[commonOntology_ProjectKB_Instance_10147]
+		[commonOntology_ProjectKB_Instance_10476]
+		[commonOntology_ProjectKB_Instance_10502]
+		[commonOntology_ProjectKB_Instance_10176])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(next_frame_number 0)
+	(options [SpeciesIDOntologyV3_ProjectKB_Instance_3])
+	(property_map [commonOntology_ProjectKB_Instance_21549])
+	(sources [SOURCES])
+	(tabs
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[QUERIES_TAB]))
+
+([QUERIES_TAB] of  Widget
+
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_129])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_717227_Instance_0]
+		[KB_717227_Instance_1]
+		[SpeciesIDOntologyV3_ProjectKB_Instance_2]))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_129] of  Property_List
+
+	(properties [commonOntology_ProjectKB_Instance_130]))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_2] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_3] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon TRUE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon TRUE)
+	(is_readonly FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_76] of  Property_List
+
+	(properties
+		[SpeciesIDOntologyV3_ProjectKB_Instance_77]
+		[SpeciesIDOntologyV3_ProjectKB_Instance_78]))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_77] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_78] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_79] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_80] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_81] of  Property_List
+
+	(properties
+		[SpeciesIDOntologyV3_ProjectKB_Instance_82]
+		[SpeciesIDOntologyV3_ProjectKB_Instance_83]))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_82] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_83] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_84] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_88] of  Property_List
+
+	(name "layout properties"))
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_89] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_90] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_91] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_92] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_93] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_94] of  Property_List
+)
+
+([SpeciesIDOntologyV3_ProjectKB_Instance_95] of  Property_List
+)
+
+([STANDARD_CLASS_CONSTRAINTS_WIDGET] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_76])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_CLASS_DIRECT_INSTANCES_WIDGET] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([STANDARD_CLASS_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_CLASS_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_79])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [STANDARD_CLASS_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_CLASS_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_80])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_CLASS_ROLE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_84])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_81])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([STANDARD_CLASS_WIDGETS] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[STANDARD_CLASS_CONSTRAINTS_WIDGET]
+		[STANDARD_CLASS_DIRECT_INSTANCES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET]
+		[STANDARD_CLASS_DOCUMENTATION_WIDGET]
+		[STANDARD_CLASS_NAME_WIDGET]
+		[STANDARD_CLASS_ROLE_WIDGET]
+		[STANDARD_CLASS_DIRECT_TYPE_WIDGET]
+		[STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET]
+		[LAYOUT_PROPERTIES]))
+
+([STANDARD_FACET_ASSOCIATED_SLOT_WIDGET] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_FACET_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [STANDARD_FACET_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_FACET_WIDGETS] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[STANDARD_FACET_NAME_WIDGET]
+		[STANDARD_FACET_DOCUMENTATION_WIDGET]
+		[STANDARD_FACET_ASSOCIATED_SLOT_WIDGET]))
+
+([STANDARD_SLOT_ASSOCIATED_FACET_WIDGET] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([STANDARD_SLOT_CONSTRAINTS_WIDGET] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([STANDARD_SLOT_DEFAULT_VALUE_WIDGET] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_91])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([STANDARD_SLOT_DIRECT_DOMAIN_WIDGET] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_89])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([STANDARD_SLOT_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_SLOT_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_92])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [STANDARD_SLOT_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_INVERSE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [commonOntology_ProjectKB_Instance_11406])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [commonOntology_ProjectKB_Instance_11405])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([STANDARD_SLOT_MAXIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_93])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [commonOntology_ProjectKB_Instance_11404])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([STANDARD_SLOT_MINIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_94])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([STANDARD_SLOT_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_95])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_SLOT_SUBSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([STANDARD_SLOT_SUPERSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([STANDARD_SLOT_TYPE_WIDGET] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [commonOntology_ProjectKB_Instance_11407])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_SLOT_VALUES_WIDGET] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [SpeciesIDOntologyV3_ProjectKB_Instance_90])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_SLOT_WIDGETS] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_CONSTRAINTS_WIDGET]
+		[STANDARD_SLOT_DIRECT_TYPE_WIDGET]
+		[STANDARD_SLOT_DIRECT_DOMAIN_WIDGET]
+		[STANDARD_SLOT_VALUES_WIDGET]
+		[STANDARD_SLOT_SUPERSLOTS_WIDGET]
+		[STANDARD_SLOT_SUBSLOTS_WIDGET]
+		[STANDARD_SLOT_DEFAULT_VALUE_WIDGET]
+		[STANDARD_SLOT_DOCUMENTATION_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_MINIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_ASSOCIATED_FACET_WIDGET]
+		[STANDARD_SLOT_NAME_WIDGET]
+		[STANDARD_SLOT_INVERSE_WIDGET]
+		[STANDARD_SLOT_TYPE_WIDGET]
+		[SpeciesIDOntologyV3_ProjectKB_Instance_88]))
+
+([VERTICAL_STRETCHER] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))

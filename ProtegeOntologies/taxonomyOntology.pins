@@ -1,0 +1,811 @@
+; Mon Jul 27 18:55:15 GMT-06:00 2009
+; 
+;+ (version "3.3")
+;+ (build "Build 418")
+
+([IsChildOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsParentOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsPredecessorOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsRankRoot] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsRoot] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsSheet] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsSuccessorOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Rank] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Taxon] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TaxonomicHierarchy] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TaxonomicRanks] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([taxonomyOntology_Instance_0] of  TaxonomicRanks
+
+	(name "Main Ranks")
+	(ranks
+		[taxonomyOntology_Instance_10000]
+		[taxonomyOntology_Instance_10001]
+		[taxonomyOntology_Instance_10002]
+		[taxonomyOntology_Instance_20000]
+		[taxonomyOntology_Instance_20001]
+		[taxonomyOntology_Instance_20002]
+		[taxonomyOntology_Instance_20003]))
+
+([taxonomyOntology_Instance_10000] of  Rank
+
+	(predecessorRankOf [taxonomyOntology_Instance_10001])
+	(successorRankOf [taxonomyOntology_Instance_20003])
+	(term "Family"))
+
+([taxonomyOntology_Instance_10001] of  Rank
+
+	(predecessorRankOf [taxonomyOntology_Instance_10002])
+	(successorRankOf [taxonomyOntology_Instance_10000])
+	(term "Genus"))
+
+([taxonomyOntology_Instance_10002] of  Rank
+
+	(successorRankOf [taxonomyOntology_Instance_10001])
+	(term "Species"))
+
+([taxonomyOntology_Instance_20000] of  Rank
+
+	(predecessorRankOf [taxonomyOntology_Instance_20001])
+	(term "Kingdom"))
+
+([taxonomyOntology_Instance_20001] of  Rank
+
+	(predecessorRankOf [taxonomyOntology_Instance_20002])
+	(successorRankOf [taxonomyOntology_Instance_20000])
+	(term "Phylum"))
+
+([taxonomyOntology_Instance_20002] of  Rank
+
+	(predecessorRankOf [taxonomyOntology_Instance_20003])
+	(successorRankOf [taxonomyOntology_Instance_20001])
+	(term "Class"))
+
+([taxonomyOntology_Instance_20003] of  Rank
+
+	(predecessorRankOf [taxonomyOntology_Instance_10000])
+	(successorRankOf [taxonomyOntology_Instance_20002])
+	(term "Order"))
+
+([taxonomyOntology_Instance_30000] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "speciesName")
+	(%3APAL-RANGE "(defrange ?rank1 :FRAME Rank)\n(defrange ?rank2 :FRAME Rank)")
+	(%3APAL-STATEMENT "(forall ?rank1 \n        (=> (= (term ?rank1) Species) \n            ( exists ?rank2 \n              (and ( prefix-of (term ?rank2) (term ?rank1)) (/= ?rank1 ?rank2)))))"))
+
+([taxonomyOntology_Instance_30001] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "test-constrain")
+	(%3APAL-RANGE "(defrange ?rank :FRAME Rank)")
+	(%3APAL-STATEMENT "(forall ?rank \n        (slot-not-null definition ?rank))"))
+
+([taxonomyOntology_Instance_40000] of  PAL-QUERY
+
+	(%3APAL-NAME "find-ranks")
+	(%3APAL-RANGE "(defrange ?rank :FRAME Rank)")
+	(%3APAL-STATEMENT "(findall ?rank \n         (slot-not-null predecessorRankOf ?rank))"))
+
+([taxonomyOntology_Instance_40002] of  Taxon
+
+	(description
+		[taxonomyOntology_Instance_40050]
+		[taxonomyOntology_Instance_50000]
+		[taxonomyOntology_Instance_60000]
+		[taxonomyOntology_Instance_70000]
+		[taxonomyOntology_Instance_70005]
+		[taxonomyOntology_Instance_70006]
+		[taxonomyOntology_Instance_70007]
+		[taxonomyOntology_Instance_70008]
+		[taxonomyOntology_Instance_70009]
+		[taxonomyOntology_Instance_70010]
+		[taxonomyOntology_Instance_70011]
+		[taxonomyOntology_Instance_70012]
+		[taxonomyOntology_Instance_70013]
+		[taxonomyOntology_Instance_70014]
+		[taxonomyOntology_Instance_70015]
+		[taxonomyOntology_Instance_70016]
+		[taxonomyOntology_Instance_70017]
+		[taxonomyOntology_Instance_70018]
+		[taxonomyOntology_Instance_70019]
+		[taxonomyOntology_Instance_70020]
+		[taxonomyOntology_Instance_70003]
+		[taxonomyOntology_Instance_70001]
+		[taxonomyOntology_Instance_70002]
+		[taxonomyOntology_Instance_70004])
+	(predecessorOf
+		[taxonomyOntology_Instance_70025]
+		[taxonomyOntology_Instance_70029]
+		[taxonomyOntology_Instance_70027]
+		[taxonomyOntology_Instance_70021]
+		[taxonomyOntology_Instance_70032])
+	(rank [taxonomyOntology_Instance_10000])
+	(successorOf [taxonomyOntology_Instance_70047])
+	(term "Chromodorididae"))
+
+([taxonomyOntology_Instance_40004] of  Structure
+
+	(owns
+		[taxonomyOntology_Instance_40006]
+		[taxonomyOntology_Instance_40011]
+		[taxonomyOntology_Instance_40009])
+	(term "Cuerpo"))
+
+([taxonomyOntology_Instance_40006] of  Property
+
+	(apliesTo
+		[taxonomyOntology_Instance_40004]
+		[taxonomyOntology_Instance_40042])
+	(describedBy
+		[taxonomyOntology_Instance_40007]
+		[taxonomyOntology_Instance_40008]
+		[taxonomyOntology_Instance_40043])
+	(term "Forma"))
+
+([taxonomyOntology_Instance_40007] of  State
+
+	(describes [taxonomyOntology_Instance_40006])
+	(term "Alargado"))
+
+([taxonomyOntology_Instance_40008] of  State
+
+	(describes [taxonomyOntology_Instance_40006])
+	(term "Ovalado"))
+
+([taxonomyOntology_Instance_40009] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40004])
+	(describedBy [taxonomyOntology_Instance_40010])
+	(term "Longitud"))
+
+([taxonomyOntology_Instance_40010] of  RangeValue
+
+	(describes [taxonomyOntology_Instance_40009])
+	(lowerBound 0.3)
+	(measuringUnit cm)
+	(upperBound "4"))
+
+([taxonomyOntology_Instance_40011] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40004])
+	(describedBy [taxonomyOntology_Instance_40012])
+	(term "Conformacion"))
+
+([taxonomyOntology_Instance_40012] of  State
+
+	(describes [taxonomyOntology_Instance_40011])
+	(term "Tiene cerata"))
+
+([taxonomyOntology_Instance_40013] of  Structure
+
+	(owns
+		[taxonomyOntology_Instance_40014]
+		[taxonomyOntology_Instance_40016])
+	(term "Pie"))
+
+([taxonomyOntology_Instance_40014] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40013])
+	(describedBy [taxonomyOntology_Instance_40015])
+	(term "Disposicion"))
+
+([taxonomyOntology_Instance_40015] of  State
+
+	(describes [taxonomyOntology_Instance_40014])
+	(term "Sobresale al manto"))
+
+([taxonomyOntology_Instance_40016] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40013])
+	(describedBy
+		[taxonomyOntology_Instance_40017]
+		[taxonomyOntology_Instance_40018]
+		[taxonomyOntology_Instance_40019])
+	(term "Coloracion"))
+
+([taxonomyOntology_Instance_40017] of  State
+
+	(describes [taxonomyOntology_Instance_40016])
+	(term "Blanquesino"))
+
+([taxonomyOntology_Instance_40018] of  State
+
+	(describes [taxonomyOntology_Instance_40016])
+	(term "Crema"))
+
+([taxonomyOntology_Instance_40019] of  State
+
+	(describes [taxonomyOntology_Instance_40016])
+	(term "Gris oscuro casi negro"))
+
+([taxonomyOntology_Instance_40020] of  Structure
+
+	(owns
+		[taxonomyOntology_Instance_40021]
+		[taxonomyOntology_Instance_40023]
+		[taxonomyOntology_Instance_40025]
+		[taxonomyOntology_Instance_40027])
+	(term "Branquia"))
+
+([taxonomyOntology_Instance_40021] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40020])
+	(describedBy [taxonomyOntology_Instance_40022])
+	(term "Posicion durante desplazamiento"))
+
+([taxonomyOntology_Instance_40022] of  State
+
+	(describes [taxonomyOntology_Instance_40021])
+	(term "Hacia atras"))
+
+([taxonomyOntology_Instance_40023] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40020])
+	(describedBy [taxonomyOntology_Instance_40024])
+	(term "Posicion del ano con respecto a la branquia"))
+
+([taxonomyOntology_Instance_40024] of  State
+
+	(describes [taxonomyOntology_Instance_40023])
+	(term "En el centro"))
+
+([taxonomyOntology_Instance_40025] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40020])
+	(describedBy [taxonomyOntology_Instance_40026])
+	(term "Numero de hojas branquiales"))
+
+([taxonomyOntology_Instance_40026] of  RangeValue
+
+	(describes [taxonomyOntology_Instance_40025])
+	(lowerBound 6.0)
+	(upperBound "9"))
+
+([taxonomyOntology_Instance_40027] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40020])
+	(describedBy
+		[taxonomyOntology_Instance_40028]
+		[taxonomyOntology_Instance_40029])
+	(term "Forma de hojas branquiales"))
+
+([taxonomyOntology_Instance_40028] of  State
+
+	(describes [taxonomyOntology_Instance_40027])
+	(term "Bipinnada"))
+
+([taxonomyOntology_Instance_40029] of  State
+
+	(describes [taxonomyOntology_Instance_40027])
+	(term "Tripinnada"))
+
+([taxonomyOntology_Instance_40030] of  Structure
+
+	(composedBy [taxonomyOntology_Instance_40037])
+	(owns
+		[taxonomyOntology_Instance_40031]
+		[taxonomyOntology_Instance_40034]
+		[taxonomyOntology_Instance_40036])
+	(term "Manto"))
+
+([taxonomyOntology_Instance_40031] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40030])
+	(describedBy
+		[taxonomyOntology_Instance_40032]
+		[taxonomyOntology_Instance_40033])
+	(term "Textura"))
+
+([taxonomyOntology_Instance_40032] of  State
+
+	(describes
+		[taxonomyOntology_Instance_40031]
+		[taxonomyOntology_Instance_40036])
+	(term "Lisa"))
+
+([taxonomyOntology_Instance_40033] of  State
+
+	(describes [taxonomyOntology_Instance_40031])
+	(term "Con tuberculos"))
+
+([taxonomyOntology_Instance_40034] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40030])
+	(describedBy [taxonomyOntology_Instance_40035])
+	(term "Forma del borde"))
+
+([taxonomyOntology_Instance_40035] of  State
+
+	(describes [taxonomyOntology_Instance_40034])
+	(term "Ondulado"))
+
+([taxonomyOntology_Instance_40036] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40030])
+	(describedBy [taxonomyOntology_Instance_40032])
+	(term "Textura del borde"))
+
+([taxonomyOntology_Instance_40037] of  Structure
+
+	(owns [taxonomyOntology_Instance_40038])
+	(partOf [taxonomyOntology_Instance_40030])
+	(term "Glandulas del manto"))
+
+([taxonomyOntology_Instance_40038] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40037])
+	(describedBy
+		[taxonomyOntology_Instance_40039]
+		[taxonomyOntology_Instance_40040]
+		[taxonomyOntology_Instance_40041])
+	(term "Posicion"))
+
+([taxonomyOntology_Instance_40039] of  State
+
+	(describes [taxonomyOntology_Instance_40038])
+	(term "Delante"))
+
+([taxonomyOntology_Instance_40040] of  State
+
+	(describes [taxonomyOntology_Instance_40038])
+	(term "Delante y atras"))
+
+([taxonomyOntology_Instance_40041] of  State
+
+	(describes [taxonomyOntology_Instance_40038])
+	(term "Alrededor del manto"))
+
+([taxonomyOntology_Instance_40042] of  Structure
+
+	(owns
+		[taxonomyOntology_Instance_40006]
+		[taxonomyOntology_Instance_40044])
+	(term "Rinoforos"))
+
+([taxonomyOntology_Instance_40043] of  State
+
+	(describes [taxonomyOntology_Instance_40006])
+	(term "Laminados"))
+
+([taxonomyOntology_Instance_40044] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40042])
+	(describedBy [taxonomyOntology_Instance_40045])
+	(term "Numero de laminillas"))
+
+([taxonomyOntology_Instance_40045] of  RangeValue
+
+	(describes [taxonomyOntology_Instance_40044])
+	(lowerBound 6.0)
+	(upperBound "20"))
+
+([taxonomyOntology_Instance_40046] of  Structure
+
+	(owns [taxonomyOntology_Instance_40047])
+	(term "Tentaculos orales"))
+
+([taxonomyOntology_Instance_40047] of  Property
+
+	(apliesTo [taxonomyOntology_Instance_40046])
+	(describedBy
+		[taxonomyOntology_Instance_40048]
+		[taxonomyOntology_Instance_40049])
+	(term "Contextura"))
+
+([taxonomyOntology_Instance_40048] of  State
+
+	(describes [taxonomyOntology_Instance_40047])
+	(term "Macizo"))
+
+([taxonomyOntology_Instance_40049] of  State
+
+	(describes [taxonomyOntology_Instance_40047])
+	(term "Surcado"))
+
+([taxonomyOntology_Instance_40050] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40006])
+	(registeredState [taxonomyOntology_Instance_40007])
+	(registeredStructure [taxonomyOntology_Instance_40004]))
+
+([taxonomyOntology_Instance_50000] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40006])
+	(registeredState [taxonomyOntology_Instance_40008])
+	(registeredStructure [taxonomyOntology_Instance_40004]))
+
+([taxonomyOntology_Instance_60000] of  QuantitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40009])
+	(registeredStructure [taxonomyOntology_Instance_40004])
+	(registeredValue [taxonomyOntology_Instance_40010]))
+
+([taxonomyOntology_Instance_70000] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40011])
+	(registeredState [taxonomyOntology_Instance_40012])
+	(registeredStructure [taxonomyOntology_Instance_40004]))
+
+([taxonomyOntology_Instance_70001] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40014])
+	(registeredState [taxonomyOntology_Instance_40015])
+	(registeredStructure [taxonomyOntology_Instance_40013]))
+
+([taxonomyOntology_Instance_70002] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40016])
+	(registeredState [taxonomyOntology_Instance_40017])
+	(registeredStructure [taxonomyOntology_Instance_40013]))
+
+([taxonomyOntology_Instance_70003] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40016])
+	(registeredState [taxonomyOntology_Instance_40018])
+	(registeredStructure [taxonomyOntology_Instance_40013]))
+
+([taxonomyOntology_Instance_70004] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40016])
+	(registeredState [taxonomyOntology_Instance_40019])
+	(registeredStructure [taxonomyOntology_Instance_40013]))
+
+([taxonomyOntology_Instance_70005] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40021])
+	(registeredState [taxonomyOntology_Instance_40022])
+	(registeredStructure [taxonomyOntology_Instance_40020]))
+
+([taxonomyOntology_Instance_70006] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40023])
+	(registeredState [taxonomyOntology_Instance_40024])
+	(registeredStructure [taxonomyOntology_Instance_40020]))
+
+([taxonomyOntology_Instance_70007] of  QuantitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40025])
+	(registeredStructure [taxonomyOntology_Instance_40020])
+	(registeredValue [taxonomyOntology_Instance_40026]))
+
+([taxonomyOntology_Instance_70008] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40027])
+	(registeredState [taxonomyOntology_Instance_40028])
+	(registeredStructure [taxonomyOntology_Instance_40020]))
+
+([taxonomyOntology_Instance_70009] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40027])
+	(registeredState [taxonomyOntology_Instance_40029])
+	(registeredStructure [taxonomyOntology_Instance_40020]))
+
+([taxonomyOntology_Instance_70010] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40031])
+	(registeredState [taxonomyOntology_Instance_40032])
+	(registeredStructure [taxonomyOntology_Instance_40030]))
+
+([taxonomyOntology_Instance_70011] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40031])
+	(registeredState [taxonomyOntology_Instance_40033])
+	(registeredStructure [taxonomyOntology_Instance_40030]))
+
+([taxonomyOntology_Instance_70012] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40034])
+	(registeredState [taxonomyOntology_Instance_40035])
+	(registeredStructure [taxonomyOntology_Instance_40030]))
+
+([taxonomyOntology_Instance_70013] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40036])
+	(registeredState [taxonomyOntology_Instance_40032])
+	(registeredStructure [taxonomyOntology_Instance_40030]))
+
+([taxonomyOntology_Instance_70014] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40038])
+	(registeredState [taxonomyOntology_Instance_40039])
+	(registeredStructure [taxonomyOntology_Instance_40037]))
+
+([taxonomyOntology_Instance_70015] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40038])
+	(registeredState [taxonomyOntology_Instance_40040])
+	(registeredStructure [taxonomyOntology_Instance_40037]))
+
+([taxonomyOntology_Instance_70016] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40038])
+	(registeredState [taxonomyOntology_Instance_40041])
+	(registeredStructure [taxonomyOntology_Instance_40037]))
+
+([taxonomyOntology_Instance_70017] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40006])
+	(registeredState [taxonomyOntology_Instance_40043])
+	(registeredStructure [taxonomyOntology_Instance_40042]))
+
+([taxonomyOntology_Instance_70018] of  QuantitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40044])
+	(registeredStructure [taxonomyOntology_Instance_40042])
+	(registeredValue [taxonomyOntology_Instance_40045]))
+
+([taxonomyOntology_Instance_70019] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40047])
+	(registeredState [taxonomyOntology_Instance_40048])
+	(registeredStructure [taxonomyOntology_Instance_40046]))
+
+([taxonomyOntology_Instance_70020] of  QualitativeCharacter
+
+	(associatedTo [taxonomyOntology_Instance_40002])
+	(registeredProperty [taxonomyOntology_Instance_40047])
+	(registeredState [taxonomyOntology_Instance_40049])
+	(registeredStructure [taxonomyOntology_Instance_40046]))
+
+([taxonomyOntology_Instance_70021] of  Taxon
+
+	(predecessorOf
+		[taxonomyOntology_Instance_70024]
+		[taxonomyOntology_Instance_70023]
+		[taxonomyOntology_Instance_70022])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_40002])
+	(term "Chromodoris"))
+
+([taxonomyOntology_Instance_70022] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70021])
+	(term "Chromodoris sphoni"))
+
+([taxonomyOntology_Instance_70023] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70021])
+	(term "Chromodoris clenchi"))
+
+([taxonomyOntology_Instance_70024] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70021])
+	(term "Chromodoris kempfi"))
+
+([taxonomyOntology_Instance_70025] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70026])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_40002])
+	(term "Cadlina"))
+
+([taxonomyOntology_Instance_70026] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70025])
+	(term "Cadlina sparsa"))
+
+([taxonomyOntology_Instance_70027] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70028])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_40002])
+	(term "Hypselodoris"))
+
+([taxonomyOntology_Instance_70028] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70027])
+	(term "Hypselodoris agassizii"))
+
+([taxonomyOntology_Instance_70029] of  Taxon
+
+	(predecessorOf
+		[taxonomyOntology_Instance_70031]
+		[taxonomyOntology_Instance_70030])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_40002])
+	(term "Glossodoris"))
+
+([taxonomyOntology_Instance_70030] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70029])
+	(term "Glossodoris dalli"))
+
+([taxonomyOntology_Instance_70031] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70029])
+	(term "Glossodoris sedna"))
+
+([taxonomyOntology_Instance_70032] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70033])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_40002])
+	(term "Mexichromis"))
+
+([taxonomyOntology_Instance_70033] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70032])
+	(term "Mexichromis antonii"))
+
+([taxonomyOntology_Instance_70034] of  Taxon
+
+	(predecessorOf
+		[taxonomyOntology_Instance_70035]
+		[taxonomyOntology_Instance_70036]
+		[taxonomyOntology_Instance_70037]
+		[taxonomyOntology_Instance_70039]
+		[taxonomyOntology_Instance_70038])
+	(rank [taxonomyOntology_Instance_10000])
+	(successorOf [taxonomyOntology_Instance_70047])
+	(term "Aplysiidae"))
+
+([taxonomyOntology_Instance_70035] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70040])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_70034])
+	(term "Dolabrifera"))
+
+([taxonomyOntology_Instance_70036] of  Taxon
+
+	(predecessorOf
+		[taxonomyOntology_Instance_70043]
+		[taxonomyOntology_Instance_70043])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_70034])
+	(term "Aplysiia"))
+
+([taxonomyOntology_Instance_70037] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70041])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_70034])
+	(term "Petalifera"))
+
+([taxonomyOntology_Instance_70038] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70044])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_70034])
+	(term "Notarchus"))
+
+([taxonomyOntology_Instance_70039] of  Taxon
+
+	(predecessorOf [taxonomyOntology_Instance_70042])
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_70034])
+	(term "Phyllaplysia"))
+
+([taxonomyOntology_Instance_70040] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70035])
+	(term "Dolabrifera dolabrifera"))
+
+([taxonomyOntology_Instance_70041] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10001])
+	(successorOf [taxonomyOntology_Instance_70037])
+	(term "Petalifera ramosa"))
+
+([taxonomyOntology_Instance_70042] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70039])
+	(term "Phyllaplysia engeli"))
+
+([taxonomyOntology_Instance_70043] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70036])
+	(term "Aplysiia dactylomela"))
+
+([taxonomyOntology_Instance_70044] of  Taxon
+
+	(rank [taxonomyOntology_Instance_10002])
+	(successorOf [taxonomyOntology_Instance_70038])
+	(term "Notarchus punctatus"))
+
+([taxonomyOntology_Instance_70046] of  TaxonomicHierarchy
+
+	(name "Moluscos")
+	(taxa
+		[taxonomyOntology_Instance_70034]
+		[taxonomyOntology_Instance_40002]
+		[taxonomyOntology_Instance_70035]
+		[taxonomyOntology_Instance_70036]
+		[taxonomyOntology_Instance_70037]
+		[taxonomyOntology_Instance_70038]
+		[taxonomyOntology_Instance_70039]
+		[taxonomyOntology_Instance_70025]
+		[taxonomyOntology_Instance_70021]
+		[taxonomyOntology_Instance_70029]
+		[taxonomyOntology_Instance_70027]
+		[taxonomyOntology_Instance_70032]
+		[taxonomyOntology_Instance_70047]
+		[taxonomyOntology_Instance_70040]
+		[taxonomyOntology_Instance_70042]
+		[taxonomyOntology_Instance_70043]
+		[taxonomyOntology_Instance_70041]
+		[taxonomyOntology_Instance_70044]
+		[taxonomyOntology_Instance_70026]
+		[taxonomyOntology_Instance_70023]
+		[taxonomyOntology_Instance_70024]
+		[taxonomyOntology_Instance_70022]
+		[taxonomyOntology_Instance_70030]
+		[taxonomyOntology_Instance_70031]
+		[taxonomyOntology_Instance_70028]
+		[taxonomyOntology_Instance_70033]))
+
+([taxonomyOntology_Instance_70047] of  Taxon
+
+	(predecessorOf
+		[taxonomyOntology_Instance_70034]
+		[taxonomyOntology_Instance_40002])
+	(rank [taxonomyOntology_Instance_20001])
+	(term "Mollusca"))
+
+([taxonomyOntology_Instance_80000] of  TaxonomicHierarchy
+)

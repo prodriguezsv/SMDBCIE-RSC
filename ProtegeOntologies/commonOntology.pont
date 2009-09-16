@@ -1,0 +1,592 @@
+; Mon Jul 27 14:09:26 GMT-06:00 2009
+; 
+;+ (version "3.3")
+;+ (build "Build 418")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot %3ALOCATION
+;+		(comment "The location to store files into")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-COMPATIBILITY
+		(type SYMBOL)
+		(allowed-values J2ME JavaBeans Classes)
+		(default Classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot partStructure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot upperBound
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot describes
+		(type INSTANCE)
+;+		(allowed-classes Property)
+;+		(inverse-slot describedBy)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot type
+		(type SYMBOL)
+;+		(allowed-parents Structure)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot describedBy
+		(type INSTANCE)
+;+		(allowed-classes State Value)
+;+		(inverse-slot describes)
+		(create-accessor read-write))
+	(single-slot %3ASUPPORT
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot childProperty
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot property
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot measuringUnit
+		(type SYMBOL)
+		(allowed-values mm cm inch)
+		(default mm)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-UNNAMED-SLOT
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+;+		(associated-facet SimpleJADEAbstractOntology_00016)
+		(create-accessor read-write))
+	(single-slot lowerBound
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot value
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-GENERATE-ONTOLOGY
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3APACKAGE
+;+		(comment "packagename")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot structure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot registeredState
+		(type INSTANCE)
+;+		(allowed-classes StateGroup State)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-IGNORE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot owns
+		(type INSTANCE)
+;+		(allowed-classes Property)
+		(cardinality 1 ?VARIABLE)
+;+		(inverse-slot apliesTo)
+		(create-accessor read-write))
+	(multislot apliesTo
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+;+		(inverse-slot owns)
+		(create-accessor read-write))
+	(single-slot %3AONTOLOGYNAME
+;+		(comment "name of the ontology")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-DIRECTORY
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot registeredValue
+		(type INSTANCE)
+;+		(allowed-classes Value)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot registeredProperty
+		(type INSTANCE)
+;+		(allowed-classes Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot addresses
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot associatedTo
+		(type INSTANCE)
+;+		(allowed-classes %3ATHING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot parentProperty
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot agente
+		(type SYMBOL)
+;+		(allowed-parents AID)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot term
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-PACKAGE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-BASE-CLASS
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+;+		(associated-facet SimpleJADEAbstractOntology_00014)
+		(create-accessor read-write))
+	(single-slot registeredStructure
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot %3AJADE-INCLUDED-PROPERTIES
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-CODE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot entireStructure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot partOf
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+;+		(inverse-slot composedBy)
+		(create-accessor read-write))
+	(multislot superpropertyOf
+		(type INSTANCE)
+;+		(allowed-classes Property)
+;+		(inverse-slot subpropertyOf)
+		(create-accessor read-write))
+	(multislot composedBy
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+;+		(inverse-slot partOf)
+		(create-accessor read-write))
+	(multislot resolvers
+		(type SYMBOL)
+;+		(allowed-parents AID)
+		(create-accessor read-write))
+	(single-slot subpropertyOf
+		(type INSTANCE)
+;+		(allowed-classes Property)
+;+		(cardinality 0 1)
+;+		(inverse-slot superpropertyOf)
+		(create-accessor read-write)))
+
+(defclass %3AJADE-CLASS
+	(is-a %3ASTANDARD-CLASS)
+	(role concrete)
+	(single-slot %3AJADE-JAVA-CODE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-BASE-CLASS
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-IGNORE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJADE-SLOT
+	(is-a %3ASTANDARD-SLOT)
+	(role concrete)
+	(single-slot %3AJADE-UNNAMED-SLOT
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3APROJECT-ANNOTATION
+	(is-a %3AANNOTATION)
+	(role concrete)
+	(single-slot %3ALOCATION
+;+		(comment "The location to store files into")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3APACKAGE
+;+		(comment "packagename")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASUPPORT
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AONTOLOGYNAME
+;+		(comment "name of the ontology")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Concept "The common ancestor for all concepts (i.e. types of entity such as Person, Address...) in an ontology"
+	(is-a USER)
+	(role abstract))
+
+(defclass AID
+	(is-a Concept)
+	(role concrete)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot addresses
+		(type STRING)
+		(create-accessor read-write))
+	(multislot resolvers
+		(type SYMBOL)
+;+		(allowed-parents AID)
+		(create-accessor read-write)))
+
+(defclass AgentAction "The common ancestor for all actions in an ontology (e.g. Sell, Buy...)"
+	(is-a Concept)
+	(role abstract))
+
+(defclass DefinedTerm "Define the terms utilized in the taxonomic  hierarchy"
+	(is-a Concept)
+	(role concrete)
+	(single-slot definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot term
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Structure "It's a subclass of a defined term"
+	(is-a DefinedTerm)
+	(role concrete)
+	(single-slot type
+		(type SYMBOL)
+;+		(allowed-parents Structure)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot partOf
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+		(create-accessor read-write))
+	(multislot composedBy
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+		(create-accessor read-write))
+	(multislot owns
+		(type INSTANCE)
+;+		(allowed-classes Property)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write)))
+
+(defclass Type "Specialized structure"
+	(is-a Structure)
+	(role concrete))
+
+(defclass Region "Specialized structure"
+	(is-a Structure)
+	(role concrete))
+
+(defclass Generic "Specialized structure"
+	(is-a Structure)
+	(role concrete))
+
+(defclass Property "It's a subclass of a defined term"
+	(is-a DefinedTerm)
+	(role concrete)
+	(multislot describedBy
+		(type INSTANCE)
+;+		(allowed-classes State Value)
+		(create-accessor read-write))
+	(multislot superpropertyOf
+		(type INSTANCE)
+;+		(allowed-classes Property)
+		(create-accessor read-write))
+	(multislot apliesTo
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+		(create-accessor read-write))
+	(single-slot subpropertyOf
+		(type INSTANCE)
+;+		(allowed-classes Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass State "It's a subclass of a defined term"
+	(is-a DefinedTerm)
+	(role concrete)
+	(multislot describes
+		(type INSTANCE)
+;+		(allowed-classes Property)
+		(create-accessor read-write)))
+
+(defclass Modifier "It's a subclass of a defined term"
+	(is-a DefinedTerm)
+	(role concrete))
+
+(defclass StateGroup
+	(is-a Concept)
+	(role concrete)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot apliesTo
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+		(create-accessor read-write)))
+
+(defclass Value
+	(is-a Concept)
+	(role abstract)
+	(single-slot measuringUnit
+		(type SYMBOL)
+		(allowed-values mm cm inch)
+		(default mm)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot describes
+		(type INSTANCE)
+;+		(allowed-classes Property)
+		(create-accessor read-write)))
+
+(defclass SingleValue
+	(is-a Value)
+	(role concrete)
+	(single-slot value
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass RangeValue
+	(is-a Value)
+	(role concrete)
+	(single-slot lowerBound
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot upperBound
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass DescriptionElement
+	(is-a Concept)
+	(role abstract)
+	(single-slot associatedTo
+		(type INSTANCE)
+;+		(allowed-classes %3ATHING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Character
+	(is-a DescriptionElement)
+	(role concrete)
+	(single-slot registeredProperty
+		(type INSTANCE)
+;+		(allowed-classes Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot registeredStructure
+		(type INSTANCE)
+;+		(allowed-classes Structure)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass QualitativeCharacter
+	(is-a Character)
+	(role concrete)
+	(single-slot registeredState
+		(type INSTANCE)
+;+		(allowed-classes StateGroup State)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass QuantitativeCharacter
+	(is-a Character)
+	(role concrete)
+	(single-slot registeredValue
+		(type INSTANCE)
+;+		(allowed-classes Value)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass EnvironmentalFactor
+	(is-a DescriptionElement)
+	(role concrete)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass QualitativeFactor
+	(is-a EnvironmentalFactor)
+	(role concrete)
+	(single-slot registeredState
+		(type INSTANCE)
+;+		(allowed-classes StateGroup State)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass QuantitativeFactor
+	(is-a EnvironmentalFactor)
+	(role concrete)
+	(single-slot registeredValue
+		(type INSTANCE)
+;+		(allowed-classes Value)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Predicate "The common ancestor for all predicates in an ontology (e.g. FatherOf...)"
+	(is-a USER)
+	(role abstract))
+
+(defclass Owns
+	(is-a Predicate)
+	(role concrete)
+	(single-slot structure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot property
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass ApliesTo
+	(is-a Predicate)
+	(role concrete)
+	(single-slot structure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot property
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass IsComposedBy
+	(is-a Predicate)
+	(role concrete)
+	(single-slot partStructure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot entireStructure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass IsPartOf
+	(is-a Predicate)
+	(role concrete)
+	(single-slot partStructure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot entireStructure
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass IsSubpropertyOf
+	(is-a Predicate)
+	(role concrete)
+	(single-slot parentProperty
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot childProperty
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass IsSuperpropertyOf
+	(is-a Predicate)
+	(role concrete)
+	(single-slot parentProperty
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot childProperty
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))

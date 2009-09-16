@@ -1,0 +1,145 @@
+; Mon Jul 27 14:09:26 GMT-06:00 2009
+; 
+;+ (version "3.3")
+;+ (build "Build 418")
+
+([addresses] of  %3AJADE-SLOT
+
+	(%3AJADE-UNNAMED-SLOT FALSE))
+
+([AgentAction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE TRUE))
+
+([AID] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE TRUE))
+
+([ApliesTo] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Character] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Concept] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE TRUE))
+
+([DefinedTerm] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([DescriptionElement] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([EnvironmentalFactor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Generic] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsComposedBy] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsPartOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsSubpropertyOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsSuperpropertyOf] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Modifier] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([name] of  %3AJADE-SLOT
+
+	(%3AJADE-UNNAMED-SLOT FALSE))
+
+([Owns] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Predicate] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE TRUE))
+
+([project+annotation] of  %3APROJECT-ANNOTATION
+
+	(%3AONTOLOGYNAME "SpeciesID")
+	(%3APACKAGE "speciesidontology"))
+
+([Property] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([QualitativeCharacter] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([QualitativeFactor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([QuantitativeCharacter] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([QuantitativeFactor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([RangeValue] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Region] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([resolvers] of  %3AJADE-SLOT
+
+	(%3AJADE-UNNAMED-SLOT FALSE))
+
+([SimpleJADEAbstractOntology_00014] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [%3AJADE-NAME]))
+
+([SimpleJADEAbstractOntology_00016] of  %3ASTANDARD-FACET
+
+	(%3AASSOCIATED-SLOT [%3AJADE-UNNAMED-SLOT]))
+
+([SingleValue] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([State] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([StateGroup] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Structure] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Type] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Value] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
