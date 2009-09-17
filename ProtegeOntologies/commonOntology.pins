@@ -1,4 +1,4 @@
-; Wed Sep 16 18:23:49 GMT-06:00 2009
+; Wed Sep 16 19:07:11 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -40,7 +40,12 @@
 		[commonOntology_Instance_10034]
 		[commonOntology_Instance_20014]
 		[commonOntology_Instance_30031]
-		[commonOntology_Instance_30000])
+		[commonOntology_Instance_30000]
+		[commonOntology_Instance_40013]
+		[commonOntology_Instance_40030]
+		[commonOntology_Instance_30003]
+		[commonOntology_Instance_40056]
+		[commonOntology_Instance_40062])
 	(term "Cuerpo"))
 
 ([commonOntology_Instance_1] of  Attribute
@@ -48,7 +53,10 @@
 	(apliesTo
 		[commonOntology_Instance_10029]
 		[commonOntology_Instance_30036]
+		[commonOntology_Instance_40046]
+		[commonOntology_Instance_10000]
 		[commonOntology_Instance_0]
+		[commonOntology_Instance_40037]
 		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_2]
@@ -59,7 +67,15 @@
 		[commonOntology_Instance_30013]
 		[commonOntology_Instance_30033]
 		[commonOntology_Instance_30037]
-		[commonOntology_Instance_30057])
+		[commonOntology_Instance_30057]
+		[commonOntology_Instance_40001]
+		[commonOntology_Instance_40029]
+		[commonOntology_Instance_40041]
+		[commonOntology_Instance_40047]
+		[commonOntology_Instance_40048]
+		[commonOntology_Instance_40055]
+		[commonOntology_Instance_40059]
+		[commonOntology_Instance_40064])
 	(term "Forma"))
 
 ([commonOntology_Instance_10000] of  Structure
@@ -67,23 +83,34 @@
 	(owns
 		[commonOntology_Instance_10001]
 		[commonOntology_Instance_10003]
-		[commonOntology_Instance_20004])
+		[commonOntology_Instance_20004]
+		[commonOntology_Instance_40032]
+		[commonOntology_Instance_1]
+		[commonOntology_Instance_40049])
 	(term "Pie"))
 
 ([commonOntology_Instance_10001] of  Attribute
 
 	(apliesTo
-		[commonOntology_Instance_10000]
 		[commonOntology_Instance_10024]
 		[commonOntology_Instance_10007]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_20002]
+		[commonOntology_Instance_40018]
+		[commonOntology_Instance_10000]
+		[commonOntology_Instance_40037]
+		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_10002]
 		[commonOntology_Instance_30005]
 		[commonOntology_Instance_30016]
 		[commonOntology_Instance_30049]
 		[commonOntology_Instance_30061]
-		[commonOntology_Instance_30062])
+		[commonOntology_Instance_30062]
+		[commonOntology_Instance_40034]
+		[commonOntology_Instance_40040]
+		[commonOntology_Instance_40043]
+		[commonOntology_Instance_40060]
+		[commonOntology_Instance_40065])
 	(term "Disposición"))
 
 ([commonOntology_Instance_10002] of  State
@@ -94,18 +121,17 @@
 ([commonOntology_Instance_10003] of  Attribute
 
 	(apliesTo
-		[commonOntology_Instance_10000]
 		[commonOntology_Instance_10029]
-		[commonOntology_Instance_0]
 		[commonOntology_Instance_10007]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_20002]
+		[commonOntology_Instance_10000]
+		[commonOntology_Instance_0])
 	(describedBy
 		[commonOntology_Instance_10005]
 		[commonOntology_Instance_10006]
 		[commonOntology_Instance_10049]
 		[commonOntology_Instance_10061]
 		[commonOntology_Instance_10062]
-		[commonOntology_Instance_10064]
 		[commonOntology_Instance_10004]
 		[commonOntology_Instance_20003]
 		[commonOntology_Instance_20006]
@@ -121,7 +147,13 @@
 		[commonOntology_Instance_20029]
 		[commonOntology_Instance_30019]
 		[commonOntology_Instance_30040]
-		[commonOntology_Instance_30060])
+		[commonOntology_Instance_30060]
+		[commonOntology_Instance_10064]
+		[commonOntology_Instance_40000]
+		[commonOntology_Instance_40002]
+		[commonOntology_Instance_30029]
+		[commonOntology_Instance_40015]
+		[commonOntology_Instance_40016])
 	(term "Coloración"))
 
 ([commonOntology_Instance_10004] of  State
@@ -133,8 +165,8 @@
 
 	(describes
 		[commonOntology_Instance_30045]
-		[commonOntology_Instance_10063]
-		[commonOntology_Instance_10003])
+		[commonOntology_Instance_10003]
+		[commonOntology_Instance_10063])
 	(term "Crema"))
 
 ([commonOntology_Instance_10006] of  State
@@ -155,8 +187,7 @@
 		[commonOntology_Instance_30027]
 		[commonOntology_Instance_30034]
 		[commonOntology_Instance_30050]
-		[commonOntology_Instance_30052]
-		[commonOntology_Instance_30054])
+		[commonOntology_Instance_30052])
 	(term "Branquia"))
 
 ([commonOntology_Instance_10008] of  Attribute
@@ -184,7 +215,9 @@
 ([commonOntology_Instance_10012] of  Attribute
 
 	(apliesTo [commonOntology_Instance_10007])
-	(describedBy [commonOntology_Instance_10013])
+	(describedBy
+		[commonOntology_Instance_10013]
+		[commonOntology_Instance_40003])
 	(term "Número hojas branquiales"))
 
 ([commonOntology_Instance_10013] of  RangeValue
@@ -240,7 +273,12 @@
 		[commonOntology_Instance_30045]
 		[commonOntology_Instance_30046]
 		[commonOntology_Instance_30047]
-		[commonOntology_Instance_30058])
+		[commonOntology_Instance_30058]
+		[commonOntology_Instance_10018]
+		[commonOntology_Instance_40006]
+		[commonOntology_Instance_40007]
+		[commonOntology_Instance_40008]
+		[commonOntology_Instance_10001])
 	(term "Manto"))
 
 ([commonOntology_Instance_10018] of  Attribute
@@ -256,6 +294,7 @@
 	(describes
 		[commonOntology_Instance_10018]
 		[commonOntology_Instance_10023]
+		[commonOntology_Instance_40013]
 		[commonOntology_Instance_10034])
 	(term "Lisa"))
 
@@ -267,7 +306,9 @@
 ([commonOntology_Instance_10021] of  Attribute
 
 	(apliesTo [commonOntology_Instance_10017])
-	(describedBy [commonOntology_Instance_10022])
+	(describedBy
+		[commonOntology_Instance_10022]
+		[commonOntology_Instance_40004])
 	(term "Forma del borde"))
 
 ([commonOntology_Instance_10022] of  State
@@ -355,6 +396,7 @@
 
 	(apliesTo
 		[commonOntology_Instance_10033]
+		[commonOntology_Instance_40053]
 		[commonOntology_Instance_0]
 		[commonOntology_Instance_10017])
 	(describedBy
@@ -362,7 +404,8 @@
 		[commonOntology_Instance_10036]
 		[commonOntology_Instance_10053]
 		[commonOntology_Instance_10019]
-		[commonOntology_Instance_30002])
+		[commonOntology_Instance_30002]
+		[commonOntology_Instance_40054])
 	(term "Contextura"))
 
 ([commonOntology_Instance_10035] of  State
@@ -530,11 +573,12 @@
 
 	(apliesTo [commonOntology_Instance_0])
 	(describedBy
-		[commonOntology_Instance_10064]
 		[commonOntology_Instance_10005]
 		[commonOntology_Instance_30008]
 		[commonOntology_Instance_10046]
-		[commonOntology_Instance_30056])
+		[commonOntology_Instance_30056]
+		[commonOntology_Instance_10064]
+		[commonOntology_Instance_40061])
 	(term "Coloración del fonfo"))
 
 ([commonOntology_Instance_10064] of  State
@@ -546,12 +590,13 @@
 		[commonOntology_Instance_30022]
 		[commonOntology_Instance_30030]
 		[commonOntology_Instance_30047]
-		[commonOntology_Instance_30054]
-		[commonOntology_Instance_10066]
-		[commonOntology_Instance_10063]
 		[commonOntology_Instance_20004]
+		[commonOntology_Instance_30027]
+		[commonOntology_Instance_10066]
 		[commonOntology_Instance_10075]
-		[commonOntology_Instance_10003])
+		[commonOntology_Instance_40006]
+		[commonOntology_Instance_10003]
+		[commonOntology_Instance_10063])
 	(term "Blanco"))
 
 ([commonOntology_Instance_10065] of  State
@@ -567,10 +612,11 @@
 	(describedBy
 		[commonOntology_Instance_10067]
 		[commonOntology_Instance_20021]
-		[commonOntology_Instance_10064]
 		[commonOntology_Instance_30029]
 		[commonOntology_Instance_30019]
-		[commonOntology_Instance_20011])
+		[commonOntology_Instance_20011]
+		[commonOntology_Instance_10064]
+		[commonOntology_Instance_20029])
 	(term "Coloración de los ápices"))
 
 ([commonOntology_Instance_10067] of  State
@@ -609,41 +655,44 @@
 	(describes
 		[commonOntology_Instance_10071]
 		[commonOntology_Instance_30010]
-		[commonOntology_Instance_10073]
 		[commonOntology_Instance_30030]
 		[commonOntology_Instance_20004]
+		[commonOntology_Instance_10073]
 		[commonOntology_Instance_10075])
 	(term "Amarillo"))
 
 ([commonOntology_Instance_10073] of  Attribute
 
 	(apliesTo
-		[commonOntology_Instance_10017]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_20002]
+		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_10074]
 		[commonOntology_Instance_20012]
 		[commonOntology_Instance_10072]
-		[commonOntology_Instance_30023])
+		[commonOntology_Instance_30023]
+		[commonOntology_Instance_40005])
 	(term "Coloración línea exterior del borde"))
 
 ([commonOntology_Instance_10074] of  State
 
 	(describes
+		[commonOntology_Instance_30045]
 		[commonOntology_Instance_10073]
-		[commonOntology_Instance_30045])
+		[commonOntology_Instance_40011])
 	(term "Naranja"))
 
 ([commonOntology_Instance_10075] of  Attribute
 
 	(apliesTo
-		[commonOntology_Instance_10017]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_20002]
+		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_10069]
 		[commonOntology_Instance_30026]
 		[commonOntology_Instance_10072]
-		[commonOntology_Instance_10064])
+		[commonOntology_Instance_10064]
+		[commonOntology_Instance_30029])
 	(term "Coloración línea interior del borde"))
 
 ([commonOntology_Instance_2] of  State
@@ -671,7 +720,9 @@
 		[commonOntology_Instance_10001]
 		[commonOntology_Instance_10073]
 		[commonOntology_Instance_30024]
-		[commonOntology_Instance_10075])
+		[commonOntology_Instance_10075]
+		[commonOntology_Instance_40010]
+		[commonOntology_Instance_40011])
 	(term "Cola"))
 
 ([commonOntology_Instance_20003] of  State
@@ -682,18 +733,18 @@
 ([commonOntology_Instance_20004] of  Attribute
 
 	(apliesTo
+		[commonOntology_Instance_20002]
 		[commonOntology_Instance_10000]
-		[commonOntology_Instance_10017]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_20005]
 		[commonOntology_Instance_20007]
-		[commonOntology_Instance_10064]
 		[commonOntology_Instance_20022]
 		[commonOntology_Instance_20023]
 		[commonOntology_Instance_20024]
 		[commonOntology_Instance_20025]
-		[commonOntology_Instance_10072])
+		[commonOntology_Instance_10072]
+		[commonOntology_Instance_10064])
 	(term "Coloración del borde"))
 
 ([commonOntology_Instance_20005] of  State
@@ -737,8 +788,8 @@
 	(describes
 		[commonOntology_Instance_30045]
 		[commonOntology_Instance_30046]
-		[commonOntology_Instance_10066]
 		[commonOntology_Instance_30024]
+		[commonOntology_Instance_10066]
 		[commonOntology_Instance_10003])
 	(term "Rojo"))
 
@@ -850,6 +901,7 @@
 	(describes
 		[commonOntology_Instance_20027]
 		[commonOntology_Instance_30043]
+		[commonOntology_Instance_10066]
 		[commonOntology_Instance_10003])
 	(term "Negro"))
 
@@ -885,7 +937,8 @@
 		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_30001]
-		[commonOntology_Instance_30038])
+		[commonOntology_Instance_30038]
+		[commonOntology_Instance_40012])
 	(term "Consistencia"))
 
 ([commonOntology_Instance_30001] of  State
@@ -902,10 +955,12 @@
 
 	(apliesTo
 		[commonOntology_Instance_10024]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_20002]
+		[commonOntology_Instance_0])
 	(describedBy
 		[commonOntology_Instance_30004]
-		[commonOntology_Instance_30048])
+		[commonOntology_Instance_30048]
+		[commonOntology_Instance_40051])
 	(term "Tamaño"))
 
 ([commonOntology_Instance_30004] of  State
@@ -1023,8 +1078,8 @@
 ([commonOntology_Instance_30024] of  Attribute
 
 	(apliesTo
-		[commonOntology_Instance_10017]
-		[commonOntology_Instance_20002])
+		[commonOntology_Instance_20002]
+		[commonOntology_Instance_10017])
 	(describedBy
 		[commonOntology_Instance_30025]
 		[commonOntology_Instance_20011])
@@ -1046,7 +1101,8 @@
 	(describedBy
 		[commonOntology_Instance_30028]
 		[commonOntology_Instance_20007]
-		[commonOntology_Instance_30060])
+		[commonOntology_Instance_30060]
+		[commonOntology_Instance_10064])
 	(term "Coloración hojas branquiales"))
 
 ([commonOntology_Instance_30028] of  State
@@ -1056,7 +1112,10 @@
 
 ([commonOntology_Instance_30029] of  State
 
-	(describes [commonOntology_Instance_10066])
+	(describes
+		[commonOntology_Instance_10066]
+		[commonOntology_Instance_10075]
+		[commonOntology_Instance_10003])
 	(term "Azul oscuro a negro"))
 
 ([commonOntology_Instance_30030] of  Attribute
@@ -1196,12 +1255,6 @@
 	(describes [commonOntology_Instance_30052])
 	(term "Más pequeñas"))
 
-([commonOntology_Instance_30054] of  Attribute
-
-	(apliesTo [commonOntology_Instance_10007])
-	(describedBy [commonOntology_Instance_10064])
-	(term "Coloración hojas branquiales"))
-
 ([commonOntology_Instance_30055] of  State
 
 	(describes [commonOntology_Instance_6])
@@ -1253,7 +1306,9 @@
 
 ([commonOntology_Instance_30064] of  State
 
-	(describes [commonOntology_Instance_30063])
+	(describes
+		[commonOntology_Instance_30063]
+		[commonOntology_Instance_40030])
 	(term "Ramificada"))
 
 ([commonOntology_Instance_30065] of  State
@@ -1268,8 +1323,378 @@
 		[commonOntology_Instance_5]
 		[commonOntology_Instance_10059]
 		[commonOntology_Instance_30009]
-		[commonOntology_Instance_30021])
+		[commonOntology_Instance_30021]
+		[commonOntology_Instance_40017])
 	(term "Longitud"))
+
+([commonOntology_Instance_40000] of  State
+
+	(describes
+		[commonOntology_Instance_40010]
+		[commonOntology_Instance_10003])
+	(term "Azul pálido"))
+
+([commonOntology_Instance_40001] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Cónico multilaminado"))
+
+([commonOntology_Instance_40002] of  State
+
+	(describes
+		[commonOntology_Instance_40007]
+		[commonOntology_Instance_10003])
+	(term "Gris rojizo"))
+
+([commonOntology_Instance_40003] of  RangeValue
+
+	(describes [commonOntology_Instance_10012])
+	(lowerBound 6.0)
+	(measuringUnit count)
+	(upperBound 7.0))
+
+([commonOntology_Instance_40004] of  State
+
+	(describes [commonOntology_Instance_10021])
+	(term "Estrecho"))
+
+([commonOntology_Instance_40005] of  State
+
+	(describes [commonOntology_Instance_10073])
+	(term "Amarillo naranja"))
+
+([commonOntology_Instance_40006] of  Attribute
+
+	(apliesTo [commonOntology_Instance_10017])
+	(describedBy [commonOntology_Instance_10064])
+	(term "Coloración línea interrumpida en el centro"))
+
+([commonOntology_Instance_40007] of  Attribute
+
+	(apliesTo [commonOntology_Instance_10017])
+	(describedBy [commonOntology_Instance_40002])
+	(term "Coloración área circundante de línea interrumpida en el centro"))
+
+([commonOntology_Instance_40008] of  Attribute
+
+	(apliesTo [commonOntology_Instance_10017])
+	(describedBy [commonOntology_Instance_40009])
+	(term "Disposición línea interrumpida en el centro"))
+
+([commonOntology_Instance_40009] of  State
+
+	(describes [commonOntology_Instance_40008])
+	(term "Desde los rinoforos hacia la branquia"))
+
+([commonOntology_Instance_40010] of  Attribute
+
+	(apliesTo [commonOntology_Instance_20002])
+	(describedBy [commonOntology_Instance_40000])
+	(term "Coloración de la mancha en forma de V"))
+
+([commonOntology_Instance_40011] of  Attribute
+
+	(apliesTo [commonOntology_Instance_20002])
+	(describedBy [commonOntology_Instance_10074])
+	(term "Coloración base de la mancha en forma de V"))
+
+([commonOntology_Instance_40012] of  State
+
+	(describes [commonOntology_Instance_30000])
+	(term "Voluminoso"))
+
+([commonOntology_Instance_40013] of  Attribute
+
+	(apliesTo [commonOntology_Instance_0])
+	(describedBy [commonOntology_Instance_10019])
+	(term "Textura de la superficie"))
+
+([commonOntology_Instance_40014] of  State
+
+	(describes [commonOntology_Instance_6])
+	(term "Tiene una concha interna"))
+
+([commonOntology_Instance_40015] of  State
+
+	(describes [commonOntology_Instance_10003])
+	(term "Verduzco"))
+
+([commonOntology_Instance_40016] of  State
+
+	(describes [commonOntology_Instance_10003])
+	(term "Grisaceo"))
+
+([commonOntology_Instance_40017] of  RangeValue
+
+	(describes [commonOntology_Instance_4])
+	(lowerBound 0.5)
+	(measuringUnit cm)
+	(upperBound 25.0))
+
+([commonOntology_Instance_40018] of  Structure
+
+	(owns
+		[commonOntology_Instance_40019]
+		[commonOntology_Instance_40021]
+		[commonOntology_Instance_40023]
+		[commonOntology_Instance_10001]
+		[commonOntology_Instance_40035])
+	(term "Parapodio"))
+
+([commonOntology_Instance_40019] of  Attribute
+
+	(apliesTo [commonOntology_Instance_40018])
+	(describedBy [commonOntology_Instance_40020])
+	(term "Grado de desarrollo"))
+
+([commonOntology_Instance_40020] of  State
+
+	(describes [commonOntology_Instance_40019])
+	(term "Mucho"))
+
+([commonOntology_Instance_40021] of  Attribute
+
+	(apliesTo [commonOntology_Instance_40018])
+	(describedBy
+		[commonOntology_Instance_40022]
+		[commonOntology_Instance_40044]
+		[commonOntology_Instance_40045]
+		[commonOntology_Instance_40052])
+	(term "Simetría"))
+
+([commonOntology_Instance_40022] of  State
+
+	(describes [commonOntology_Instance_40021])
+	(term "Simétrico o asimétrico"))
+
+([commonOntology_Instance_40023] of  Attribute
+
+	(apliesTo [commonOntology_Instance_40018])
+	(describedBy
+		[commonOntology_Instance_40024]
+		[commonOntology_Instance_40025])
+	(term "Tiene movilidad"))
+
+([commonOntology_Instance_40024] of  State
+
+	(describes [commonOntology_Instance_40023])
+	(term "Sí"))
+
+([commonOntology_Instance_40025] of  State
+
+	(describes [commonOntology_Instance_40023])
+	(term "No"))
+
+([commonOntology_Instance_40026] of  Structure
+
+	(owns [commonOntology_Instance_6])
+	(term "Pene"))
+
+([commonOntology_Instance_40028] of  State
+
+	(describes [commonOntology_Instance_6])
+	(term "Tiene espinas"))
+
+([commonOntology_Instance_40029] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Aplanado dorsoventralmente"))
+
+([commonOntology_Instance_40030] of  Attribute
+
+	(apliesTo [commonOntology_Instance_0])
+	(describedBy
+		[commonOntology_Instance_30064]
+		[commonOntology_Instance_40031])
+	(term "Forma de las papilas"))
+
+([commonOntology_Instance_40031] of  State
+
+	(describes [commonOntology_Instance_40030])
+	(term "Simple"))
+
+([commonOntology_Instance_40032] of  Attribute
+
+	(apliesTo [commonOntology_Instance_10000])
+	(describedBy [commonOntology_Instance_40033])
+	(term "Ancho"))
+
+([commonOntology_Instance_40033] of  State
+
+	(describes [commonOntology_Instance_40032])
+	(term "Mismo que el cuerpo"))
+
+([commonOntology_Instance_40034] of  State
+
+	(describes [commonOntology_Instance_10001])
+	(term "Asimétrica y reducida"))
+
+([commonOntology_Instance_40035] of  Attribute
+
+	(apliesTo [commonOntology_Instance_40018])
+	(describedBy [commonOntology_Instance_40036])
+	(term "Número de aberturas en la cavidad paleal"))
+
+([commonOntology_Instance_40036] of  RangeValue
+
+	(describes [commonOntology_Instance_40035])
+	(lowerBound 2.0)
+	(measuringUnit count)
+	(upperBound 10.0))
+
+([commonOntology_Instance_40037] of  Structure
+
+	(owns
+		[commonOntology_Instance_40038]
+		[commonOntology_Instance_10001]
+		[commonOntology_Instance_1])
+	(term "Concha interna"))
+
+([commonOntology_Instance_40038] of  Attribute
+
+	(apliesTo [commonOntology_Instance_40037])
+	(describedBy
+		[commonOntology_Instance_40039]
+		[commonOntology_Instance_40042])
+	(term "Aspecto"))
+
+([commonOntology_Instance_40039] of  State
+
+	(describes [commonOntology_Instance_40038])
+	(term "Lamina pequeña y frágil"))
+
+([commonOntology_Instance_40040] of  State
+
+	(describes [commonOntology_Instance_10001])
+	(term "Más larga que ancha rodeada por el manto totalmente"))
+
+([commonOntology_Instance_40041] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Alto alargado y contractil"))
+
+([commonOntology_Instance_40042] of  State
+
+	(describes [commonOntology_Instance_40038])
+	(term "Delgada y traslúcida"))
+
+([commonOntology_Instance_40043] of  State
+
+	(describes [commonOntology_Instance_10001])
+	(term "Envuelta por un lóbulo del manto"))
+
+([commonOntology_Instance_40044] of  State
+
+	(describes [commonOntology_Instance_40021])
+	(term "Simétricos libres"))
+
+([commonOntology_Instance_40045] of  State
+
+	(describes [commonOntology_Instance_40021])
+	(term "Fusionados"))
+
+([commonOntology_Instance_40046] of  Structure
+
+	(owns [commonOntology_Instance_1])
+	(term "Tentáculos orales"))
+
+([commonOntology_Instance_40047] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Anchos en la parte final"))
+
+([commonOntology_Instance_40048] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Relativamente ancho"))
+
+([commonOntology_Instance_40049] of  Attribute
+
+	(apliesTo [commonOntology_Instance_10000])
+	(describedBy [commonOntology_Instance_40050])
+	(term "Prolongacion"))
+
+([commonOntology_Instance_40050] of  State
+
+	(describes [commonOntology_Instance_40049])
+	(term "Forma una cola corta"))
+
+([commonOntology_Instance_40051] of  State
+
+	(describes [commonOntology_Instance_30003])
+	(term "Generalmente más pequeñas que las dolabriferas aplisias y notarchus"))
+
+([commonOntology_Instance_40052] of  State
+
+	(describes [commonOntology_Instance_40021])
+	(term "Asimetricos y reducidos el derecho más desarrollado"))
+
+([commonOntology_Instance_40053] of  Structure
+
+	(owns [commonOntology_Instance_10034])
+	(term "Dorso"))
+
+([commonOntology_Instance_40054] of  State
+
+	(describes [commonOntology_Instance_10034])
+	(term "Lisa con papilas más o menos ramificadas"))
+
+([commonOntology_Instance_40055] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Alto y globoso"))
+
+([commonOntology_Instance_40056] of  Attribute
+
+	(apliesTo [commonOntology_Instance_0])
+	(describedBy [commonOntology_Instance_40057])
+	(term "Forma de las papilas contractiles sobre el dorso"))
+
+([commonOntology_Instance_40057] of  State
+
+	(describes [commonOntology_Instance_40056])
+	(term "Simple y ramificada"))
+
+([commonOntology_Instance_40058] of  State
+
+	(describes [commonOntology_Instance_6])
+	(term "No tiene concha interna"))
+
+([commonOntology_Instance_40059] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Muy estrecho"))
+
+([commonOntology_Instance_40060] of  State
+
+	(describes [commonOntology_Instance_10001])
+	(term "Fusionados a lo largo de las margenes dejando pequeña abertura en la mitad anterior del cuerpo"))
+
+([commonOntology_Instance_40061] of  State
+
+	(describes [commonOntology_Instance_10063])
+	(term "Verde"))
+
+([commonOntology_Instance_40062] of  Attribute
+
+	(apliesTo [commonOntology_Instance_0])
+	(describedBy [commonOntology_Instance_40063])
+	(term "Camuflaje"))
+
+([commonOntology_Instance_40063] of  State
+
+	(describes [commonOntology_Instance_40062])
+	(term "Diseño de manchas característico de las algas"))
+
+([commonOntology_Instance_40064] of  State
+
+	(describes [commonOntology_Instance_1])
+	(term "Laminar con el ápice central"))
+
+([commonOntology_Instance_40065] of  State
+
+	(describes [commonOntology_Instance_10001])
+	(term "No cubre dorsalmente a la concha ni los bordes"))
 
 ([commonOntology_Instance_5] of  RangeValue
 
@@ -1282,15 +1707,19 @@
 
 	(apliesTo
 		[commonOntology_Instance_10054]
-		[commonOntology_Instance_0]
-		[commonOntology_Instance_20008])
+		[commonOntology_Instance_20008]
+		[commonOntology_Instance_40026]
+		[commonOntology_Instance_0])
 	(describedBy
 		[commonOntology_Instance_7]
 		[commonOntology_Instance_10060]
 		[commonOntology_Instance_30015]
 		[commonOntology_Instance_30017]
 		[commonOntology_Instance_30039]
-		[commonOntology_Instance_30055])
+		[commonOntology_Instance_30055]
+		[commonOntology_Instance_40014]
+		[commonOntology_Instance_40028]
+		[commonOntology_Instance_40058])
 	(term "Conformación"))
 
 ([commonOntology_Instance_7] of  State
