@@ -1,4 +1,4 @@
-; Mon Jul 27 18:55:15 GMT-06:00 2009
+; Thu Sep 17 11:34:55 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -7,116 +7,111 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(single-slot scoreWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot attributeWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot structureWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot subjectRank
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rank
+		(type INSTANCE)
+;+		(allowed-classes Rank)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot objectTaxon
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot ranks
 		(type INSTANCE)
 ;+		(allowed-classes Rank)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(single-slot parentRank
+	(multislot weightedDescription
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
-;+		(cardinality 1 1)
+;+		(allowed-classes WeightedDescriptor)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(multislot taxa
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(multislot description
+	(single-slot modifier
 		(type INSTANCE)
-;+		(allowed-classes DescriptionElement)
-		(cardinality 1 ?VARIABLE)
-;+		(inverse-slot associatedTo)
-		(create-accessor read-write))
-	(single-slot childRank
-		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Modifier)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot parentTaxon
+	(single-slot descriptor
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Descriptor)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot predecessorRankOf
+	(single-slot successorRank
 		(type INSTANCE)
 ;+		(allowed-classes Rank)
 ;+		(cardinality 0 1)
-;+		(inverse-slot successorRankOf)
+;+		(inverse-slot predecessorRank)
 		(create-accessor read-write))
-	(single-slot successorRankOf
+	(single-slot predecessorRank
 		(type INSTANCE)
 ;+		(allowed-classes Rank)
 ;+		(cardinality 0 1)
-;+		(inverse-slot predecessorRankOf)
+;+		(inverse-slot successorRank)
+		(create-accessor read-write))
+	(multislot successors
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(inverse-slot predecessor)
+		(create-accessor read-write))
+	(single-slot predecessor
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(cardinality 0 1)
+;+		(inverse-slot successors)
+		(create-accessor read-write))
+	(single-slot objectRank
+		(type INSTANCE)
+;+		(allowed-classes Rank)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot level
+		(type INSTANCE)
+;+		(allowed-classes Rank)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot subjectTaxon
+		(type INSTANCE)
+;+		(allowed-classes DefinedTerm)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot taxon
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot rank
-		(type INSTANCE)
-;+		(allowed-classes Rank)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot successorOf
-		(type INSTANCE)
 ;+		(allowed-classes Taxon)
-;+		(cardinality 0 1)
-;+		(inverse-slot predecessorOf)
-		(create-accessor read-write))
-	(multislot predecessorOf
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(inverse-slot successorOf)
-		(create-accessor read-write))
-	(single-slot childTaxon
-		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot rankObject
+	(multislot weightedDescriptors
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass Taxon
-	(is-a DefinedTerm)
-	(role concrete)
-	(multislot description
-		(type INSTANCE)
-;+		(allowed-classes DescriptionElement)
+;+		(allowed-classes WeightedDescriptor)
 		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot rank
-		(type INSTANCE)
-;+		(allowed-classes Rank)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot successorOf
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot predecessorOf
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-		(create-accessor read-write)))
-
-(defclass Rank
-	(is-a DefinedTerm)
-	(role concrete)
-	(single-slot predecessorRankOf
-		(type INSTANCE)
-;+		(allowed-classes Rank)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot successorRankOf
-		(type INSTANCE)
-;+		(allowed-classes Rank)
-;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass TaxonomicRanks
@@ -145,85 +140,175 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsSuccessorOf
+(defclass Taxon
+	(is-a Concept)
+	(role concrete)
+	(multislot weightedDescription
+		(type INSTANCE)
+;+		(allowed-classes WeightedDescriptor)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(multislot successors
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+		(create-accessor read-write))
+	(single-slot predecessor
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot level
+		(type INSTANCE)
+;+		(allowed-classes Rank)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Rank
+	(is-a Concept)
+	(role concrete)
+	(single-slot successorRank
+		(type INSTANCE)
+;+		(allowed-classes Rank)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot predecessorRank
+		(type INSTANCE)
+;+		(allowed-classes Rank)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Modifier
+	(is-a Concept)
+	(role concrete)
+	(single-slot scoreWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot attributeWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot structureWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass WeightedDescriptor
+	(is-a Concept)
+	(role concrete)
+	(single-slot modifier
+		(type INSTANCE)
+;+		(allowed-classes Modifier)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot descriptor
+		(type INSTANCE)
+;+		(allowed-classes Descriptor)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass WeightedDescription
+	(is-a Concept)
+	(role concrete)
+	(multislot weightedDescriptors
+		(type INSTANCE)
+;+		(allowed-classes WeightedDescriptor)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write)))
+
+(defclass IsSuccessorTaxonOf
 	(is-a Predicate)
 	(role concrete)
-	(single-slot parentTaxon
+	(single-slot objectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot childTaxon
+	(single-slot subjectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsPredecessorOf
+(defclass IsPredecessorTaxonOf
 	(is-a Predicate)
 	(role concrete)
-	(single-slot parentTaxon
+	(single-slot objectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot childTaxon
+	(single-slot subjectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsRoot
+(defclass IsRootTaxon
 	(is-a Predicate)
 	(role concrete)
 	(single-slot taxon
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsSheet
+(defclass IsSheetTaxon
 	(is-a Predicate)
 	(role concrete)
 	(single-slot taxon
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsParentOf
+(defclass IsSuccessorRankOf
 	(is-a Predicate)
 	(role concrete)
-	(single-slot parentRank
+	(single-slot subjectRank
 		(type INSTANCE)
 ;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot childRank
+	(single-slot objectRank
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Rank)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsChildOf
+(defclass IsPredecessorRankOf
 	(is-a Predicate)
 	(role concrete)
-	(single-slot parentRank
+	(single-slot subjectRank
 		(type INSTANCE)
 ;+		(allowed-classes DefinedTerm)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot childRank
+	(single-slot objectRank
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Rank)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass IsRankRoot
+(defclass IsRootRank
 	(is-a Predicate)
 	(role concrete)
-	(single-slot rankObject
+	(single-slot rank
 		(type INSTANCE)
-;+		(allowed-classes DefinedTerm)
+;+		(allowed-classes Rank)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))

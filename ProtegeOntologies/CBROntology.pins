@@ -1,13 +1,25 @@
-; Fri Jul 24 21:50:43 GMT-06:00 2009
+; Thu Sep 17 13:16:26 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
 
-([Adapt] of  %3AJADE-CLASS
+([AdaptCases] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([AreProposedSolutions] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([AreSimilarTo] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
 ([Case] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Hypothesis] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -19,19 +31,19 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([IsSimilarTo] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
-
-([IsSolution] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
-
 ([IsTheMostSilimarTo] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
+([PossibleSolution] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([Problema] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ProposedSolution] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -43,7 +55,7 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([Retrieve] of  %3AJADE-CLASS
+([RetrieveHypothesis] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

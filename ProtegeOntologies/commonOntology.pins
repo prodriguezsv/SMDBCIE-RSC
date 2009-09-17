@@ -1,4 +1,4 @@
-; Wed Sep 16 19:35:13 GMT-06:00 2009
+; Thu Sep 17 07:02:16 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -496,7 +496,9 @@
 
 ([commonOntology_Instance_10045] of  State
 
-	(describes [commonOntology_Instance_10043])
+	(describes
+		[commonOntology_Instance_10043]
+		[commonOntology_Instance_20027])
 	(term "Celeste"))
 
 ([commonOntology_Instance_10046] of  State
@@ -923,7 +925,7 @@
 	(describedBy
 		[commonOntology_Instance_20028]
 		[commonOntology_Instance_20029]
-		[commonOntology_Instance_20030])
+		[commonOntology_Instance_10045])
 	(term "Coloración de las manchas"))
 
 ([commonOntology_Instance_20028] of  State
@@ -934,16 +936,11 @@
 ([commonOntology_Instance_20029] of  State
 
 	(describes
-		[commonOntology_Instance_20027]
 		[commonOntology_Instance_30043]
 		[commonOntology_Instance_10066]
-		[commonOntology_Instance_10003])
+		[commonOntology_Instance_10003]
+		[commonOntology_Instance_20027])
 	(term "Negro"))
-
-([commonOntology_Instance_20030] of  State
-
-	(describes [commonOntology_Instance_20027])
-	(term "Celeste"))
 
 ([commonOntology_Instance_20031] of  State
 
@@ -1969,6 +1966,10 @@
 	(%3AJADE-IGNORE FALSE))
 
 ([Describes] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Description] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
