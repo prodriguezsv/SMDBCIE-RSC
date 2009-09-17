@@ -1,4 +1,4 @@
-; Wed Sep 16 17:32:56 GMT-06:00 2009
+; Wed Sep 16 18:23:49 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -7,8 +7,30 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot %3ALOCATION
-;+		(comment "The location to store files into")
+	(single-slot lowerBound
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-COMPATIBILITY
+		(type SYMBOL)
+		(allowed-values J2ME JavaBeans Classes)
+		(default Classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot %3AJADE-INCLUDED-PROPERTIES
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot %3AONTOLOGYNAME
+;+		(comment "name of the ontology")
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -17,37 +39,10 @@
 ;+		(allowed-classes Structure EnvironmentalCategory)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot score
-		(type INSTANCE)
-;+		(allowed-classes State Value)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot agente
-		(type SYMBOL)
-;+		(allowed-parents AID)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot value
-		(type FLOAT)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-PACKAGE
+	(single-slot %3ALOCATION
+;+		(comment "The location to store files into")
 		(type STRING)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-NAME
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-NAME
-		(type STRING)
-;+		(cardinality 0 1)
-;+		(associated-facet SimpleJADEAbstractOntology_00014)
-		(create-accessor read-write))
-	(multislot describedBy
-		(type INSTANCE)
-;+		(allowed-classes State Value)
-;+		(inverse-slot describes)
 		(create-accessor read-write))
 	(multislot describes
 		(type INSTANCE)
@@ -66,64 +61,37 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot attribute
+	(single-slot %3AJADE-PROPERTIES-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+;+		(associated-facet SimpleJADEAbstractOntology_00014)
+		(create-accessor read-write))
+	(multislot describedBy
 		(type INSTANCE)
-;+		(allowed-classes Attribute)
+;+		(allowed-classes State Value)
+;+		(inverse-slot describes)
+		(create-accessor read-write))
+	(single-slot agente
+		(type SYMBOL)
+;+		(allowed-parents AID)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot addresses
-		(type STRING)
-		(create-accessor read-write))
-	(single-slot %3AJADE-IGNORE
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot structure
-		(type INSTANCE)
-;+		(allowed-classes Structure EnvironmentalCategory)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-DIRECTORY
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-CODE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot measuringUnit
-		(type SYMBOL)
-		(allowed-values mm cm m inch count)
-		(default count)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-BASE-CLASS
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot upperBound
+	(single-slot value
 		(type FLOAT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot term
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot resolvers
-		(type SYMBOL)
-;+		(allowed-parents AID)
-		(create-accessor read-write))
-	(single-slot %3ASUPPORT
+	(single-slot %3AJADE-PROPERTIES-PACKAGE
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot score
+		(type INSTANCE)
+;+		(allowed-classes State Value)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(multislot owns
 		(type INSTANCE)
@@ -131,11 +99,9 @@
 		(cardinality 1 ?VARIABLE)
 ;+		(inverse-slot apliesTo)
 		(create-accessor read-write))
-	(multislot apliesTo
-		(type INSTANCE)
-;+		(allowed-classes Structure EnvironmentalCategory)
-		(cardinality 1 ?VARIABLE)
-;+		(inverse-slot owns)
+	(single-slot %3ASUPPORT
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-UNNAMED-SLOT
 		(type SYMBOL)
@@ -143,44 +109,72 @@
 ;+		(cardinality 1 1)
 ;+		(associated-facet SimpleJADEAbstractOntology_00016)
 		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-COMPATIBILITY
-		(type SYMBOL)
-		(allowed-values J2ME JavaBeans Classes)
-		(default Classes)
-;+		(cardinality 0 1)
+	(multislot apliesTo
+		(type INSTANCE)
+;+		(allowed-classes Structure EnvironmentalCategory)
+		(cardinality 1 ?VARIABLE)
+;+		(inverse-slot owns)
 		(create-accessor read-write))
-	(single-slot lowerBound
+	(single-slot upperBound
 		(type FLOAT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot definition
+	(single-slot %3AJADE-JAVA-BASE-CLASS
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot %3AJADE-INCLUDED-PROPERTIES
-		(type INSTANCE)
-;+		(allowed-classes)
+	(multislot resolvers
+		(type SYMBOL)
+;+		(allowed-parents AID)
 		(create-accessor read-write))
-	(single-slot %3AONTOLOGYNAME
-;+		(comment "name of the ontology")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot name_
+	(single-slot term
 		(type STRING)
 ;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass %3AJADE-CLASS
-	(is-a %3ASTANDARD-CLASS)
-	(role concrete)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-DIRECTORY
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot structure
+		(type INSTANCE)
+;+		(allowed-classes Structure EnvironmentalCategory)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot measuringUnit
+		(type SYMBOL)
+		(allowed-values mm cm m inch count)
+		(default count)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-CODE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot addresses
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot attribute
+		(type INSTANCE)
+;+		(allowed-classes Attribute)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3AJADE-IGNORE
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-CODE
+		(create-accessor read-write)))
+
+(defclass %3AJADE-CLASS
+	(is-a %3ASTANDARD-CLASS)
+	(role concrete)
+	(single-slot %3AJADE-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -188,8 +182,14 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3AJADE-NAME
+	(single-slot %3AJADE-JAVA-CODE
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-IGNORE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -209,6 +209,10 @@
 (defclass %3APROJECT-ANNOTATION
 	(is-a %3AANNOTATION)
 	(role concrete)
+	(single-slot %3ASUPPORT
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3ALOCATION
 ;+		(comment "The location to store files into")
 		(type STRING)
@@ -223,10 +227,6 @@
 ;+		(comment "name of the ontology")
 		(type STRING)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3ASUPPORT
-		(type STRING)
-;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Concept "The common ancestor for all concepts (i.e. types of entity such as Person, Address...) in an ontology"
@@ -236,9 +236,6 @@
 (defclass AID
 	(is-a Concept)
 	(role concrete)
-	(multislot addresses
-		(type STRING)
-		(create-accessor read-write))
 	(multislot resolvers
 		(type SYMBOL)
 ;+		(allowed-parents AID)
@@ -246,6 +243,9 @@
 	(single-slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot addresses
+		(type STRING)
 		(create-accessor read-write)))
 
 (defclass AgentAction "The common ancestor for all actions in an ontology (e.g. Sell, Buy...)"
@@ -307,16 +307,16 @@
 (defclass Value
 	(is-a Concept)
 	(role abstract)
+	(multislot describes
+		(type INSTANCE)
+;+		(allowed-classes Attribute)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
 	(single-slot measuringUnit
 		(type SYMBOL)
 		(allowed-values mm cm m inch count)
 		(default count)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot describes
-		(type INSTANCE)
-;+		(allowed-classes Attribute)
-		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write)))
 
 (defclass SingleValue
@@ -330,11 +330,11 @@
 (defclass RangeValue
 	(is-a Value)
 	(role concrete)
-	(single-slot lowerBound
+	(single-slot upperBound
 		(type FLOAT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot upperBound
+	(single-slot lowerBound
 		(type FLOAT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
@@ -342,9 +342,9 @@
 (defclass Descriptor
 	(is-a Concept)
 	(role abstract)
-	(single-slot attribute
+	(single-slot structure
 		(type INSTANCE)
-;+		(allowed-classes Attribute)
+;+		(allowed-classes Structure EnvironmentalCategory)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot score
@@ -352,9 +352,9 @@
 ;+		(allowed-classes State Value)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(single-slot structure
+	(single-slot attribute
 		(type INSTANCE)
-;+		(allowed-classes Structure EnvironmentalCategory)
+;+		(allowed-classes Attribute)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -519,27 +519,27 @@
 (defclass DescribedBy
 	(is-a Predicate)
 	(role concrete)
-	(single-slot attribute
-		(type INSTANCE)
-;+		(allowed-classes Attribute)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot score
 		(type INSTANCE)
 ;+		(allowed-classes State Value)
 		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot attribute
+		(type INSTANCE)
+;+		(allowed-classes Attribute)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Describes
 	(is-a Predicate)
 	(role concrete)
-	(single-slot attribute
-		(type INSTANCE)
-;+		(allowed-classes Attribute)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot score
 		(type INSTANCE)
 ;+		(allowed-classes State Value)
 		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot attribute
+		(type INSTANCE)
+;+		(allowed-classes Attribute)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
