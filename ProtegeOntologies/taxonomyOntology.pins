@@ -1,4 +1,4 @@
-; Thu Sep 17 11:34:55 GMT-06:00 2009
+; Thu Sep 24 07:05:22 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -54,6 +54,39 @@
 ([taxonomyOntology_Instance_0] of  TaxonomicRanks
 
 	(name "Rangos fundamentales"))
+
+([taxonomyOntology_Instance_10000] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Instance_10048]
+		[taxonomyOntology_Instance_10051]
+		[taxonomyOntology_Instance_10045]
+		[taxonomyOntology_Instance_10040]
+		[taxonomyOntology_Instance_10037]
+		[taxonomyOntology_Instance_10022]
+		[taxonomyOntology_Instance_10013]
+		[taxonomyOntology_Instance_10016]
+		[taxonomyOntology_Instance_10019]
+		[taxonomyOntology_Instance_10099]
+		[taxonomyOntology_Instance_10093]
+		[taxonomyOntology_Instance_10096]
+		[taxonomyOntology_Instance_10090]
+		[taxonomyOntology_Instance_10087]
+		[taxonomyOntology_Instance_10072]
+		[taxonomyOntology_Instance_10069]
+		[taxonomyOntology_Instance_10066]
+		[taxonomyOntology_Instance_10060]
+		[taxonomyOntology_Instance_10063]
+		[taxonomyOntology_Instance_10057]
+		[taxonomyOntology_Instance_10054]
+		[taxonomyOntology_Instance_10028]
+		[taxonomyOntology_Instance_10031]
+		[taxonomyOntology_Instance_10034]
+		[taxonomyOntology_Instance_10025]
+		[taxonomyOntology_Instance_10075]
+		[taxonomyOntology_Instance_10078]
+		[taxonomyOntology_Instance_10081]
+		[taxonomyOntology_Instance_10084]))
 
 ([taxonomyOntology_Instance_10005] of  Rank
 
@@ -621,36 +654,7 @@
 
 	(level [taxonomyOntology_Instance_10010])
 	(name "Chromodorididae")
-	(weightedDescription
-		[taxonomyOntology_Instance_10013]
-		[taxonomyOntology_Instance_10016]
-		[taxonomyOntology_Instance_10019]
-		[taxonomyOntology_Instance_10022]
-		[taxonomyOntology_Instance_10025]
-		[taxonomyOntology_Instance_10028]
-		[taxonomyOntology_Instance_10031]
-		[taxonomyOntology_Instance_10034]
-		[taxonomyOntology_Instance_10037]
-		[taxonomyOntology_Instance_10040]
-		[taxonomyOntology_Instance_10045]
-		[taxonomyOntology_Instance_10048]
-		[taxonomyOntology_Instance_10051]
-		[taxonomyOntology_Instance_10054]
-		[taxonomyOntology_Instance_10057]
-		[taxonomyOntology_Instance_10060]
-		[taxonomyOntology_Instance_10063]
-		[taxonomyOntology_Instance_10066]
-		[taxonomyOntology_Instance_10069]
-		[taxonomyOntology_Instance_10072]
-		[taxonomyOntology_Instance_10075]
-		[taxonomyOntology_Instance_10078]
-		[taxonomyOntology_Instance_10081]
-		[taxonomyOntology_Instance_10084]
-		[taxonomyOntology_Instance_10087]
-		[taxonomyOntology_Instance_10090]
-		[taxonomyOntology_Instance_10093]
-		[taxonomyOntology_Instance_10096]
-		[taxonomyOntology_Instance_10099]))
+	(weightedDescription [taxonomyOntology_Instance_10000]))
 
 ([taxonomyOntology_Instance_70046] of  TaxonomicHierarchy
 
