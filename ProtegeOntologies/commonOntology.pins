@@ -1,4 +1,4 @@
-; Thu Sep 17 07:02:16 GMT-06:00 2009
+; Sat Sep 26 12:38:46 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -613,7 +613,7 @@
 		[commonOntology_Instance_50022]
 		[commonOntology_Instance_50028]
 		[commonOntology_Instance_50030])
-	(term "Coloración del fonfo"))
+	(term "Coloración del fondo"))
 
 ([commonOntology_Instance_10064] of  State
 

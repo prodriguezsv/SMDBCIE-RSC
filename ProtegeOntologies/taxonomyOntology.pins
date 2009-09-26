@@ -1,4 +1,4 @@
-; Thu Sep 24 07:05:22 GMT-06:00 2009
+; Sat Sep 26 12:50:25 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -51,6 +51,468 @@
 
 	(%3AJADE-IGNORE TRUE))
 
+([taxonomyOntology_Class0] of  Taxon
+
+	(level [taxonomyOntology_Instance_10011])
+	(name "Chromodoris")
+	(predecessor [taxonomyOntology_Instance_5])
+	(successors
+		[taxonomyOntology_Class20]
+		[taxonomyOntology_Instance_10200]
+		[taxonomyOntology_Instance_20029])
+	(weightedDescription [taxonomyOntology_Instance_20000]))
+
+([taxonomyOntology_Class1] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class4])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class10] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.6)
+	(structureWeight 1.0))
+
+([taxonomyOntology_Class11] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class5])
+	(modifier [taxonomyOntology_Class10]))
+
+([taxonomyOntology_Class12] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class6])
+	(modifier [taxonomyOntology_Instance_10030]))
+
+([taxonomyOntology_Class13] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class7])
+	(modifier [taxonomyOntology_Instance_10027]))
+
+([taxonomyOntology_Class14] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10055])
+	(score [commonOntology_Instance_10056])
+	(structure [commonOntology_Instance_10054]))
+
+([taxonomyOntology_Class15] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10057])
+	(score [commonOntology_Instance_10048])
+	(structure [commonOntology_Instance_10054]))
+
+([taxonomyOntology_Class16] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class14])
+	(modifier [taxonomyOntology_Class17]))
+
+([taxonomyOntology_Class17] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 1.0)
+	(structureWeight 0.3))
+
+([taxonomyOntology_Class18] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class15])
+	(modifier [taxonomyOntology_Class19]))
+
+([taxonomyOntology_Class19] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.5)
+	(structureWeight 0.3))
+
+([taxonomyOntology_Class2] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10047])
+	(score [commonOntology_Instance_10048])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class20] of  Taxon
+
+	(level [taxonomyOntology_Instance_10012])
+	(name "Chromodoris sphoni")
+	(predecessor [taxonomyOntology_Class0])
+	(weightedDescription [taxonomyOntology_Instance_20001]))
+
+([taxonomyOntology_Class21] of  RVCharacterDescriptor
+
+	(attribute [commonOntology_Instance_4])
+	(score [commonOntology_Instance_10059])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class22] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_1])
+	(score [commonOntology_Instance_3])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class23] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_6])
+	(score [commonOntology_Instance_10060])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class24] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10061])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class25] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10062])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class26] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10063])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class27] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10063])
+	(score [commonOntology_Instance_10005])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class28] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10034])
+	(score [commonOntology_Instance_10019])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class29] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10014])
+	(score [commonOntology_Instance_10065])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Class30] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Class31] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10004])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Class32] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10066])
+	(score [commonOntology_Instance_10067])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Class33] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10068])
+	(score [commonOntology_Instance_10069])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class34] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10068])
+	(score [commonOntology_Instance_10070])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class35] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10071])
+	(score [commonOntology_Instance_10072])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class36] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10073])
+	(score [commonOntology_Instance_10074])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class37] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10075])
+	(score [commonOntology_Instance_10069])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class38] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20000])
+	(score [commonOntology_Instance_20001])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class39] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20003])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Class4] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10049])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class40] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Class41] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10066])
+	(score [commonOntology_Instance_10067])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Class42] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20003])
+	(structure [commonOntology_Instance_20002]))
+
+([taxonomyOntology_Class43] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_20002]))
+
+([taxonomyOntology_Class44] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10005])
+	(structure [commonOntology_Instance_20002]))
+
+([taxonomyOntology_Class45] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_20005])
+	(structure [commonOntology_Instance_20002]))
+
+([taxonomyOntology_Class46] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20006])
+	(structure [commonOntology_Instance_10000]))
+
+([taxonomyOntology_Class47] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_20007])
+	(structure [commonOntology_Instance_10000]))
+
+([taxonomyOntology_Class48] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20009])
+	(score [commonOntology_Instance_20010])
+	(structure [commonOntology_Instance_20008]))
+
+([taxonomyOntology_Class49] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class21])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class5] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10050])
+	(score [commonOntology_Instance_10051])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Class51] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class22])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class52] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class23])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class53] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class24])
+	(modifier [taxonomyOntology_Class56]))
+
+([taxonomyOntology_Class54] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 1.0)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Class55] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class25])
+	(modifier [taxonomyOntology_Class56]))
+
+([taxonomyOntology_Class56] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.8)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Class57] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class26])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class58] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class27])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class59] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class28])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class6] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_1])
+	(score [commonOntology_Instance_10052])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class60] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 1.0)
+	(structureWeight 0.9))
+
+([taxonomyOntology_Class61] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.9)
+	(structureWeight 0.9))
+
+([taxonomyOntology_Class62] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class29])
+	(modifier [taxonomyOntology_Class60]))
+
+([taxonomyOntology_Class63] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class30])
+	(modifier [taxonomyOntology_Class60]))
+
+([taxonomyOntology_Class64] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class31])
+	(modifier [taxonomyOntology_Class61]))
+
+([taxonomyOntology_Class65] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class32])
+	(modifier [taxonomyOntology_Class60]))
+
+([taxonomyOntology_Class66] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class33])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class67] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class34])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class68] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class35])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class69] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class36])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class7] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10034])
+	(score [commonOntology_Instance_10053])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Class70] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class37])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class71] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class38])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class72] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class40])
+	(modifier [taxonomyOntology_Class60]))
+
+([taxonomyOntology_Class73] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class75])
+	(modifier [taxonomyOntology_Class61]))
+
+([taxonomyOntology_Class74] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class41])
+	(modifier [taxonomyOntology_Class60]))
+
+([taxonomyOntology_Class75] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10004])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Class76] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class42])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class77] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class43])
+	(modifier [taxonomyOntology_Class80]))
+
+([taxonomyOntology_Class78] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class44])
+	(modifier [taxonomyOntology_Class80]))
+
+([taxonomyOntology_Class79] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class45])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class8] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class2])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Class80] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.9)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Class81] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class46])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class82] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class47])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class83] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class48])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class9] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class5])
+	(modifier [taxonomyOntology_Class17]))
+
 ([taxonomyOntology_Instance_0] of  TaxonomicRanks
 
 	(name "Rangos fundamentales"))
@@ -87,6 +549,30 @@
 		[taxonomyOntology_Instance_10078]
 		[taxonomyOntology_Instance_10081]
 		[taxonomyOntology_Instance_10084]))
+
+([taxonomyOntology_Instance_10001] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20011])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_10002] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30024])
+	(score [commonOntology_Instance_20012])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_10003] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20013])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_10004] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20012])
+	(structure [commonOntology_Instance_0]))
 
 ([taxonomyOntology_Instance_10005] of  Rank
 
@@ -632,6 +1118,385 @@
 	(scoreWeight 0.2)
 	(structureWeight 1.0))
 
+([taxonomyOntology_Instance_10200] of  Taxon
+
+	(level [taxonomyOntology_Instance_10012])
+	(name "Chromodoris clenchi")
+	(predecessor [taxonomyOntology_Class0])
+	(weightedDescription [taxonomyOntology_Instance_50001]))
+
+([taxonomyOntology_Instance_20000] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Class8]
+		[taxonomyOntology_Class1]
+		[taxonomyOntology_Class11]
+		[taxonomyOntology_Class12]
+		[taxonomyOntology_Class13]
+		[taxonomyOntology_Class16]
+		[taxonomyOntology_Class18]))
+
+([taxonomyOntology_Instance_20001] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Class49]
+		[taxonomyOntology_Class51]
+		[taxonomyOntology_Class52]
+		[taxonomyOntology_Class53]
+		[taxonomyOntology_Class55]
+		[taxonomyOntology_Class57]
+		[taxonomyOntology_Class58]
+		[taxonomyOntology_Class59]
+		[taxonomyOntology_Class62]
+		[taxonomyOntology_Class63]
+		[taxonomyOntology_Class64]
+		[taxonomyOntology_Class65]
+		[taxonomyOntology_Class66]
+		[taxonomyOntology_Class67]
+		[taxonomyOntology_Class68]
+		[taxonomyOntology_Class69]
+		[taxonomyOntology_Class70]
+		[taxonomyOntology_Class71]
+		[taxonomyOntology_Class72]
+		[taxonomyOntology_Class73]
+		[taxonomyOntology_Class74]
+		[taxonomyOntology_Class76]
+		[taxonomyOntology_Class77]
+		[taxonomyOntology_Class78]
+		[taxonomyOntology_Class79]
+		[taxonomyOntology_Class81]
+		[taxonomyOntology_Class82]
+		[taxonomyOntology_Class83]))
+
+([taxonomyOntology_Instance_20002] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10063])
+	(score [commonOntology_Instance_30008])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_20003] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10034])
+	(score [commonOntology_Instance_30002])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20004] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30003])
+	(score [commonOntology_Instance_30004])
+	(structure [commonOntology_Instance_10024]))
+
+([taxonomyOntology_Instance_20005] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_10004])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_20006] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20014])
+	(score [commonOntology_Instance_20015])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20007] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20016])
+	(score [commonOntology_Instance_20017])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20008] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20018])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20009] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20010] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20019])
+	(score [commonOntology_Instance_20017])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20011] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20020])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20012] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10066])
+	(score [commonOntology_Instance_20021])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20013] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10066])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20015] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.5)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Instance_20016] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_10001])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20017] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_10004])
+	(modifier [taxonomyOntology_Class56]))
+
+([taxonomyOntology_Instance_20018] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_10003])
+	(modifier [taxonomyOntology_Instance_20015]))
+
+([taxonomyOntology_Instance_20019] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20005])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20020] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20006])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20021] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_10002])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20022] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20007])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20023] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20009])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20024] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20008])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20025] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20010])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20026] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20011])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20027] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20012])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_20028] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20013])
+	(modifier [taxonomyOntology_Instance_50004]))
+
+([taxonomyOntology_Instance_20029] of  Taxon
+
+	(level [taxonomyOntology_Instance_10012])
+	(name "Chromodoris kempfi")
+	(predecessor [taxonomyOntology_Class0])
+	(weightedDescription [taxonomyOntology_Instance_50005]))
+
+([taxonomyOntology_Instance_20030] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_20022])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20031] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_20023])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20032] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_20024])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20033] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20004])
+	(score [commonOntology_Instance_20025])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20034] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20026])
+	(score [commonOntology_Instance_10064])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20035] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20027])
+	(score [commonOntology_Instance_20028])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20036] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20027])
+	(score [commonOntology_Instance_20029])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20037] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_20027])
+	(score [commonOntology_Instance_10045])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_20038] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20031])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20039] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20032])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20040] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20033])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_20041] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20031])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Instance_20042] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20032])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Instance_20043] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_20033])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Instance_20044] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20030])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Instance_20045] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20031])
+	(modifier [taxonomyOntology_Instance_10018]))
+
+([taxonomyOntology_Instance_20046] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20032])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Instance_20047] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20033])
+	(modifier [taxonomyOntology_Instance_10018]))
+
+([taxonomyOntology_Instance_20048] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20034])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Instance_20049] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20035])
+	(modifier [taxonomyOntology_Instance_10021]))
+
+([taxonomyOntology_Instance_20050] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20036])
+	(modifier [taxonomyOntology_Instance_10015]))
+
+([taxonomyOntology_Instance_20051] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20037])
+	(modifier [taxonomyOntology_Instance_20052]))
+
+([taxonomyOntology_Instance_20052] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.5)
+	(structureWeight 1.0))
+
+([taxonomyOntology_Instance_20053] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.5)
+	(structureWeight 0.8))
+
+([taxonomyOntology_Instance_20054] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20038])
+	(modifier [taxonomyOntology_Instance_10027]))
+
+([taxonomyOntology_Instance_20055] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20039])
+	(modifier [taxonomyOntology_Instance_10047]))
+
+([taxonomyOntology_Instance_20056] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20040])
+	(modifier [taxonomyOntology_Instance_20053]))
+
+([taxonomyOntology_Instance_20057] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20041])
+	(modifier [taxonomyOntology_Instance_10027]))
+
+([taxonomyOntology_Instance_20058] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20042])
+	(modifier [taxonomyOntology_Instance_10047]))
+
+([taxonomyOntology_Instance_20059] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20043])
+	(modifier [taxonomyOntology_Instance_20053]))
+
+([taxonomyOntology_Instance_20100] of  Taxon
+
+	(level [taxonomyOntology_Instance_10011])
+	(name "Cadlina")
+	(successors [taxonomyOntology_Instance_30012])
+	(weightedDescription [taxonomyOntology_Instance_50000]))
+
+([taxonomyOntology_Instance_20101] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30000])
+	(score [commonOntology_Instance_30001])
+	(structure [commonOntology_Instance_10017]))
+
 ([taxonomyOntology_Instance_30000] of  %3APAL-CONSTRAINT
 
 	(%3APAL-NAME "speciesName")
@@ -644,6 +1509,166 @@
 	(%3APAL-RANGE "(defrange ?rank :FRAME Rank)")
 	(%3APAL-STATEMENT "(forall ?rank \n        (slot-not-null definition ?rank))"))
 
+([taxonomyOntology_Instance_30005] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10001])
+	(score [commonOntology_Instance_30005])
+	(structure [commonOntology_Instance_10024]))
+
+([taxonomyOntology_Instance_30006] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30006])
+	(score [commonOntology_Instance_30007])
+	(structure [commonOntology_Instance_10054]))
+
+([taxonomyOntology_Instance_30008] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20003])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30009] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20004])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30010] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30005])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30011] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30006])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30012] of  Taxon
+
+	(level [taxonomyOntology_Instance_10012])
+	(name "Cadlina sparsa")
+	(predecessor [taxonomyOntology_Instance_20100])
+	(weightedDescription [taxonomyOntology_Instance_60002]))
+
+([taxonomyOntology_Instance_30013] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10063])
+	(score [commonOntology_Instance_10046])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_30014] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_30011])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Instance_30015] of  RVCharacterDescriptor
+
+	(attribute [commonOntology_Instance_4])
+	(score [commonOntology_Instance_30009])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_30016] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30010])
+	(score [commonOntology_Instance_10072])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_30017] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10003])
+	(score [commonOntology_Instance_30011])
+	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Instance_30018] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_20002])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30019] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30013])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30020] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30015])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30021] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30016])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30022] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30014])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30023] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30017])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30024] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30028])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30025] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30029])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30026] of  Taxon
+
+	(level [taxonomyOntology_Instance_10011])
+	(name "Hypselodoris")
+	(weightedDescription [taxonomyOntology_Instance_70000]))
+
+([taxonomyOntology_Instance_30027] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30030])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30028] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_1])
+	(score [commonOntology_Instance_30012])
+	(structure [commonOntology_Instance_0]))
+
+([taxonomyOntology_Instance_30029] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_1])
+	(score [commonOntology_Instance_30013])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_30030] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30014])
+	(score [commonOntology_Instance_30015])
+	(structure [commonOntology_Instance_10024]))
+
+([taxonomyOntology_Instance_30032] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10001])
+	(score [commonOntology_Instance_30016])
+	(structure [commonOntology_Instance_10007]))
+
+([taxonomyOntology_Instance_30033] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_6])
+	(score [commonOntology_Instance_30017])
+	(structure [commonOntology_Instance_10054]))
+
+([taxonomyOntology_Instance_30035] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30032])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30036] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30033])
+	(modifier [taxonomyOntology_Class54]))
+
 ([taxonomyOntology_Instance_40000] of  PAL-QUERY
 
 	(%3APAL-NAME "find-ranks")
@@ -654,7 +1679,100 @@
 
 	(level [taxonomyOntology_Instance_10010])
 	(name "Chromodorididae")
+	(successors [taxonomyOntology_Class0])
 	(weightedDescription [taxonomyOntology_Instance_10000]))
+
+([taxonomyOntology_Instance_50000] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Instance_60000]
+		[taxonomyOntology_Instance_30008]
+		[taxonomyOntology_Instance_30009]
+		[taxonomyOntology_Instance_30010]
+		[taxonomyOntology_Instance_30011]))
+
+([taxonomyOntology_Instance_50001] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Instance_20016]
+		[taxonomyOntology_Instance_20017]
+		[taxonomyOntology_Instance_20018]
+		[taxonomyOntology_Instance_20019]
+		[taxonomyOntology_Instance_20020]
+		[taxonomyOntology_Instance_50002]
+		[taxonomyOntology_Instance_20022]
+		[taxonomyOntology_Instance_20023]
+		[taxonomyOntology_Instance_20024]
+		[taxonomyOntology_Instance_20025]
+		[taxonomyOntology_Instance_20026]
+		[taxonomyOntology_Instance_20027]
+		[taxonomyOntology_Instance_20028]))
+
+([taxonomyOntology_Instance_50002] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_50003])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_50003] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_10073])
+	(score [commonOntology_Instance_20012])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_50004] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.1)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Instance_50005] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Instance_20044]
+		[taxonomyOntology_Instance_20045]
+		[taxonomyOntology_Instance_20046]
+		[taxonomyOntology_Instance_20047]
+		[taxonomyOntology_Instance_20048]
+		[taxonomyOntology_Instance_20049]
+		[taxonomyOntology_Instance_20050]
+		[taxonomyOntology_Instance_20051]
+		[taxonomyOntology_Instance_20054]
+		[taxonomyOntology_Instance_20055]
+		[taxonomyOntology_Instance_20056]
+		[taxonomyOntology_Instance_20057]
+		[taxonomyOntology_Instance_20058]
+		[taxonomyOntology_Instance_20059]))
+
+([taxonomyOntology_Instance_60000] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_60001])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_60001] of  SSCharacterDescriptor
+
+	(attribute [commonOntology_Instance_30000])
+	(score [commonOntology_Instance_30001])
+	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_60002] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Instance_30018]
+		[taxonomyOntology_Instance_30019]
+		[taxonomyOntology_Instance_30020]
+		[taxonomyOntology_Instance_30021]
+		[taxonomyOntology_Instance_30022]
+		[taxonomyOntology_Instance_30023]))
+
+([taxonomyOntology_Instance_70000] of  WeightedDescription
+
+	(weightedDescriptors
+		[taxonomyOntology_Instance_30024]
+		[taxonomyOntology_Instance_30025]
+		[taxonomyOntology_Instance_30027]
+		[taxonomyOntology_Instance_30010]
+		[taxonomyOntology_Instance_30035]
+		[taxonomyOntology_Instance_30036]))
 
 ([taxonomyOntology_Instance_70046] of  TaxonomicHierarchy
 
