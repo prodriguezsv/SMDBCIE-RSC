@@ -1,4 +1,4 @@
-; Sat Sep 26 12:50:25 GMT-06:00 2009
+; Mon Sep 28 10:51:39 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -35,10 +35,6 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([Rank] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE FALSE))
-
 ([Taxon] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
@@ -47,13 +43,9 @@
 
 	(%3AJADE-IGNORE TRUE))
 
-([TaxonomicRanks] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE TRUE))
-
 ([taxonomyOntology_Class0] of  Taxon
 
-	(level [taxonomyOntology_Instance_10011])
+	(level Genus)
 	(name "Chromodoris")
 	(predecessor [taxonomyOntology_Instance_5])
 	(successors
@@ -130,7 +122,7 @@
 
 ([taxonomyOntology_Class20] of  Taxon
 
-	(level [taxonomyOntology_Instance_10012])
+	(level Species)
 	(name "Chromodoris sphoni")
 	(predecessor [taxonomyOntology_Class0])
 	(weightedDescription [taxonomyOntology_Instance_20001]))
@@ -513,10 +505,6 @@
 	(descriptor [taxonomyOntology_Class5])
 	(modifier [taxonomyOntology_Class17]))
 
-([taxonomyOntology_Instance_0] of  TaxonomicRanks
-
-	(name "Rangos fundamentales"))
-
 ([taxonomyOntology_Instance_10000] of  WeightedDescription
 
 	(weightedDescriptors
@@ -573,52 +561,6 @@
 	(attribute [commonOntology_Instance_10003])
 	(score [commonOntology_Instance_20012])
 	(structure [commonOntology_Instance_0]))
-
-([taxonomyOntology_Instance_10005] of  Rank
-
-	(name "Dominio")
-	(successorRank [taxonomyOntology_Instance_10006]))
-
-([taxonomyOntology_Instance_10006] of  Rank
-
-	(name "Reino")
-	(predecessorRank [taxonomyOntology_Instance_10005])
-	(successorRank [taxonomyOntology_Instance_10007]))
-
-([taxonomyOntology_Instance_10007] of  Rank
-
-	(name "Filo")
-	(predecessorRank [taxonomyOntology_Instance_10006])
-	(successorRank [taxonomyOntology_Instance_10008]))
-
-([taxonomyOntology_Instance_10008] of  Rank
-
-	(name "Clase")
-	(predecessorRank [taxonomyOntology_Instance_10007])
-	(successorRank [taxonomyOntology_Instance_10009]))
-
-([taxonomyOntology_Instance_10009] of  Rank
-
-	(name "Orden")
-	(predecessorRank [taxonomyOntology_Instance_10008])
-	(successorRank [taxonomyOntology_Instance_10010]))
-
-([taxonomyOntology_Instance_10010] of  Rank
-
-	(name "Familia")
-	(predecessorRank [taxonomyOntology_Instance_10009])
-	(successorRank [taxonomyOntology_Instance_10011]))
-
-([taxonomyOntology_Instance_10011] of  Rank
-
-	(name "Género")
-	(predecessorRank [taxonomyOntology_Instance_10010])
-	(successorRank [taxonomyOntology_Instance_10012]))
-
-([taxonomyOntology_Instance_10012] of  Rank
-
-	(name "Especie")
-	(predecessorRank [taxonomyOntology_Instance_10011]))
 
 ([taxonomyOntology_Instance_10013] of  WeightedDescriptor
 
@@ -1120,10 +1062,15 @@
 
 ([taxonomyOntology_Instance_10200] of  Taxon
 
-	(level [taxonomyOntology_Instance_10012])
+	(level Species)
 	(name "Chromodoris clenchi")
 	(predecessor [taxonomyOntology_Class0])
 	(weightedDescription [taxonomyOntology_Instance_50001]))
+
+([taxonomyOntology_Instance_2] of  Taxon
+
+	(level Root)
+	(name "Mollusca"))
 
 ([taxonomyOntology_Instance_20000] of  WeightedDescription
 
@@ -1313,7 +1260,7 @@
 
 ([taxonomyOntology_Instance_20029] of  Taxon
 
-	(level [taxonomyOntology_Instance_10012])
+	(level Species)
 	(name "Chromodoris kempfi")
 	(predecessor [taxonomyOntology_Class0])
 	(weightedDescription [taxonomyOntology_Instance_50005]))
@@ -1486,7 +1433,7 @@
 
 ([taxonomyOntology_Instance_20100] of  Taxon
 
-	(level [taxonomyOntology_Instance_10011])
+	(level Genus)
 	(name "Cadlina")
 	(successors [taxonomyOntology_Instance_30012])
 	(weightedDescription [taxonomyOntology_Instance_50000]))
@@ -1543,7 +1490,7 @@
 
 ([taxonomyOntology_Instance_30012] of  Taxon
 
-	(level [taxonomyOntology_Instance_10012])
+	(level Species)
 	(name "Cadlina sparsa")
 	(predecessor [taxonomyOntology_Instance_20100])
 	(weightedDescription [taxonomyOntology_Instance_60002]))
@@ -1620,7 +1567,7 @@
 
 ([taxonomyOntology_Instance_30026] of  Taxon
 
-	(level [taxonomyOntology_Instance_10011])
+	(level Genus)
 	(name "Hypselodoris")
 	(weightedDescription [taxonomyOntology_Instance_70000]))
 
@@ -1677,7 +1624,7 @@
 
 ([taxonomyOntology_Instance_5] of  Taxon
 
-	(level [taxonomyOntology_Instance_10010])
+	(level Family)
 	(name "Chromodorididae")
 	(successors [taxonomyOntology_Class0])
 	(weightedDescription [taxonomyOntology_Instance_10000]))
