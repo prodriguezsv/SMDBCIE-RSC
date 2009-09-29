@@ -1,4 +1,4 @@
-; Mon Sep 28 10:51:39 GMT-06:00 2009
+; Mon Sep 28 22:33:51 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -21,12 +21,12 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[taxonomyOntology_ProjectKB_Instance_60606]
-		[taxonomyOntology_ProjectKB_Instance_60607]
-		[taxonomyOntology_ProjectKB_Instance_60608]
-		[taxonomyOntology_ProjectKB_Instance_60609]
-		[taxonomyOntology_ProjectKB_Instance_60610]
-		[taxonomyOntology_ProjectKB_Instance_60611]))
+		[taxonomyOntology_ProjectKB_Instance_60573]
+		[taxonomyOntology_ProjectKB_Instance_60574]
+		[taxonomyOntology_ProjectKB_Instance_60575]
+		[taxonomyOntology_ProjectKB_Instance_70576]
+		[taxonomyOntology_ProjectKB_Instance_70577]
+		[taxonomyOntology_ProjectKB_Instance_70578]))
 
 ([CLSES_TAB] of  Widget
 
@@ -1343,24 +1343,24 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[PAL_FORM_WIDGET]
-		[taxonomyOntology_ProjectKB_Instance_50659]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[taxonomyOntology_ProjectKB_Instance_30550]
-		[taxonomyOntology_ProjectKB_Instance_50650]
 		[STANDARD_CLASS_FORM_WIDGET]
-		[taxonomyOntology_ProjectKB_Instance_1595]
-		[taxonomyOntology_ProjectKB_Instance_1512]
 		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
 		[taxonomyOntology_ProjectKB_Instance_40682]
-		[KB_620522_Instance_15]
-		[KB_620522_Instance_0]
-		[KB_620522_Instance_30]
-		[KB_620522_Instance_185]
+		[taxonomyOntology_ProjectKB_Instance_30550]
+		[taxonomyOntology_ProjectKB_Instance_50659]
 		[KB_620522_Instance_211]
+		[KB_620522_Instance_185]
+		[KB_620522_Instance_15]
 		[KB_620522_Instance_170]
+		[KB_620522_Instance_0]
 		[KB_620522_Instance_104]
-		[KB_620522_Instance_84])
+		[taxonomyOntology_ProjectKB_Instance_1512]
+		[KB_620522_Instance_84]
+		[taxonomyOntology_ProjectKB_Instance_50650]
+		[KB_620522_Instance_30]
+		[taxonomyOntology_ProjectKB_Instance_1595])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -1753,105 +1753,6 @@
 	(integer_value 147)
 	(name "QUERY_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
 
-([taxonomyOntology_ProjectKB_Instance_10566] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "name")
-	(property_list [taxonomyOntology_ProjectKB_Instance_10567])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 0))
-
-([taxonomyOntology_ProjectKB_Instance_10567] of  Property_List
-)
-
-([taxonomyOntology_ProjectKB_Instance_10568] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([taxonomyOntology_ProjectKB_Instance_10569] of  Widget
-
-	(is_hidden FALSE)
-	(name "TaxonomicRanks")
-	(property_list [taxonomyOntology_ProjectKB_Instance_10570])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([taxonomyOntology_ProjectKB_Instance_10570] of  Property_List
-
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_10571]
-		[taxonomyOntology_ProjectKB_Instance_10576]
-		[taxonomyOntology_ProjectKB_Instance_10566]))
-
-([taxonomyOntology_ProjectKB_Instance_10571] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_10568]
-		[taxonomyOntology_ProjectKB_Instance_20569]))
-
-([taxonomyOntology_ProjectKB_Instance_10576] of  Widget
-
-	(height 490)
-	(is_hidden FALSE)
-	(label "Ranks")
-	(name "ranks")
-	(property_list [taxonomyOntology_ProjectKB_Instance_10577])
-	(widget_class_name "edu.stanford.smi.protegex.widget.graph.GraphWidget")
-	(width 850)
-	(x 0)
-	(y 60))
-
-([taxonomyOntology_ProjectKB_Instance_10577] of  Property_List
-
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_566]
-		[taxonomyOntology_ProjectKB_Instance_567]
-		[taxonomyOntology_ProjectKB_Instance_568]
-		[taxonomyOntology_ProjectKB_Instance_569]
-		[taxonomyOntology_ProjectKB_Instance_570]
-		[taxonomyOntology_ProjectKB_Instance_571]
-		[taxonomyOntology_ProjectKB_Instance_572]
-		[taxonomyOntology_ProjectKB_Instance_573]
-		[taxonomyOntology_ProjectKB_Instance_574]
-		[taxonomyOntology_ProjectKB_Instance_575]
-		[taxonomyOntology_ProjectKB_Instance_576]
-		[taxonomyOntology_ProjectKB_Instance_577]
-		[taxonomyOntology_ProjectKB_Instance_578]
-		[taxonomyOntology_ProjectKB_Instance_579]
-		[taxonomyOntology_ProjectKB_Instance_580]
-		[taxonomyOntology_ProjectKB_Instance_581]
-		[taxonomyOntology_ProjectKB_Instance_582]
-		[taxonomyOntology_ProjectKB_Instance_583]
-		[taxonomyOntology_ProjectKB_Instance_584]
-		[taxonomyOntology_ProjectKB_Instance_585]
-		[taxonomyOntology_ProjectKB_Instance_586]
-		[taxonomyOntology_ProjectKB_Instance_587]
-		[taxonomyOntology_ProjectKB_Instance_588]
-		[taxonomyOntology_ProjectKB_Instance_589]
-		[taxonomyOntology_ProjectKB_Instance_590]))
-
-([taxonomyOntology_ProjectKB_Instance_1505] of  Widget
-
-	(is_hidden FALSE)
-	(name "Rank")
-	(property_list [taxonomyOntology_ProjectKB_Instance_1506])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([taxonomyOntology_ProjectKB_Instance_1506] of  Property_List
-
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_1507]
-		[taxonomyOntology_ProjectKB_Instance_40674]
-		[taxonomyOntology_ProjectKB_Instance_40678]))
-
-([taxonomyOntology_ProjectKB_Instance_1507] of  Property_List
-
-	(name "layout properties"))
-
 ([taxonomyOntology_ProjectKB_Instance_1512] of  Widget
 
 	(is_hidden FALSE)
@@ -1920,45 +1821,20 @@
 ([taxonomyOntology_ProjectKB_Instance_1601] of  Property_List
 )
 
-([taxonomyOntology_ProjectKB_Instance_1830] of  Widget
+([taxonomyOntology_ProjectKB_Instance_20538] of  Widget
 
-	(height 60)
 	(is_hidden FALSE)
-	(label "Rango Taxonómico")
-	(name "level")
-	(property_list [taxonomyOntology_ProjectKB_Instance_1831])
-	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
-	(width 200)
-	(x 0)
-	(y 60))
+	(name ":UNDEFINED")
+	(property_list [taxonomyOntology_ProjectKB_Instance_20539])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
 
-([taxonomyOntology_ProjectKB_Instance_1831] of  Property_List
+([taxonomyOntology_ProjectKB_Instance_20539] of  Property_List
 
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_1832]
-		[taxonomyOntology_ProjectKB_Instance_1833]
-		[taxonomyOntology_ProjectKB_Instance_60564]
-		[taxonomyOntology_ProjectKB_Instance_60565]
-		[taxonomyOntology_ProjectKB_Instance_60566]
-		[taxonomyOntology_ProjectKB_Instance_60567]
-		[taxonomyOntology_ProjectKB_Instance_60568]
-		[taxonomyOntology_ProjectKB_Instance_60569]
-		[taxonomyOntology_ProjectKB_Instance_60570]
-		[taxonomyOntology_ProjectKB_Instance_60571]
-		[taxonomyOntology_ProjectKB_Instance_60572]
-		[taxonomyOntology_ProjectKB_Instance_60573]
-		[taxonomyOntology_ProjectKB_Instance_60574]
-		[taxonomyOntology_ProjectKB_Instance_60575]))
+	(properties [taxonomyOntology_ProjectKB_Instance_20540]))
 
-([taxonomyOntology_ProjectKB_Instance_1832] of  Boolean
+([taxonomyOntology_ProjectKB_Instance_20540] of  Property_List
 
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value"))
-
-([taxonomyOntology_ProjectKB_Instance_1833] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
+	(name "layout properties"))
 
 ([taxonomyOntology_ProjectKB_Instance_20552] of  Widget
 
@@ -1990,11 +1866,6 @@
 		[taxonomyOntology_ProjectKB_Instance_60562]
 		[taxonomyOntology_ProjectKB_Instance_60563]))
 
-([taxonomyOntology_ProjectKB_Instance_20569] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
 ([taxonomyOntology_ProjectKB_Instance_2091] of  Property_List
 
 	(name "layout properties"))
@@ -2021,19 +1892,19 @@
 ([taxonomyOntology_ProjectKB_Instance_2102] of  Map
 
 	(entries
-		[taxonomyOntology_ProjectKB_Instance_60613]
-		[taxonomyOntology_ProjectKB_Instance_60614]
-		[taxonomyOntology_ProjectKB_Instance_60616]
-		[taxonomyOntology_ProjectKB_Instance_60618]
-		[taxonomyOntology_ProjectKB_Instance_60620]
-		[taxonomyOntology_ProjectKB_Instance_60621]
-		[taxonomyOntology_ProjectKB_Instance_60623])
+		[taxonomyOntology_ProjectKB_Instance_70579]
+		[taxonomyOntology_ProjectKB_Instance_70581]
+		[taxonomyOntology_ProjectKB_Instance_70583]
+		[taxonomyOntology_ProjectKB_Instance_70585]
+		[taxonomyOntology_ProjectKB_Instance_70586]
+		[taxonomyOntology_ProjectKB_Instance_70588]
+		[taxonomyOntology_ProjectKB_Instance_70590])
 	(referenced_maps
-		[taxonomyOntology_ProjectKB_Instance_60612]
-		[taxonomyOntology_ProjectKB_Instance_60622]
-		[taxonomyOntology_ProjectKB_Instance_60615]
-		[taxonomyOntology_ProjectKB_Instance_60617]
-		[taxonomyOntology_ProjectKB_Instance_60619]))
+		[taxonomyOntology_ProjectKB_Instance_70587]
+		[taxonomyOntology_ProjectKB_Instance_70584]
+		[taxonomyOntology_ProjectKB_Instance_70582]
+		[taxonomyOntology_ProjectKB_Instance_70580]
+		[taxonomyOntology_ProjectKB_Instance_70589]))
 
 ([taxonomyOntology_ProjectKB_Instance_30550] of  Widget
 
@@ -2274,100 +2145,6 @@
 	(name "ButtonDisplayed-View References to Value"))
 
 ([taxonomyOntology_ProjectKB_Instance_40565] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_40566] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "name")
-	(property_list [taxonomyOntology_ProjectKB_Instance_40567])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 220)
-	(x 0)
-	(y 0))
-
-([taxonomyOntology_ProjectKB_Instance_40567] of  Property_List
-)
-
-([taxonomyOntology_ProjectKB_Instance_40674] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(label "Predecessor rank")
-	(name "predecessorRank")
-	(property_list [taxonomyOntology_ProjectKB_Instance_40675])
-	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
-	(width 220)
-	(x 0)
-	(y 60))
-
-([taxonomyOntology_ProjectKB_Instance_40675] of  Property_List
-
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_40676]
-		[taxonomyOntology_ProjectKB_Instance_40677]
-		[taxonomyOntology_ProjectKB_Instance_50608]
-		[taxonomyOntology_ProjectKB_Instance_50609]
-		[taxonomyOntology_ProjectKB_Instance_50610]
-		[taxonomyOntology_ProjectKB_Instance_50611]
-		[taxonomyOntology_ProjectKB_Instance_50612]
-		[taxonomyOntology_ProjectKB_Instance_50613]
-		[taxonomyOntology_ProjectKB_Instance_50614]
-		[taxonomyOntology_ProjectKB_Instance_50615]
-		[taxonomyOntology_ProjectKB_Instance_50616]
-		[taxonomyOntology_ProjectKB_Instance_50617]
-		[taxonomyOntology_ProjectKB_Instance_50618]
-		[taxonomyOntology_ProjectKB_Instance_50619]))
-
-([taxonomyOntology_ProjectKB_Instance_40676] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value"))
-
-([taxonomyOntology_ProjectKB_Instance_40677] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_40678] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(label "Successor rank")
-	(name "successorRank")
-	(property_list [taxonomyOntology_ProjectKB_Instance_40679])
-	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
-	(width 220)
-	(x 0)
-	(y 120))
-
-([taxonomyOntology_ProjectKB_Instance_40679] of  Property_List
-
-	(properties
-		[taxonomyOntology_ProjectKB_Instance_40680]
-		[taxonomyOntology_ProjectKB_Instance_40681]
-		[taxonomyOntology_ProjectKB_Instance_50620]
-		[taxonomyOntology_ProjectKB_Instance_50621]
-		[taxonomyOntology_ProjectKB_Instance_50622]
-		[taxonomyOntology_ProjectKB_Instance_50623]
-		[taxonomyOntology_ProjectKB_Instance_50624]
-		[taxonomyOntology_ProjectKB_Instance_50625]
-		[taxonomyOntology_ProjectKB_Instance_50626]
-		[taxonomyOntology_ProjectKB_Instance_50627]
-		[taxonomyOntology_ProjectKB_Instance_50628]
-		[taxonomyOntology_ProjectKB_Instance_50629]
-		[taxonomyOntology_ProjectKB_Instance_50630]
-		[taxonomyOntology_ProjectKB_Instance_50631]))
-
-([taxonomyOntology_ProjectKB_Instance_40680] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value"))
-
-([taxonomyOntology_ProjectKB_Instance_40681] of  Boolean
 
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
@@ -2802,112 +2579,6 @@
 
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50608] of  String
-
-	(name "tooltip_text"))
-
-([taxonomyOntology_ProjectKB_Instance_50609] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50610] of  String
-
-	(name "ButtonDescription-View Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50611] of  String
-
-	(name "ButtonDescription-View References to Value"))
-
-([taxonomyOntology_ProjectKB_Instance_50612] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50613] of  String
-
-	(name "ButtonDescription-Create Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50614] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50615] of  String
-
-	(name "ButtonDescription-Add Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50616] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50617] of  String
-
-	(name "ButtonDescription-Remove Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50618] of  String
-
-	(name "ButtonDescription-Delete Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50619] of  Boolean
-
-	(boolean_value FALSE)
-	(name "readOnly_configured"))
-
-([taxonomyOntology_ProjectKB_Instance_50620] of  String
-
-	(name "tooltip_text"))
-
-([taxonomyOntology_ProjectKB_Instance_50621] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50622] of  String
-
-	(name "ButtonDescription-View Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50623] of  String
-
-	(name "ButtonDescription-View References to Value"))
-
-([taxonomyOntology_ProjectKB_Instance_50624] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50625] of  String
-
-	(name "ButtonDescription-Create Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50626] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50627] of  String
-
-	(name "ButtonDescription-Add Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50628] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50629] of  String
-
-	(name "ButtonDescription-Remove Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50630] of  String
-
-	(name "ButtonDescription-Delete Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_50631] of  Boolean
-
-	(boolean_value FALSE)
-	(name "readOnly_configured"))
 
 ([taxonomyOntology_ProjectKB_Instance_50650] of  Widget
 
@@ -4285,130 +3956,6 @@
 	(boolean_value FALSE)
 	(name "readOnly_configured"))
 
-([taxonomyOntology_ProjectKB_Instance_566] of  String
-
-	(name "tooltip_text"))
-
-([taxonomyOntology_ProjectKB_Instance_567] of  String
-
-	(name "Rank_customDisplayName")
-	(string_value "Rank"))
-
-([taxonomyOntology_ProjectKB_Instance_568] of  String
-
-	(name "Rank_shape")
-	(string_value "Ellipse"))
-
-([taxonomyOntology_ProjectKB_Instance_569] of  Integer
-
-	(integer_value 70)
-	(name "Rank_shapeColorRed"))
-
-([taxonomyOntology_ProjectKB_Instance_570] of  Integer
-
-	(integer_value 130)
-	(name "Rank_shapeColorGreen"))
-
-([taxonomyOntology_ProjectKB_Instance_571] of  Integer
-
-	(integer_value 180)
-	(name "Rank_shapeColorBlue"))
-
-([taxonomyOntology_ProjectKB_Instance_572] of  Integer
-
-	(integer_value 0)
-	(name "Rank_textColorRed"))
-
-([taxonomyOntology_ProjectKB_Instance_573] of  Integer
-
-	(integer_value 0)
-	(name "Rank_textColorGreen"))
-
-([taxonomyOntology_ProjectKB_Instance_574] of  Integer
-
-	(integer_value 0)
-	(name "Rank_textColorBlue"))
-
-([taxonomyOntology_ProjectKB_Instance_575] of  Boolean
-
-	(boolean_value FALSE)
-	(name "Rank_bold"))
-
-([taxonomyOntology_ProjectKB_Instance_576] of  Boolean
-
-	(boolean_value FALSE)
-	(name "Rank_italic"))
-
-([taxonomyOntology_ProjectKB_Instance_577] of  String
-
-	(name "Rank_connectorSlot")
-	(string_value "predecessorRankOf"))
-
-([taxonomyOntology_ProjectKB_Instance_578] of  String
-
-	(name "Rank_lineType")
-	(string_value "Solid"))
-
-([taxonomyOntology_ProjectKB_Instance_579] of  String
-
-	(name "Rank_arrowheadType")
-	(string_value "Arrowhead"))
-
-([taxonomyOntology_ProjectKB_Instance_580] of  Boolean
-
-	(boolean_value TRUE)
-	(name "Rank_displayText"))
-
-([taxonomyOntology_ProjectKB_Instance_581] of  String
-
-	(name "TaxonomyClassification_gridStyle")
-	(string_value "Crosses"))
-
-([taxonomyOntology_ProjectKB_Instance_582] of  String
-
-	(name "TaxonomyClassification_snapOnMove")
-	(string_value "Afterwards"))
-
-([taxonomyOntology_ProjectKB_Instance_583] of  Boolean
-
-	(boolean_value FALSE)
-	(name "TaxonomyClassification_wrapping"))
-
-([taxonomyOntology_ProjectKB_Instance_584] of  Integer
-
-	(integer_value 0)
-	(name "RankToRankRelation_lineColorRed"))
-
-([taxonomyOntology_ProjectKB_Instance_585] of  Integer
-
-	(integer_value 0)
-	(name "RankToRankRelation_lineColorGreen"))
-
-([taxonomyOntology_ProjectKB_Instance_586] of  Integer
-
-	(integer_value 0)
-	(name "RankToRankRelation_lineColorBlue"))
-
-([taxonomyOntology_ProjectKB_Instance_587] of  String
-
-	(name "RankToRankRelation_lineType")
-	(string_value "Solid"))
-
-([taxonomyOntology_ProjectKB_Instance_588] of  String
-
-	(name "RankToRankRelation_arrowheadType")
-	(string_value "Arrowhead"))
-
-([taxonomyOntology_ProjectKB_Instance_589] of  Boolean
-
-	(boolean_value TRUE)
-	(name "RankToRankRelation_displayText"))
-
-([taxonomyOntology_ProjectKB_Instance_590] of  String
-
-	(name "slotForRelations")
-	(string_value "relations"))
-
 ([taxonomyOntology_ProjectKB_Instance_60556] of  Boolean
 
 	(boolean_value TRUE)
@@ -4445,58 +3992,20 @@
 	(boolean_value FALSE)
 	(name "readOnly_configured"))
 
-([taxonomyOntology_ProjectKB_Instance_60564] of  String
-
-	(name "tooltip_text"))
-
-([taxonomyOntology_ProjectKB_Instance_60565] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_60566] of  String
-
-	(name "ButtonDescription-View Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_60567] of  String
-
-	(name "ButtonDescription-View References to Value"))
-
-([taxonomyOntology_ProjectKB_Instance_60568] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_60569] of  String
-
-	(name "ButtonDescription-Create Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_60570] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_60571] of  String
-
-	(name "ButtonDescription-Add Instance"))
-
-([taxonomyOntology_ProjectKB_Instance_60572] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove Instance"))
-
 ([taxonomyOntology_ProjectKB_Instance_60573] of  String
 
-	(name "ButtonDescription-Remove Instance"))
+	(name "WeightedDescriptor")
+	(string_value "descriptor{-}modifier"))
 
 ([taxonomyOntology_ProjectKB_Instance_60574] of  String
 
-	(name "ButtonDescription-Delete Instance"))
+	(name "TaxonomicHierarchy")
+	(string_value "name"))
 
-([taxonomyOntology_ProjectKB_Instance_60575] of  Boolean
+([taxonomyOntology_ProjectKB_Instance_60575] of  String
 
-	(boolean_value FALSE)
-	(name "readOnly_configured"))
+	(name "PAL-QUERY")
+	(string_value "%3APAL-NAME"))
 
 ([taxonomyOntology_ProjectKB_Instance_60576] of  String
 
@@ -4534,20 +4043,6 @@
 	(boolean_value FALSE)
 	(name "readOnly_configured"))
 
-([taxonomyOntology_ProjectKB_Instance_60582] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "rootTaxon")
-	(property_list [taxonomyOntology_ProjectKB_Instance_60583])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 540))
-
-([taxonomyOntology_ProjectKB_Instance_60583] of  Property_List
-)
-
 ([taxonomyOntology_ProjectKB_Instance_60584] of  Widget
 
 	(height 60)
@@ -4575,100 +4070,6 @@
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
 
-([taxonomyOntology_ProjectKB_Instance_60606] of  String
-
-	(name "WeightedDescription")
-	(string_value "weightedDescriptors"))
-
-([taxonomyOntology_ProjectKB_Instance_60607] of  String
-
-	(name "TaxonomicHierarchy")
-	(string_value "name"))
-
-([taxonomyOntology_ProjectKB_Instance_60608] of  String
-
-	(name "PAL-QUERY")
-	(string_value "%3APAL-NAME"))
-
-([taxonomyOntology_ProjectKB_Instance_60609] of  String
-
-	(name "Modifier")
-	(string_value "{%28}structureWeight{%3B}attributeWeight{%3B}scoreWeight{%29}"))
-
-([taxonomyOntology_ProjectKB_Instance_60610] of  String
-
-	(name "Taxon")
-	(string_value "name"))
-
-([taxonomyOntology_ProjectKB_Instance_60611] of  String
-
-	(name "WeightedDescriptor")
-	(string_value "descriptor{-}modifier"))
-
-([taxonomyOntology_ProjectKB_Instance_60612] of  Map
-)
-
-([taxonomyOntology_ProjectKB_Instance_60613] of  Map_Entry
-
-	(key "InstanceGraphWidget.taxonomyOntology_Instance_80000.taxa")
-	(key_class "java.lang.String")
-	(value "taxonomyOntology_ProjectKB_Instance_60612")
-	(value_class "java.util.Map"))
-
-([taxonomyOntology_ProjectKB_Instance_60614] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([taxonomyOntology_ProjectKB_Instance_60615] of  Map
-)
-
-([taxonomyOntology_ProjectKB_Instance_60616] of  Map_Entry
-
-	(key "InstanceGraphWidget.taxonomyOntology_Instance_70046.taxa")
-	(key_class "java.lang.String")
-	(value "taxonomyOntology_ProjectKB_Instance_60615")
-	(value_class "java.util.Map"))
-
-([taxonomyOntology_ProjectKB_Instance_60617] of  Map
-)
-
-([taxonomyOntology_ProjectKB_Instance_60618] of  Map_Entry
-
-	(key "InstanceGraphWidget.taxonomyOntology_Instance_0.relations")
-	(key_class "java.lang.String")
-	(value "taxonomyOntology_ProjectKB_Instance_60617")
-	(value_class "java.util.Map"))
-
-([taxonomyOntology_ProjectKB_Instance_60619] of  Map
-)
-
-([taxonomyOntology_ProjectKB_Instance_60620] of  Map_Entry
-
-	(key "InstanceGraphWidget.taxonomyOntology_Instance_0.ranks")
-	(key_class "java.lang.String")
-	(value "taxonomyOntology_ProjectKB_Instance_60619")
-	(value_class "java.util.Map"))
-
-([taxonomyOntology_ProjectKB_Instance_60621] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([taxonomyOntology_ProjectKB_Instance_60622] of  Map
-)
-
-([taxonomyOntology_ProjectKB_Instance_60623] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "taxonomyOntology_ProjectKB_Instance_60622")
-	(value_class "java.util.Map"))
-
 ([taxonomyOntology_ProjectKB_Instance_645] of  String
 
 	(name "horizontal_stretcher")
@@ -4678,6 +4079,85 @@
 
 	(name "vertical_stretcher")
 	(string_value "<<none>>"))
+
+([taxonomyOntology_ProjectKB_Instance_70576] of  String
+
+	(name "WeightedDescription")
+	(string_value "weightedDescriptors"))
+
+([taxonomyOntology_ProjectKB_Instance_70577] of  String
+
+	(name "Taxon")
+	(string_value "name"))
+
+([taxonomyOntology_ProjectKB_Instance_70578] of  String
+
+	(name "Modifier")
+	(string_value "{%28}structureWeight{%3B}attributeWeight{%3B}scoreWeight{%29}"))
+
+([taxonomyOntology_ProjectKB_Instance_70579] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([taxonomyOntology_ProjectKB_Instance_70580] of  Map
+)
+
+([taxonomyOntology_ProjectKB_Instance_70581] of  Map_Entry
+
+	(key "InstanceGraphWidget.taxonomyOntology_Instance_80000.taxa")
+	(key_class "java.lang.String")
+	(value "taxonomyOntology_ProjectKB_Instance_70580")
+	(value_class "java.util.Map"))
+
+([taxonomyOntology_ProjectKB_Instance_70582] of  Map
+)
+
+([taxonomyOntology_ProjectKB_Instance_70583] of  Map_Entry
+
+	(key "InstanceGraphWidget.taxonomyOntology_Instance_70046.taxa")
+	(key_class "java.lang.String")
+	(value "taxonomyOntology_ProjectKB_Instance_70582")
+	(value_class "java.util.Map"))
+
+([taxonomyOntology_ProjectKB_Instance_70584] of  Map
+)
+
+([taxonomyOntology_ProjectKB_Instance_70585] of  Map_Entry
+
+	(key "InstanceGraphWidget.taxonomyOntology_Instance_0.relations")
+	(key_class "java.lang.String")
+	(value "taxonomyOntology_ProjectKB_Instance_70584")
+	(value_class "java.util.Map"))
+
+([taxonomyOntology_ProjectKB_Instance_70586] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([taxonomyOntology_ProjectKB_Instance_70587] of  Map
+)
+
+([taxonomyOntology_ProjectKB_Instance_70588] of  Map_Entry
+
+	(key "InstanceGraphWidget.taxonomyOntology_Instance_0.ranks")
+	(key_class "java.lang.String")
+	(value "taxonomyOntology_ProjectKB_Instance_70587")
+	(value_class "java.util.Map"))
+
+([taxonomyOntology_ProjectKB_Instance_70589] of  Map
+)
+
+([taxonomyOntology_ProjectKB_Instance_70590] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "taxonomyOntology_ProjectKB_Instance_70589")
+	(value_class "java.util.Map"))
 
 ([taxonomyOntology_ProjectKB_Instance_98] of  String
 
