@@ -11,7 +11,7 @@ import ontology.common.*;
 * It's a subclass of a defined term
 * Protege name: Structure
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:45
 */
 public class DefaultStructure implements Structure, Serializable {
    // bean stuff
@@ -26,7 +26,7 @@ public class DefaultStructure implements Structure, Serializable {
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -41,6 +41,18 @@ public class DefaultStructure implements Structure, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: term
+   */
+   private String term;
+   public void setTerm(String value) { 
+     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
+    this.term=value;
+   }
+   public String getTerm() {
+     return this.term;
+   }
 
    /**
    * Protege name: owns
@@ -73,18 +85,6 @@ public class DefaultStructure implements Structure, Serializable {
    }
    public String getDefinition() {
      return this.definition;
-   }
-
-   /**
-   * Protege name: term
-   */
-   private String term;
-   public void setTerm(String value) { 
-     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
-    this.term=value;
-   }
-   public String getTerm() {
-     return this.term;
    }
 
 }

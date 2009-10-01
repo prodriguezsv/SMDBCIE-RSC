@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: CharacterDescriptor
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:44
 */
 public class DefaultCharacterDescriptor implements CharacterDescriptor, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultCharacterDescriptor implements CharacterDescriptor, Serializ
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 

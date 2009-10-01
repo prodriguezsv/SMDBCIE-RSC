@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: RangeValue
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:43
 */
 public interface RangeValue extends Value, Serializable {
    // bean stuff
@@ -16,15 +16,15 @@ public interface RangeValue extends Value, Serializable {
    public void removePropertyChangeListener(PropertyChangeListener pcl);
 
    /**
-   * Protege name: lowerBound
-   */
-   public void setLowerBound(float value);
-   public float getLowerBound();
-
-   /**
    * Protege name: upperBound
    */
    public void setUpperBound(float value);
    public float getUpperBound();
+
+   /**
+   * Protege name: lowerBound
+   */
+   public void setLowerBound(float value);
+   public float getLowerBound();
 
 }

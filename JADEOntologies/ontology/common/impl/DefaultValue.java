@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: Value
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:43
 */
 public class DefaultValue implements Value, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultValue implements Value, Serializable {
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -40,18 +40,6 @@ public class DefaultValue implements Value, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
-
-   /**
-   * Protege name: measuringUnit
-   */
-   private String measuringUnit;
-   public void setMeasuringUnit(String value) { 
-     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
-    this.measuringUnit=value;
-   }
-   public String getMeasuringUnit() {
-     return this.measuringUnit;
-   }
 
    /**
    * Protege name: describes
@@ -73,5 +61,17 @@ public class DefaultValue implements Value, Serializable {
    public Iterator getAllDescribes() {return describes.iterator(); }
    public List getDescribes() {return describes; }
    public void setDescribes(List l) {describes = l; }
+
+   /**
+   * Protege name: measuringUnit
+   */
+   private String measuringUnit;
+   public void setMeasuringUnit(String value) { 
+     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
+    this.measuringUnit=value;
+   }
+   public String getMeasuringUnit() {
+     return this.measuringUnit;
+   }
 
 }

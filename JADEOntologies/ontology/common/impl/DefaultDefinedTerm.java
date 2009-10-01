@@ -10,7 +10,7 @@ import ontology.common.*;
 * Define the terms utilized in the taxonomic  hierarchy
 * Protege name: DefinedTerm
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:44
 */
 public class DefaultDefinedTerm implements DefinedTerm, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultDefinedTerm implements DefinedTerm, Serializable {
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -42,18 +42,6 @@ public class DefaultDefinedTerm implements DefinedTerm, Serializable {
   }
 
    /**
-   * Protege name: definition
-   */
-   private String definition;
-   public void setDefinition(String value) { 
-     pcs.firePropertyChange("definition", (this.definition==null?new String():this.definition), value);
-    this.definition=value;
-   }
-   public String getDefinition() {
-     return this.definition;
-   }
-
-   /**
    * Protege name: term
    */
    private String term;
@@ -63,6 +51,18 @@ public class DefaultDefinedTerm implements DefinedTerm, Serializable {
    }
    public String getTerm() {
      return this.term;
+   }
+
+   /**
+   * Protege name: definition
+   */
+   private String definition;
+   public void setDefinition(String value) { 
+     pcs.firePropertyChange("definition", (this.definition==null?new String():this.definition), value);
+    this.definition=value;
+   }
+   public String getDefinition() {
+     return this.definition;
    }
 
 }

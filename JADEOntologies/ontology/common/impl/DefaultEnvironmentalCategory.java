@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: EnvironmentalCategory
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:45
 */
 public class DefaultEnvironmentalCategory implements EnvironmentalCategory, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultEnvironmentalCategory implements EnvironmentalCategory, Seri
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,18 @@ public class DefaultEnvironmentalCategory implements EnvironmentalCategory, Seri
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: term
+   */
+   private String term;
+   public void setTerm(String value) { 
+     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
+    this.term=value;
+   }
+   public String getTerm() {
+     return this.term;
+   }
 
    /**
    * Protege name: owns
@@ -72,18 +84,6 @@ public class DefaultEnvironmentalCategory implements EnvironmentalCategory, Seri
    }
    public String getDefinition() {
      return this.definition;
-   }
-
-   /**
-   * Protege name: term
-   */
-   private String term;
-   public void setTerm(String value) { 
-     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
-    this.term=value;
-   }
-   public String getTerm() {
-     return this.term;
    }
 
 }

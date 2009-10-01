@@ -9,7 +9,7 @@ import jade.util.leap.*;
 /**
 * Protege name: Descriptor
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:45
 */
 public interface Descriptor extends jade.content.Concept, Serializable {
    // bean stuff

@@ -11,7 +11,7 @@ import ontology.common.*;
 * It's a subclass of a defined term
 * Protege name: State
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:45
 */
 public class DefaultState implements State, Serializable {
    // bean stuff
@@ -26,7 +26,7 @@ public class DefaultState implements State, Serializable {
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -43,15 +43,15 @@ public class DefaultState implements State, Serializable {
   }
 
    /**
-   * Protege name: definition
+   * Protege name: term
    */
-   private String definition;
-   public void setDefinition(String value) { 
-     pcs.firePropertyChange("definition", (this.definition==null?new String():this.definition), value);
-    this.definition=value;
+   private String term;
+   public void setTerm(String value) { 
+     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
+    this.term=value;
    }
-   public String getDefinition() {
-     return this.definition;
+   public String getTerm() {
+     return this.term;
    }
 
    /**
@@ -76,15 +76,15 @@ public class DefaultState implements State, Serializable {
    public void setDescribes(List l) {describes = l; }
 
    /**
-   * Protege name: term
+   * Protege name: definition
    */
-   private String term;
-   public void setTerm(String value) { 
-     pcs.firePropertyChange("term", (this.term==null?new String():this.term), value);
-    this.term=value;
+   private String definition;
+   public void setDefinition(String value) { 
+     pcs.firePropertyChange("definition", (this.definition==null?new String():this.definition), value);
+    this.definition=value;
    }
-   public String getTerm() {
-     return this.term;
+   public String getDefinition() {
+     return this.definition;
    }
 
 }

@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: ApliesTo
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:45
 */
 public interface ApliesTo extends jade.content.Predicate, Serializable {
    // bean stuff

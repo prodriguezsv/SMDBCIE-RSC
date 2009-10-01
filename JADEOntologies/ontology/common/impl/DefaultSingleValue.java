@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: SingleValue
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:43
 */
 public class DefaultSingleValue implements SingleValue, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultSingleValue implements SingleValue, Serializable {
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,27 @@ public class DefaultSingleValue implements SingleValue, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: describes
+   */
+   private List describes = new ArrayList();
+   public void addDescribes(Attribute elem) { 
+     describes.add(elem);
+     pcs.firePropertyChange("describes", oldList, this.describes);
+   }
+   public boolean removeDescribes(Attribute elem) {
+     boolean result = describes.remove(elem);
+     pcs.firePropertyChange("describes", oldList, this.describes);
+     return result;
+   }
+   public void clearAllDescribes() {
+     describes.clear();
+     pcs.firePropertyChange("describes", oldList, this.describes);
+   }
+   public Iterator getAllDescribes() {return describes.iterator(); }
+   public List getDescribes() {return describes; }
+   public void setDescribes(List l) {describes = l; }
 
    /**
    * Protege name: value
@@ -64,26 +85,5 @@ public class DefaultSingleValue implements SingleValue, Serializable {
    public String getMeasuringUnit() {
      return this.measuringUnit;
    }
-
-   /**
-   * Protege name: describes
-   */
-   private List describes = new ArrayList();
-   public void addDescribes(Attribute elem) { 
-     describes.add(elem);
-     pcs.firePropertyChange("describes", oldList, this.describes);
-   }
-   public boolean removeDescribes(Attribute elem) {
-     boolean result = describes.remove(elem);
-     pcs.firePropertyChange("describes", oldList, this.describes);
-     return result;
-   }
-   public void clearAllDescribes() {
-     describes.clear();
-     pcs.firePropertyChange("describes", oldList, this.describes);
-   }
-   public Iterator getAllDescribes() {return describes.iterator(); }
-   public List getDescribes() {return describes; }
-   public void setDescribes(List l) {describes = l; }
 
 }

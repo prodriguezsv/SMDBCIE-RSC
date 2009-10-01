@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: RangeValue
 * @author ontology bean generator
-* @version 2009/09/16, 12:02:11
+* @version 2009/09/30, 12:55:43
 */
 public class DefaultRangeValue implements RangeValue, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    }
 
 
-  private static final long serialVersionUID = 50810507811552110L;
+  private static final long serialVersionUID = 3978892154560758766L;
 
   private String _internalInstanceName = null;
 
@@ -40,30 +40,6 @@ public class DefaultRangeValue implements RangeValue, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
-
-   /**
-   * Protege name: lowerBound
-   */
-   private float lowerBound;
-   public void setLowerBound(float value) { 
-     pcs.firePropertyChange("lowerBound", ""+this.lowerBound, ""+value);
-    this.lowerBound=value;
-   }
-   public float getLowerBound() {
-     return this.lowerBound;
-   }
-
-   /**
-   * Protege name: measuringUnit
-   */
-   private String measuringUnit;
-   public void setMeasuringUnit(String value) { 
-     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
-    this.measuringUnit=value;
-   }
-   public String getMeasuringUnit() {
-     return this.measuringUnit;
-   }
 
    /**
    * Protege name: describes
@@ -96,6 +72,30 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    }
    public float getUpperBound() {
      return this.upperBound;
+   }
+
+   /**
+   * Protege name: lowerBound
+   */
+   private float lowerBound;
+   public void setLowerBound(float value) { 
+     pcs.firePropertyChange("lowerBound", ""+this.lowerBound, ""+value);
+    this.lowerBound=value;
+   }
+   public float getLowerBound() {
+     return this.lowerBound;
+   }
+
+   /**
+   * Protege name: measuringUnit
+   */
+   private String measuringUnit;
+   public void setMeasuringUnit(String value) { 
+     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
+    this.measuringUnit=value;
+   }
+   public String getMeasuringUnit() {
+     return this.measuringUnit;
    }
 
 }
