@@ -1,4 +1,4 @@
-; Wed Sep 30 15:00:52 GMT-06:00 2009
+; Thu Oct 01 09:26:03 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -45,7 +45,7 @@
 ([taxonomyOntology_Class1] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class4])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class10] of  Modifier
 
@@ -1292,7 +1292,7 @@
 ([taxonomyOntology_Class13] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class7])
-	(modifier [taxonomyOntology_Instance_10027]))
+	(modifier [taxonomyOntology_Instance_10039]))
 
 ([taxonomyOntology_Class14] of  SSCharacterDescriptor
 
@@ -1309,13 +1309,7 @@
 ([taxonomyOntology_Class16] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class14])
-	(modifier [taxonomyOntology_Class17]))
-
-([taxonomyOntology_Class17] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 0.3))
+	(modifier [taxonomyOntology_Class10208]))
 
 ([taxonomyOntology_Class18] of  WeightedDescriptor
 
@@ -1341,65 +1335,85 @@
 	(predecessor [taxonomyOntology_Class0])
 	(weightedDescription [taxonomyOntology_Instance_20001]))
 
+([taxonomyOntology_Class20000] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class10026])
+	(modifier [taxonomyOntology_Class54]))
+
 ([taxonomyOntology_Class20002] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10137]))
+	(descriptor [taxonomyOntology_Class10137])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20003] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10136]))
+	(descriptor [taxonomyOntology_Class10136])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20004] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10135]))
+	(descriptor [taxonomyOntology_Class10135])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20005] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10134]))
+	(descriptor [taxonomyOntology_Class10134])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20006] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10133]))
+	(descriptor [taxonomyOntology_Class10133])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20007] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10154]))
+	(descriptor [taxonomyOntology_Class10154])
+	(modifier [taxonomyOntology_Class10206]))
 
 ([taxonomyOntology_Class20008] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10155]))
+	(descriptor [taxonomyOntology_Class10155])
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Class20009] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10157]))
+	(descriptor [taxonomyOntology_Class10157])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20010] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10153]))
+	(descriptor [taxonomyOntology_Class10153])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20011] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10158]))
+	(descriptor [taxonomyOntology_Class10158])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20012] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10159]))
+	(descriptor [taxonomyOntology_Class10159])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20013] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10160]))
+	(descriptor [taxonomyOntology_Class10160])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20016] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10118]))
+	(descriptor [taxonomyOntology_Class10118])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20024] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10116]))
+	(descriptor [taxonomyOntology_Class10116])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20025] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10117]))
+	(descriptor [taxonomyOntology_Class10117])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20027] of  WeightedDescriptor
 
@@ -1408,7 +1422,8 @@
 
 ([taxonomyOntology_Class20028] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10080]))
+	(descriptor [taxonomyOntology_Class10080])
+	(modifier [taxonomyOntology_Class80]))
 
 ([taxonomyOntology_Class20029] of  WeightedDescriptor
 
@@ -1417,15 +1432,18 @@
 
 ([taxonomyOntology_Class20031] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10081]))
+	(descriptor [taxonomyOntology_Class10081])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20032] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10079]))
+	(descriptor [taxonomyOntology_Class10079])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20033] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10076]))
+	(descriptor [taxonomyOntology_Class10076])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20034] of  WeightedDescriptor
 
@@ -1434,7 +1452,8 @@
 
 ([taxonomyOntology_Class20035] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10075]))
+	(descriptor [taxonomyOntology_Class10075])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20036] of  WeightedDescriptor
 
@@ -1443,11 +1462,13 @@
 
 ([taxonomyOntology_Class20042] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10072]))
+	(descriptor [taxonomyOntology_Class10072])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20044] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10083]))
+	(descriptor [taxonomyOntology_Class10083])
+	(modifier [taxonomyOntology_Class10187]))
 
 ([taxonomyOntology_Class20045] of  WeightedDescriptor
 
@@ -1466,75 +1487,93 @@
 
 ([taxonomyOntology_Class20051] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10090]))
+	(descriptor [taxonomyOntology_Class10090])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20055] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10085]))
+	(descriptor [taxonomyOntology_Class10085])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20061] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10113]))
+	(descriptor [taxonomyOntology_Class10113])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20062] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10112]))
+	(descriptor [taxonomyOntology_Class10112])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20064] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10110]))
+	(descriptor [taxonomyOntology_Class10110])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20065] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10109]))
+	(descriptor [taxonomyOntology_Class10109])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20066] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10111]))
+	(descriptor [taxonomyOntology_Class10111])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20067] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10108]))
+	(descriptor [taxonomyOntology_Class10108])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20071] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10107]))
+	(descriptor [taxonomyOntology_Class10107])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20072] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10115]))
+	(descriptor [taxonomyOntology_Class10115])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20073] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10138]))
+	(descriptor [taxonomyOntology_Class10138])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20074] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10139]))
+	(descriptor [taxonomyOntology_Class10139])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20075] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10142]))
+	(descriptor [taxonomyOntology_Class10142])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20076] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10141]))
+	(descriptor [taxonomyOntology_Class10141])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20077] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10140]))
+	(descriptor [taxonomyOntology_Class10140])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20078] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10143]))
+	(descriptor [taxonomyOntology_Class10143])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20079] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10144]))
+	(descriptor [taxonomyOntology_Class10144])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20080] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10145]))
+	(descriptor [taxonomyOntology_Class10145])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20081] of  WeightedDescriptor
 
@@ -1543,7 +1582,8 @@
 
 ([taxonomyOntology_Class20082] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10044]))
+	(descriptor [taxonomyOntology_Class10044])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20083] of  WeightedDescriptor
 
@@ -1552,35 +1592,43 @@
 
 ([taxonomyOntology_Class20085] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10009]))
+	(descriptor [taxonomyOntology_Class10009])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20087] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10013]))
+	(descriptor [taxonomyOntology_Class10013])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20088] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10012]))
+	(descriptor [taxonomyOntology_Class10012])
+	(modifier [taxonomyOntology_Class10185]))
 
 ([taxonomyOntology_Class20090] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10015]))
+	(descriptor [taxonomyOntology_Class10015])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20092] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10014]))
+	(descriptor [taxonomyOntology_Class10014])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20093] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10010]))
+	(descriptor [taxonomyOntology_Class10010])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20094] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10011]))
+	(descriptor [taxonomyOntology_Class10011])
+	(modifier [taxonomyOntology_Class56]))
 
 ([taxonomyOntology_Class20095] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10016]))
+	(descriptor [taxonomyOntology_Class10016])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20096] of  WeightedDescriptor
 
@@ -1589,15 +1637,18 @@
 
 ([taxonomyOntology_Class20097] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10002]))
+	(descriptor [taxonomyOntology_Class10002])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20098] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10003]))
+	(descriptor [taxonomyOntology_Class10003])
+	(modifier [taxonomyOntology_Class10184]))
 
 ([taxonomyOntology_Class20099] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10005]))
+	(descriptor [taxonomyOntology_Class10005])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20104] of  WeightedDescriptor
 
@@ -1606,27 +1657,33 @@
 
 ([taxonomyOntology_Class20105] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10006]))
+	(descriptor [taxonomyOntology_Class10006])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20106] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10008]))
+	(descriptor [taxonomyOntology_Class10008])
+	(modifier [taxonomyOntology_Class30008]))
 
 ([taxonomyOntology_Class20109] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10001]))
+	(descriptor [taxonomyOntology_Class10001])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20111] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10007]))
+	(descriptor [taxonomyOntology_Class10007])
+	(modifier [taxonomyOntology_Class80]))
 
 ([taxonomyOntology_Class20112] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10037]))
+	(descriptor [taxonomyOntology_Class10037])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20113] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10036]))
+	(descriptor [taxonomyOntology_Class10036])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20114] of  WeightedDescriptor
 
@@ -1635,15 +1692,13 @@
 
 ([taxonomyOntology_Class20116] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10038]))
+	(descriptor [taxonomyOntology_Class10038])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20117] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10033]))
-
-([taxonomyOntology_Class20118] of  WeightedDescriptor
-
-	(descriptor [taxonomyOntology_Class10034]))
+	(descriptor [taxonomyOntology_Class10033])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20119] of  WeightedDescriptor
 
@@ -1652,15 +1707,18 @@
 
 ([taxonomyOntology_Class20120] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10022]))
+	(descriptor [taxonomyOntology_Class10022])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20121] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10023]))
+	(descriptor [taxonomyOntology_Class10023])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20122] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10024]))
+	(descriptor [taxonomyOntology_Class10024])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20125] of  WeightedDescriptor
 
@@ -1669,27 +1727,33 @@
 
 ([taxonomyOntology_Class20126] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10019]))
+	(descriptor [taxonomyOntology_Class10019])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20127] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10030]))
+	(descriptor [taxonomyOntology_Class10030])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20128] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10020]))
+	(descriptor [taxonomyOntology_Class10020])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20129] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10028]))
+	(descriptor [taxonomyOntology_Class10028])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20130] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10029]))
+	(descriptor [taxonomyOntology_Class10029])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20131] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10021]))
+	(descriptor [taxonomyOntology_Class10021])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20132] of  WeightedDescriptor
 
@@ -1703,39 +1767,48 @@
 
 ([taxonomyOntology_Class20136] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10032]))
+	(descriptor [taxonomyOntology_Class10032])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20139] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10042]))
+	(descriptor [taxonomyOntology_Class10042])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20140] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10041]))
+	(descriptor [taxonomyOntology_Class10041])
+	(modifier [taxonomyOntology_Class30008]))
 
 ([taxonomyOntology_Class20141] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10040]))
+	(descriptor [taxonomyOntology_Class10040])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20142] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10039]))
+	(descriptor [taxonomyOntology_Class10039])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20143] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10152]))
+	(descriptor [taxonomyOntology_Class10152])
+	(modifier [taxonomyOntology_Class56]))
 
 ([taxonomyOntology_Class20144] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10150]))
+	(descriptor [taxonomyOntology_Class10150])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20145] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10151]))
+	(descriptor [taxonomyOntology_Class10151])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20146] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10161]))
+	(descriptor [taxonomyOntology_Class10161])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20152] of  WeightedDescriptor
 
@@ -1744,19 +1817,23 @@
 
 ([taxonomyOntology_Class20153] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10104]))
+	(descriptor [taxonomyOntology_Class10104])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20154] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10103]))
+	(descriptor [taxonomyOntology_Class10103])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20161] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10061]))
+	(descriptor [taxonomyOntology_Class10061])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20162] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10060]))
+	(descriptor [taxonomyOntology_Class10060])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20167] of  WeightedDescriptor
 
@@ -1765,44 +1842,48 @@
 
 ([taxonomyOntology_Class20169] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10057]))
+	(descriptor [taxonomyOntology_Class10057])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20170] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10058]))
+	(descriptor [taxonomyOntology_Class10058])
+	(modifier [taxonomyOntology_Class80]))
 
 ([taxonomyOntology_Class20171] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10059]))
+	(descriptor [taxonomyOntology_Class10059])
+	(modifier [taxonomyOntology_Class80]))
 
 ([taxonomyOntology_Class20172] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10056]))
+	(descriptor [taxonomyOntology_Class10056])
+	(modifier [taxonomyOntology_Class80]))
 
 ([taxonomyOntology_Class20173] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10055]))
+	(descriptor [taxonomyOntology_Class10055])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20178] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10062]))
+	(descriptor [taxonomyOntology_Class10062])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20185] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class10046])
 	(modifier [taxonomyOntology_Class54]))
 
-([taxonomyOntology_Class20186] of  WeightedDescriptor
-
-	(descriptor [taxonomyOntology_Instance_10002]))
-
 ([taxonomyOntology_Class20187] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10047]))
+	(descriptor [taxonomyOntology_Class10047])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20188] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10053]))
+	(descriptor [taxonomyOntology_Class10053])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20189] of  WeightedDescriptor
 
@@ -1816,11 +1897,13 @@
 
 ([taxonomyOntology_Class20193] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10050]))
+	(descriptor [taxonomyOntology_Class10050])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20194] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10049]))
+	(descriptor [taxonomyOntology_Class10049])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20196] of  WeightedDescriptor
 
@@ -1829,31 +1912,38 @@
 
 ([taxonomyOntology_Class20197] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10054]))
+	(descriptor [taxonomyOntology_Class10054])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20198] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10063]))
+	(descriptor [taxonomyOntology_Class10063])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20202] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10070]))
+	(descriptor [taxonomyOntology_Class10070])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20203] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10071]))
+	(descriptor [taxonomyOntology_Class10071])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20204] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10069]))
+	(descriptor [taxonomyOntology_Class10069])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20206] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10065]))
+	(descriptor [taxonomyOntology_Class10065])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20209] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10066]))
+	(descriptor [taxonomyOntology_Class10066])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20210] of  WeightedDescriptor
 
@@ -1862,7 +1952,8 @@
 
 ([taxonomyOntology_Class20211] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10067]))
+	(descriptor [taxonomyOntology_Class10067])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20214] of  WeightedDescriptor
 
@@ -1871,71 +1962,88 @@
 
 ([taxonomyOntology_Class20216] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10162]))
+	(descriptor [taxonomyOntology_Class10162])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20217] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10163]))
+	(descriptor [taxonomyOntology_Class10163])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20218] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10164]))
+	(descriptor [taxonomyOntology_Class10164])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class20219] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10123]))
+	(descriptor [taxonomyOntology_Class10123])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20220] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10128]))
+	(descriptor [taxonomyOntology_Class10128])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20221] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10119]))
+	(descriptor [taxonomyOntology_Class10119])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20222] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10129]))
+	(descriptor [taxonomyOntology_Class10129])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20223] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10130]))
+	(descriptor [taxonomyOntology_Class10130])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20224] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10127]))
+	(descriptor [taxonomyOntology_Class10127])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20225] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10126]))
+	(descriptor [taxonomyOntology_Class10126])
+	(modifier [taxonomyOntology_Class80]))
 
 ([taxonomyOntology_Class20226] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10120]))
+	(descriptor [taxonomyOntology_Class10120])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20227] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10125]))
+	(descriptor [taxonomyOntology_Class10125])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20228] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10122]))
+	(descriptor [taxonomyOntology_Class10122])
+	(modifier [taxonomyOntology_Class40009]))
 
 ([taxonomyOntology_Class20229] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10121]))
+	(descriptor [taxonomyOntology_Class10121])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20230] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10131]))
+	(descriptor [taxonomyOntology_Class10131])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20231] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10132]))
+	(descriptor [taxonomyOntology_Class10132])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20236] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10098]))
+	(descriptor [taxonomyOntology_Class10098])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class21] of  RVCharacterDescriptor
 
@@ -1997,6 +2105,43 @@
 	(score [commonOntology_Instance_10064])
 	(structure [commonOntology_Instance_10007]))
 
+([taxonomyOntology_Class30002] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_10017])
+	(modifier [taxonomyOntology_Class30004]))
+
+([taxonomyOntology_Class30003] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class29])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class30004] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.95)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Class30005] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class10080])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class30006] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class10083])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class30007] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class10068])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Class30008] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.85)
+	(structureWeight 0.0))
+
 ([taxonomyOntology_Class30009] of  WeightedDescription
 
 	(weightedDescriptors
@@ -2016,7 +2161,8 @@
 
 ([taxonomyOntology_Class30010] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10156]))
+	(descriptor [taxonomyOntology_Class10156])
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Class30011] of  WeightedDescription
 
@@ -2031,11 +2177,14 @@
 		[taxonomyOntology_Class20217]
 		[taxonomyOntology_Class20222]
 		[taxonomyOntology_Class30045]
-		[taxonomyOntology_Class30046]))
+		[taxonomyOntology_Class30046]
+		[taxonomyOntology_Class30039]
+		[taxonomyOntology_Class30040]))
 
 ([taxonomyOntology_Class30012] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10017]))
+	(descriptor [taxonomyOntology_Class10017])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30013] of  WeightedDescription
 
@@ -2061,13 +2210,14 @@
 	(weightedDescriptors
 		[taxonomyOntology_Class20090]
 		[taxonomyOntology_Class20013]
-		[taxonomyOntology_Class20009]
 		[taxonomyOntology_Class20002]
-		[taxonomyOntology_Class30016]))
+		[taxonomyOntology_Class30016]
+		[taxonomyOntology_Class40010]))
 
 ([taxonomyOntology_Class30016] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class30017]))
+	(descriptor [taxonomyOntology_Class30017])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30017] of  SSCharacterDescriptor
 
@@ -2077,7 +2227,8 @@
 
 ([taxonomyOntology_Class30025] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10097]))
+	(descriptor [taxonomyOntology_Class10097])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30026] of  WeightedDescriptor
 
@@ -2091,7 +2242,8 @@
 
 ([taxonomyOntology_Class30028] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10094]))
+	(descriptor [taxonomyOntology_Class10094])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30032] of  WeightedDescriptor
 
@@ -2100,44 +2252,48 @@
 
 ([taxonomyOntology_Class30035] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10092]))
+	(descriptor [taxonomyOntology_Class10092])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30036] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class10091])
 	(modifier [taxonomyOntology_Class54]))
 
-([taxonomyOntology_Class30038] of  WeightedDescriptor
-
-	(descriptor [taxonomyOntology_Class39]))
-
 ([taxonomyOntology_Class30039] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10101]))
+	(descriptor [taxonomyOntology_Class10101])
+	(modifier [taxonomyOntology_Class56]))
 
 ([taxonomyOntology_Class30040] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10100]))
+	(descriptor [taxonomyOntology_Class10100])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30041] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10099]))
+	(descriptor [taxonomyOntology_Class10099])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30045] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10149]))
+	(descriptor [taxonomyOntology_Class10149])
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Class30046] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10148]))
+	(descriptor [taxonomyOntology_Class10148])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class30049] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10146]))
+	(descriptor [taxonomyOntology_Class10146])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30050] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10147]))
+	(descriptor [taxonomyOntology_Class10147])
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class30051] of  WeightedDescriptor
 
@@ -2181,8 +2337,6 @@
 		[taxonomyOntology_Class20105]
 		[taxonomyOntology_Class20113]
 		[taxonomyOntology_Class20117]
-		[taxonomyOntology_Class20125]
-		[taxonomyOntology_Class20132]
 		[taxonomyOntology_Class20161]
 		[taxonomyOntology_Class20162]
 		[taxonomyOntology_Class20169]
@@ -2196,11 +2350,13 @@
 		[taxonomyOntology_Class20028]
 		[taxonomyOntology_Class20032]
 		[taxonomyOntology_Class20035]
-		[taxonomyOntology_Class20045]
-		[taxonomyOntology_Class20048]
 		[taxonomyOntology_Class20049]
 		[taxonomyOntology_Class20055]
-		[taxonomyOntology_Class20024]))
+		[taxonomyOntology_Class20024]
+		[taxonomyOntology_Class20044]
+		[taxonomyOntology_Class20000]
+		[taxonomyOntology_Class30002]
+		[taxonomyOntology_Class30003]))
 
 ([taxonomyOntology_Class30055] of  WeightedDescription
 
@@ -2208,24 +2364,28 @@
 		[taxonomyOntology_Class20085]
 		[taxonomyOntology_Class20113]
 		[taxonomyOntology_Class20119]
-		[taxonomyOntology_Class20125]
-		[taxonomyOntology_Class20132]
 		[taxonomyOntology_Class20178]
 		[taxonomyOntology_Class20187]
 		[taxonomyOntology_Class20190]
 		[taxonomyOntology_Class20194]
 		[taxonomyOntology_Class20209]
 		[taxonomyOntology_Class20211]
-		[taxonomyOntology_Class20028]
 		[taxonomyOntology_Class20032]
 		[taxonomyOntology_Class20033]
-		[taxonomyOntology_Class20044]
-		[taxonomyOntology_Class20048]
 		[taxonomyOntology_Class20049]
 		[taxonomyOntology_Class20055]
 		[taxonomyOntology_Class20024]
 		[taxonomyOntology_Class30025]
-		[taxonomyOntology_Class30028]))
+		[taxonomyOntology_Class30028]
+		[taxonomyOntology_Class20000]
+		[taxonomyOntology_Class30002]
+		[taxonomyOntology_Class30005]
+		[taxonomyOntology_Class30006]
+		[taxonomyOntology_Class30003]
+		[taxonomyOntology_Class20064]
+		[taxonomyOntology_Class20065]
+		[taxonomyOntology_Class20066]
+		[taxonomyOntology_Class20071]))
 
 ([taxonomyOntology_Class30056] of  WeightedDescription
 
@@ -2240,13 +2400,11 @@
 	(weightedDescriptors
 		[taxonomyOntology_Class20097]
 		[taxonomyOntology_Class20114]
-		[taxonomyOntology_Class20125]
 		[taxonomyOntology_Class20236]
 		[taxonomyOntology_Class30035]
 		[taxonomyOntology_Class30041]
 		[taxonomyOntology_Class20031]
 		[taxonomyOntology_Class20042]
-		[taxonomyOntology_Class20048]
 		[taxonomyOntology_Class20051]
 		[taxonomyOntology_Class20188]
 		[taxonomyOntology_Class20193]
@@ -2254,10 +2412,12 @@
 		[taxonomyOntology_Class20198]
 		[taxonomyOntology_Class20202]
 		[taxonomyOntology_Class20204]
-		[taxonomyOntology_Class20214]
 		[taxonomyOntology_Class20061]
 		[taxonomyOntology_Class20062]
-		[taxonomyOntology_Class20067]))
+		[taxonomyOntology_Class20067]
+		[taxonomyOntology_Class20000]
+		[taxonomyOntology_Class30003]
+		[taxonomyOntology_Class30007]))
 
 ([taxonomyOntology_Class30058] of  WeightedDescription
 
@@ -2276,7 +2436,8 @@
 
 ([taxonomyOntology_Class30059] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class30060]))
+	(descriptor [taxonomyOntology_Class30060])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class30060] of  SSCharacterDescriptor
 
@@ -2398,6 +2559,17 @@
 	(attribute [commonOntology_Instance_10003])
 	(score [commonOntology_Instance_10064])
 	(structure [commonOntology_Instance_10029]))
+
+([taxonomyOntology_Class40009] of  Modifier
+
+	(attributeWeight 1.0)
+	(scoreWeight 0.0)
+	(structureWeight 0.0))
+
+([taxonomyOntology_Class40010] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Class10157])
+	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class41] of  SSCharacterDescriptor
 
@@ -2546,22 +2718,22 @@
 ([taxonomyOntology_Class66] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class33])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class67] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class34])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class68] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class35])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class69] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class36])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class7] of  SSCharacterDescriptor
 
@@ -2572,12 +2744,12 @@
 ([taxonomyOntology_Class70] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class37])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class71] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class38])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class72] of  WeightedDescriptor
 
@@ -2623,7 +2795,7 @@
 ([taxonomyOntology_Class8] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Class2])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Class80] of  Modifier
 
@@ -2645,11 +2817,6 @@
 
 	(descriptor [taxonomyOntology_Class48])
 	(modifier [taxonomyOntology_Class54]))
-
-([taxonomyOntology_Class9] of  WeightedDescriptor
-
-	(descriptor [taxonomyOntology_Class5])
-	(modifier [taxonomyOntology_Class17]))
 
 ([taxonomyOntology_Instance_10000] of  WeightedDescription
 
@@ -2711,19 +2878,13 @@
 ([taxonomyOntology_Instance_10013] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10014])
-	(modifier [taxonomyOntology_Instance_10015]))
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Instance_10014] of  SSCharacterDescriptor
 
 	(attribute [commonOntology_Instance_1])
 	(score [commonOntology_Instance_2])
 	(structure [commonOntology_Instance_0]))
-
-([taxonomyOntology_Instance_10015] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.8)
-	(structureWeight 1.0))
 
 ([taxonomyOntology_Instance_10016] of  WeightedDescriptor
 
@@ -2745,7 +2906,7 @@
 ([taxonomyOntology_Instance_10019] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10020])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10020] of  RVCharacterDescriptor
 
@@ -2753,16 +2914,10 @@
 	(score [commonOntology_Instance_5])
 	(structure [commonOntology_Instance_0]))
 
-([taxonomyOntology_Instance_10021] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10022] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10023])
-	(modifier [taxonomyOntology_Instance_10024]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10023] of  SSCharacterDescriptor
 
@@ -2770,28 +2925,16 @@
 	(score [commonOntology_Instance_7])
 	(structure [commonOntology_Instance_0]))
 
-([taxonomyOntology_Instance_10024] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10025] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10026])
-	(modifier [taxonomyOntology_Instance_10027]))
+	(modifier [taxonomyOntology_Instance_10039]))
 
 ([taxonomyOntology_Instance_10026] of  SSCharacterDescriptor
 
 	(attribute [commonOntology_Instance_10001])
 	(score [commonOntology_Instance_10002])
 	(structure [commonOntology_Instance_10000]))
-
-([taxonomyOntology_Instance_10027] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.8)
-	(structureWeight 0.8))
 
 ([taxonomyOntology_Instance_10028] of  WeightedDescriptor
 
@@ -2813,19 +2956,13 @@
 ([taxonomyOntology_Instance_10031] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10032])
-	(modifier [taxonomyOntology_Instance_10033]))
+	(modifier [taxonomyOntology_Instance_10030]))
 
 ([taxonomyOntology_Instance_10032] of  SSCharacterDescriptor
 
 	(attribute [commonOntology_Instance_10003])
 	(score [commonOntology_Instance_10005])
 	(structure [commonOntology_Instance_10000]))
-
-([taxonomyOntology_Instance_10033] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.7)
-	(structureWeight 0.8))
 
 ([taxonomyOntology_Instance_10034] of  WeightedDescriptor
 
@@ -2864,19 +3001,13 @@
 ([taxonomyOntology_Instance_10040] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10041])
-	(modifier [taxonomyOntology_Instance_10042]))
+	(modifier [taxonomyOntology_Instance_10039]))
 
 ([taxonomyOntology_Instance_10041] of  SSCharacterDescriptor
 
 	(attribute [commonOntology_Instance_10010])
 	(score [commonOntology_Instance_10011])
 	(structure [commonOntology_Instance_10007]))
-
-([taxonomyOntology_Instance_10042] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.8)
-	(structureWeight 0.8))
 
 ([taxonomyOntology_Instance_10044] of  SSCharacterDescriptor
 
@@ -2937,7 +3068,7 @@
 ([taxonomyOntology_Instance_10054] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10055])
-	(modifier [taxonomyOntology_Instance_10056]))
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Instance_10055] of  SSCharacterDescriptor
 
@@ -2945,28 +3076,16 @@
 	(score [commonOntology_Instance_10019])
 	(structure [commonOntology_Instance_10017]))
 
-([taxonomyOntology_Instance_10056] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.8)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10057] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10058])
-	(modifier [taxonomyOntology_Instance_10059]))
+	(modifier [taxonomyOntology_Instance_10074]))
 
 ([taxonomyOntology_Instance_10058] of  SSCharacterDescriptor
 
 	(attribute [commonOntology_Instance_10018])
 	(score [commonOntology_Instance_10020])
 	(structure [commonOntology_Instance_10017]))
-
-([taxonomyOntology_Instance_10059] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.4)
-	(structureWeight 1.0))
 
 ([taxonomyOntology_Instance_10060] of  WeightedDescriptor
 
@@ -2988,7 +3107,7 @@
 ([taxonomyOntology_Instance_10063] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10064])
-	(modifier [taxonomyOntology_Instance_10065]))
+	(modifier [taxonomyOntology_Instance_10083]))
 
 ([taxonomyOntology_Instance_10064] of  SSCharacterDescriptor
 
@@ -2996,16 +3115,10 @@
 	(score [commonOntology_Instance_10019])
 	(structure [commonOntology_Instance_10017]))
 
-([taxonomyOntology_Instance_10065] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.7)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10066] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10067])
-	(modifier [taxonomyOntology_Instance_10068]))
+	(modifier [taxonomyOntology_Instance_10101]))
 
 ([taxonomyOntology_Instance_10067] of  SSCharacterDescriptor
 
@@ -3013,28 +3126,16 @@
 	(score [commonOntology_Instance_10026])
 	(structure [commonOntology_Instance_10024]))
 
-([taxonomyOntology_Instance_10068] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.2)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10069] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10070])
-	(modifier [taxonomyOntology_Instance_10071]))
+	(modifier [taxonomyOntology_Instance_10101]))
 
 ([taxonomyOntology_Instance_10070] of  SSCharacterDescriptor
 
 	(attribute [commonOntology_Instance_10025])
 	(score [commonOntology_Instance_10027])
 	(structure [commonOntology_Instance_10024]))
-
-([taxonomyOntology_Instance_10071] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.2)
-	(structureWeight 1.0))
 
 ([taxonomyOntology_Instance_10072] of  WeightedDescriptor
 
@@ -3056,7 +3157,7 @@
 ([taxonomyOntology_Instance_10075] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10076])
-	(modifier [taxonomyOntology_Instance_10077]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10076] of  SSCharacterDescriptor
 
@@ -3064,28 +3165,16 @@
 	(score [commonOntology_Instance_10030])
 	(structure [commonOntology_Instance_10029]))
 
-([taxonomyOntology_Instance_10077] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10078] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10079])
-	(modifier [taxonomyOntology_Instance_10080]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10079] of  RVCharacterDescriptor
 
 	(attribute [commonOntology_Instance_10031])
 	(score [commonOntology_Instance_10032])
 	(structure [commonOntology_Instance_10029]))
-
-([taxonomyOntology_Instance_10080] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
 
 ([taxonomyOntology_Instance_10081] of  WeightedDescriptor
 
@@ -3107,7 +3196,7 @@
 ([taxonomyOntology_Instance_10084] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10085])
-	(modifier [taxonomyOntology_Instance_10086]))
+	(modifier [taxonomyOntology_Instance_10101]))
 
 ([taxonomyOntology_Instance_10085] of  SSCharacterDescriptor
 
@@ -3115,16 +3204,10 @@
 	(score [commonOntology_Instance_10036])
 	(structure [commonOntology_Instance_10033]))
 
-([taxonomyOntology_Instance_10086] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.2)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10087] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10088])
-	(modifier [taxonomyOntology_Instance_10089]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10088] of  SSHeuristicDescriptor
 
@@ -3132,16 +3215,10 @@
 	(score [commonOntology_Instance_10039])
 	(structure [commonOntology_Instance_10037]))
 
-([taxonomyOntology_Instance_10089] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10090] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10091])
-	(modifier [taxonomyOntology_Instance_10092]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10091] of  RVHeuristicDescriptor
 
@@ -3149,16 +3226,10 @@
 	(score [commonOntology_Instance_10042])
 	(structure [commonOntology_Instance_10040]))
 
-([taxonomyOntology_Instance_10092] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10093] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10094])
-	(modifier [taxonomyOntology_Instance_10095]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_10094] of  SSHeuristicDescriptor
 
@@ -3166,28 +3237,16 @@
 	(score [commonOntology_Instance_10044])
 	(structure [commonOntology_Instance_10040]))
 
-([taxonomyOntology_Instance_10095] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 1.0)
-	(structureWeight 1.0))
-
 ([taxonomyOntology_Instance_10096] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_10097])
-	(modifier [taxonomyOntology_Instance_10098]))
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Instance_10097] of  SSHeuristicDescriptor
 
 	(attribute [commonOntology_Instance_10043])
 	(score [commonOntology_Instance_10045])
 	(structure [commonOntology_Instance_10040]))
-
-([taxonomyOntology_Instance_10098] of  Modifier
-
-	(attributeWeight 1.0)
-	(scoreWeight 0.8)
-	(structureWeight 1.0))
 
 ([taxonomyOntology_Instance_10099] of  WeightedDescriptor
 
@@ -3501,7 +3560,7 @@
 ([taxonomyOntology_Instance_20044] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20030])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_20045] of  WeightedDescriptor
 
@@ -3511,7 +3570,7 @@
 ([taxonomyOntology_Instance_20046] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20032])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_20047] of  WeightedDescriptor
 
@@ -3521,17 +3580,17 @@
 ([taxonomyOntology_Instance_20048] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20034])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_20049] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20035])
-	(modifier [taxonomyOntology_Instance_10021]))
+	(modifier [taxonomyOntology_Class10207]))
 
 ([taxonomyOntology_Instance_20050] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20036])
-	(modifier [taxonomyOntology_Instance_10015]))
+	(modifier [taxonomyOntology_Class10205]))
 
 ([taxonomyOntology_Instance_20051] of  WeightedDescriptor
 
@@ -3553,7 +3612,7 @@
 ([taxonomyOntology_Instance_20054] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20038])
-	(modifier [taxonomyOntology_Instance_10027]))
+	(modifier [taxonomyOntology_Instance_10039]))
 
 ([taxonomyOntology_Instance_20055] of  WeightedDescriptor
 
@@ -3568,7 +3627,7 @@
 ([taxonomyOntology_Instance_20057] of  WeightedDescriptor
 
 	(descriptor [taxonomyOntology_Instance_20041])
-	(modifier [taxonomyOntology_Instance_10027]))
+	(modifier [taxonomyOntology_Instance_10039]))
 
 ([taxonomyOntology_Instance_20058] of  WeightedDescriptor
 
