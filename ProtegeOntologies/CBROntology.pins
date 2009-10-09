@@ -1,13 +1,13 @@
-; Sat Sep 26 23:42:46 GMT-06:00 2009
+; Wed Oct 07 21:56:04 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
 
-([AdaptCases] of  %3AJADE-CLASS
+([Adapt] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
-([AreProposedSolutions] of  %3AJADE-CLASS
+([AreReasonableSolutionsTo] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -31,7 +31,7 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([IsTheMostSilimarTo] of  %3AJADE-CLASS
+([IsTheMostReasonableTo] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -39,7 +39,7 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([Problema] of  %3AJADE-CLASS
+([Problem] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -55,7 +55,7 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([RetrieveHypothesis] of  %3AJADE-CLASS
+([Retrieve] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
