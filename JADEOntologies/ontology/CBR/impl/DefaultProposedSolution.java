@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: ProposedSolution
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultProposedSolution implements ProposedSolution, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultProposedSolution implements ProposedSolution, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,15 +41,15 @@ public class DefaultProposedSolution implements ProposedSolution, Serializable {
   }
 
    /**
-   * Protege name: certaintyDegree
+   * Protege name: state
    */
-   private String certaintyDegree;
-   public void setCertaintyDegree(String value) { 
-     pcs.firePropertyChange("certaintyDegree", (this.certaintyDegree==null?new String():this.certaintyDegree), value);
-    this.certaintyDegree=value;
+   private boolean state;
+   public void setState(boolean value) { 
+     pcs.firePropertyChange("state", this.state, value);
+    this.state=value;
    }
-   public String getCertaintyDegree() {
-     return this.certaintyDegree;
+   public boolean getState() {
+     return this.state;
    }
 
    /**
@@ -65,15 +65,15 @@ public class DefaultProposedSolution implements ProposedSolution, Serializable {
    }
 
    /**
-   * Protege name: state
+   * Protege name: certaintyDegree
    */
-   private boolean state;
-   public void setState(boolean value) { 
-     pcs.firePropertyChange("state", this.state, value);
-    this.state=value;
+   private String certaintyDegree;
+   public void setCertaintyDegree(String value) { 
+     pcs.firePropertyChange("certaintyDegree", (this.certaintyDegree==null?new String():this.certaintyDegree), value);
+    this.certaintyDegree=value;
    }
-   public boolean getState() {
-     return this.state;
+   public String getCertaintyDegree() {
+     return this.certaintyDegree;
    }
 
 }

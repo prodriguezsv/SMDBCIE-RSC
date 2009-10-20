@@ -1,4 +1,4 @@
-; Wed Sep 30 12:55:54 GMT-06:00 2009
+; Tue Oct 20 16:32:40 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -20,13 +20,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[commonOntology_ProjectKB_Instance_10036]
-		[commonOntology_ProjectKB_Instance_10037]
-		[commonOntology_ProjectKB_Instance_10038]
-		[commonOntology_ProjectKB_Instance_10039]
-		[commonOntology_ProjectKB_Instance_10040]
-		[commonOntology_ProjectKB_Instance_10041]
-		[commonOntology_ProjectKB_Instance_10042]))
+		[commonOntology_ProjectKB_Instance_10085]
+		[commonOntology_ProjectKB_Instance_10086]
+		[commonOntology_ProjectKB_Instance_10087]
+		[commonOntology_ProjectKB_Instance_10088]
+		[commonOntology_ProjectKB_Instance_10089]
+		[commonOntology_ProjectKB_Instance_10090]
+		[commonOntology_ProjectKB_Instance_10091]))
 
 ([CLSES_TAB] of  Widget
 
@@ -48,96 +48,96 @@
 	(property_list [commonOntology_ProjectKB_Instance_11])
 	(widget_class_name "ezpal.EZPalTab"))
 
-([commonOntology_ProjectKB_Instance_10036] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([commonOntology_ProjectKB_Instance_10037] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([commonOntology_ProjectKB_Instance_10038] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([commonOntology_ProjectKB_Instance_10039] of  String
-
-	(name "SingleValue")
-	(string_value "value{+}measuringUnit"))
-
-([commonOntology_ProjectKB_Instance_10040] of  String
-
-	(name "RangeValue")
-	(string_value "lowerBound{+-+}upperBound{+}measuringUnit"))
-
-([commonOntology_ProjectKB_Instance_10041] of  String
+([commonOntology_ProjectKB_Instance_10085] of  String
 
 	(name "DefinedTerm")
 	(string_value "term"))
 
-([commonOntology_ProjectKB_Instance_10042] of  String
+([commonOntology_ProjectKB_Instance_10086] of  String
+
+	(name "SingleValue")
+	(string_value "value{+}measuringUnit"))
+
+([commonOntology_ProjectKB_Instance_10087] of  String
+
+	(name "RangeValue")
+	(string_value "lowerBound{+-+}upperBound{+}measuringUnit"))
+
+([commonOntology_ProjectKB_Instance_10088] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([commonOntology_ProjectKB_Instance_10089] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([commonOntology_ProjectKB_Instance_10090] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([commonOntology_ProjectKB_Instance_10091] of  String
 
 	(name "Descriptor")
 	(string_value "{%28}structure{%3B}attribute{%3B}score{%29}"))
 
-([commonOntology_ProjectKB_Instance_10043] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10092] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([commonOntology_ProjectKB_Instance_10044] of  Map
+([commonOntology_ProjectKB_Instance_10093] of  Map
 )
 
-([commonOntology_ProjectKB_Instance_10045] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10094] of  Map_Entry
 
 	(key "InstanceGraphWidget.commonOntology_Instance_2.composedBy")
 	(key_class "java.lang.String")
-	(value "commonOntology_ProjectKB_Instance_10044")
+	(value "commonOntology_ProjectKB_Instance_10093")
 	(value_class "java.util.Map"))
 
-([commonOntology_ProjectKB_Instance_10046] of  Map
+([commonOntology_ProjectKB_Instance_10095] of  Map
 
 	(entries
-		[commonOntology_ProjectKB_Instance_10047]
-		[commonOntology_ProjectKB_Instance_10048]))
+		[commonOntology_ProjectKB_Instance_10096]
+		[commonOntology_ProjectKB_Instance_10097]))
 
-([commonOntology_ProjectKB_Instance_10047] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10096] of  Map_Entry
 
 	(key "commonOntology_Instance_1")
 	(key_class "java.lang.String")
 	(value "60 40 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([commonOntology_ProjectKB_Instance_10048] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10097] of  Map_Entry
 
 	(key "commonOntology_Instance_2")
 	(key_class "java.lang.String")
 	(value "280 60 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([commonOntology_ProjectKB_Instance_10049] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10098] of  Map_Entry
 
 	(key "InstanceGraphWidget.commonOntology_Instance_0.composedBy")
 	(key_class "java.lang.String")
-	(value "commonOntology_ProjectKB_Instance_10046")
+	(value "commonOntology_ProjectKB_Instance_10095")
 	(value_class "java.util.Map"))
 
-([commonOntology_ProjectKB_Instance_10050] of  Map
+([commonOntology_ProjectKB_Instance_10099] of  Map
 )
 
-([commonOntology_ProjectKB_Instance_10051] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10100] of  Map_Entry
 
 	(key "InstanceGraphWidget.commonOntology_Instance_1.composedBy")
 	(key_class "java.lang.String")
-	(value "commonOntology_ProjectKB_Instance_10050")
+	(value "commonOntology_ProjectKB_Instance_10099")
 	(value_class "java.util.Map"))
 
-([commonOntology_ProjectKB_Instance_10052] of  Map_Entry
+([commonOntology_ProjectKB_Instance_10101] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -1759,15 +1759,15 @@
 ([commonOntology_ProjectKB_Instance_21549] of  Map
 
 	(entries
-		[commonOntology_ProjectKB_Instance_10043]
-		[commonOntology_ProjectKB_Instance_10045]
-		[commonOntology_ProjectKB_Instance_10049]
-		[commonOntology_ProjectKB_Instance_10051]
-		[commonOntology_ProjectKB_Instance_10052])
+		[commonOntology_ProjectKB_Instance_10092]
+		[commonOntology_ProjectKB_Instance_10094]
+		[commonOntology_ProjectKB_Instance_10098]
+		[commonOntology_ProjectKB_Instance_10100]
+		[commonOntology_ProjectKB_Instance_10101])
 	(referenced_maps
-		[commonOntology_ProjectKB_Instance_10046]
-		[commonOntology_ProjectKB_Instance_10044]
-		[commonOntology_ProjectKB_Instance_10050]))
+		[commonOntology_ProjectKB_Instance_10095]
+		[commonOntology_ProjectKB_Instance_10093]
+		[commonOntology_ProjectKB_Instance_10099]))
 
 ([commonOntology_ProjectKB_Instance_21558] of  Property_List
 
@@ -2404,7 +2404,7 @@
 ([commonOntology_ProjectKB_Instance_30490] of  Widget
 
 	(is_hidden FALSE)
-	(name "ApliesTo")
+	(name "AppliesTo")
 	(property_list [commonOntology_ProjectKB_Instance_30491])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
 
@@ -2792,7 +2792,7 @@
 
 ([FORMS_TAB] of  Widget
 
-	(is_hidden FALSE)
+	(is_hidden TRUE)
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
 
 ([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
@@ -2934,39 +2934,39 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
+		[commonOntology_ProjectKB_Instance_10204]
 		[PAL_FORM_WIDGET]
-		[commonOntology_ProjectKB_Instance_10304]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_194749_Instance_141]
-		[STANDARD_CLASS_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
-		[STANDARD_FACET_FORM_WIDGET]
-		[commonOntology_ProjectKB_Instance_10315]
-		[commonOntology_ProjectKB_Instance_10328]
-		[commonOntology_ProjectKB_Instance_10140]
-		[commonOntology_ProjectKB_Instance_20264]
-		[commonOntology_ProjectKB_Instance_20297]
-		[commonOntology_ProjectKB_Instance_10358]
-		[commonOntology_ProjectKB_Instance_10369]
-		[commonOntology_ProjectKB_Instance_30366]
-		[commonOntology_ProjectKB_Instance_10481]
+		[commonOntology_ProjectKB_Instance_10176]
+		[commonOntology_ProjectKB_Instance_10304]
+		[commonOntology_ProjectKB_Instance_30404]
 		[commonOntology_ProjectKB_Instance_10502]
 		[commonOntology_ProjectKB_Instance_30387]
-		[commonOntology_ProjectKB_Instance_20326]
-		[commonOntology_ProjectKB_Instance_10384]
-		[commonOntology_ProjectKB_Instance_10476]
-		[commonOntology_ProjectKB_Instance_20343]
-		[commonOntology_ProjectKB_Instance_30490]
+		[commonOntology_ProjectKB_Instance_30366]
+		[STANDARD_CLASS_FORM_WIDGET]
 		[commonOntology_ProjectKB_Instance_30477]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[commonOntology_ProjectKB_Instance_30421]
+		[STANDARD_FACET_FORM_WIDGET]
 		[commonOntology_ProjectKB_Instance_30516]
 		[commonOntology_ProjectKB_Instance_30503]
-		[commonOntology_ProjectKB_Instance_30421]
-		[commonOntology_ProjectKB_Instance_30404]
-		[commonOntology_ProjectKB_Instance_10176]
-		[commonOntology_ProjectKB_Instance_10147]
+		[commonOntology_ProjectKB_Instance_30490]
 		[commonOntology_ProjectKB_Instance_20152]
-		[commonOntology_ProjectKB_Instance_20201]
-		[commonOntology_ProjectKB_Instance_10204])
+		[commonOntology_ProjectKB_Instance_10147]
+		[commonOntology_ProjectKB_Instance_10140]
+		[commonOntology_ProjectKB_Instance_10315]
+		[commonOntology_ProjectKB_Instance_10328]
+		[commonOntology_ProjectKB_Instance_10358]
+		[commonOntology_ProjectKB_Instance_20326]
+		[commonOntology_ProjectKB_Instance_20343]
+		[commonOntology_ProjectKB_Instance_10476]
+		[commonOntology_ProjectKB_Instance_10481]
+		[commonOntology_ProjectKB_Instance_10369]
+		[commonOntology_ProjectKB_Instance_20264]
+		[commonOntology_ProjectKB_Instance_20297]
+		[commonOntology_ProjectKB_Instance_10384]
+		[commonOntology_ProjectKB_Instance_20201])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -2979,8 +2979,10 @@
 	(tabs
 		[CLSES_TAB]
 		[SLOTS_TAB]
-		[FORMS_TAB]
 		[INSTANCES_TAB]
+		[commonOntology_ProjectKB_Instance_14]
+		[commonOntology_ProjectKB_Instance_66]
+		[commonOntology_ProjectKB_Instance_36]
 		[commonOntology_ProjectKB_Instance_38]
 		[commonOntology_ProjectKB_Instance_56]
 		[commonOntology_ProjectKB_Instance_68]
@@ -2988,13 +2990,12 @@
 		[commonOntology_ProjectKB_Instance_64]
 		[commonOntology_ProjectKB_Instance_8]
 		[commonOntology_ProjectKB_Instance_60]
+		[FORMS_TAB]
 		[commonOntology_ProjectKB_Instance_16]
-		[commonOntology_ProjectKB_Instance_14]
 		[commonOntology_ProjectKB_Instance_0]
 		[commonOntology_ProjectKB_Instance_42]
 		[commonOntology_ProjectKB_Instance_62]
 		[commonOntology_ProjectKB_Instance_26]
-		[commonOntology_ProjectKB_Instance_66]
 		[commonOntology_ProjectKB_Instance_22]
 		[commonOntology_ProjectKB_Instance_52]
 		[commonOntology_ProjectKB_Instance_18]
@@ -3003,7 +3004,6 @@
 		[commonOntology_ProjectKB_Instance_54]
 		[QUERIES_TAB]
 		[commonOntology_ProjectKB_Instance_50]
-		[commonOntology_ProjectKB_Instance_36]
 		[commonOntology_ProjectKB_Instance_32]
 		[commonOntology_ProjectKB_Instance_12]
 		[commonOntology_ProjectKB_Instance_44]

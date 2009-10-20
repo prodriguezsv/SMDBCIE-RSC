@@ -9,7 +9,7 @@ import java.beans.PropertyChangeListener;
 * Define the terms utilized in the taxonomic  hierarchy
 * Protege name: DefinedTerm
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public interface DefinedTerm extends jade.content.Concept, Serializable {
    // bean stuff

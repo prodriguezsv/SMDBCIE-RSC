@@ -1,4 +1,4 @@
-; Wed Oct 07 21:56:04 GMT-06:00 2009
+; Tue Oct 20 12:07:28 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -7,29 +7,65 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot similarTo
+	(multislot proposedSolutions
+		(type INSTANCE)
+;+		(allowed-classes ProposedSolution)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(multislot hypothesis
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot solutionDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot unmatchedDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot possibleSolution
+		(type INSTANCE)
+;+		(allowed-classes Taxon Case)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot justification
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot problem
 		(type INSTANCE)
 ;+		(allowed-classes Problem)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot confirmedDescription
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot proposedSolution
-		(type INSTANCE)
-;+		(allowed-classes ProposedSolution)
+	(single-slot points
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+		(default 0.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot contradictions
+	(multislot successfulConflictSet
 		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
+;+		(allowed-classes Hypothesis)
 		(create-accessor read-write))
-	(single-slot certaintyDegree
+	(single-slot state
 		(type SYMBOL)
-		(allowed-values Certain Doubtful Uncertain)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot case
+		(type INSTANCE)
+;+		(allowed-classes Case)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot leastSimilarityDegree
+		(type SYMBOL)
+		(allowed-values Diferente PocoSimilar RelativamenteSimilar MedianamenteSimilar ConsiderablementeSimilar AltamenteSimilar Igual ValorNoComparable)
+		(default MEDIANAMENTESIMILAR)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot evaluatedSolution
@@ -42,11 +78,27 @@
 ;+		(allowed-classes Case)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(multislot failureConflictSet
-		(type INSTANCE)
-;+		(allowed-classes Hypothesis)
+	(single-slot certaintyDegree
+		(type SYMBOL)
+		(allowed-values Certain Doubtful Uncertain)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot doubtfulDescription
+	(single-slot proposedSolution
+		(type INSTANCE)
+;+		(allowed-classes ProposedSolution)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot confirmedDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot similarTo
+		(type INSTANCE)
+;+		(allowed-classes Problem)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot contradictions
 		(type INSTANCE)
 ;+		(allowed-classes Description)
 ;+		(cardinality 0 1)
@@ -61,10 +113,24 @@
 ;+		(allowed-classes Description)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot rank
+	(single-slot goalRank
 		(type SYMBOL)
 		(allowed-values Family Genus Species)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot failureConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(create-accessor read-write))
+	(single-slot doubtfulDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot solution
 		(type INSTANCE)
@@ -76,76 +142,10 @@
 ;+		(allowed-classes PossibleSolution)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(single-slot goalRank
+	(single-slot rank
 		(type SYMBOL)
 		(allowed-values Family Genus Species)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot description
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot justification
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot unmatchedDescription
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot proposedSolutions
-		(type INSTANCE)
-;+		(allowed-classes ProposedSolution)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot solutionDescription
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot hypothesis
-		(type INSTANCE)
-;+		(allowed-classes Hypothesis)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot possibleSolution
-		(type INSTANCE)
-;+		(allowed-classes Taxon Case)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot points
-		(type FLOAT)
-		(range 0.0 %3FVARIABLE)
-		(default 0.0)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot case
-		(type INSTANCE)
-;+		(allowed-classes Case)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot state
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot leastSimilarityDegree
-		(type SYMBOL)
-		(allowed-values DIFERENTE POCOSIMILAR RELATIVAMENTESIMILAR MEDIANAMENTESIMILAR CONSIDERABLEMENTESIMILAR ALTAMENTESIMILAR IGUAL VALORNOCOMPARABLE)
-		(default MEDIANAMENTESIMILAR)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot problem
-		(type INSTANCE)
-;+		(allowed-classes Problem)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot successfulConflictSet
-		(type INSTANCE)
-;+		(allowed-classes Hypothesis)
 		(create-accessor read-write)))
 
 (defclass Resolve
@@ -178,6 +178,11 @@
 (defclass Adapt
 	(is-a AgentAction)
 	(role concrete)
+	(single-slot to
+		(type INSTANCE)
+;+		(allowed-classes Problem)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot successfulConflictSet
 		(type INSTANCE)
 ;+		(allowed-classes Hypothesis)
@@ -185,19 +190,48 @@
 	(multislot failureConflictSet
 		(type INSTANCE)
 ;+		(allowed-classes Hypothesis)
-		(create-accessor read-write))
+		(create-accessor read-write)))
+
+(defclass Evaluate
+	(is-a AgentAction)
+	(role concrete)
 	(single-slot to
 		(type INSTANCE)
 ;+		(allowed-classes Problem)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot successfulConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(create-accessor read-write))
+	(multislot failureConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(create-accessor read-write)))
+
+(defclass Select
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot to
+		(type INSTANCE)
+;+		(allowed-classes Problem)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot successfulConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(create-accessor read-write))
+	(multislot failureConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
 		(create-accessor read-write)))
 
 (defclass Case
 	(is-a Concept)
 	(role concrete)
-	(single-slot solution
+	(single-slot problem
 		(type INSTANCE)
-;+		(allowed-classes Solution)
+;+		(allowed-classes Problem)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot state
@@ -205,9 +239,9 @@
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot problem
+	(single-slot solution
 		(type INSTANCE)
-;+		(allowed-classes Problem)
+;+		(allowed-classes Solution)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -226,7 +260,7 @@
 		(create-accessor read-write))
 	(single-slot leastSimilarityDegree
 		(type SYMBOL)
-		(allowed-values DIFERENTE POCOSIMILAR RELATIVAMENTESIMILAR MEDIANAMENTESIMILAR CONSIDERABLEMENTESIMILAR ALTAMENTESIMILAR IGUAL VALORNOCOMPARABLE)
+		(allowed-values Diferente PocoSimilar RelativamenteSimilar MedianamenteSimilar ConsiderablementeSimilar AltamenteSimilar Igual ValorNoComparable)
 		(default MEDIANAMENTESIMILAR)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
@@ -252,27 +286,7 @@
 (defclass PossibleSolution
 	(is-a Concept)
 	(role concrete)
-	(single-slot confirmedDescription
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot contradictions
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot solutionDescription
-		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot possibleSolution
-		(type INSTANCE)
-;+		(allowed-classes Taxon Case)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot doubtfulDescription
+	(single-slot unconfirmedDescription
 		(type INSTANCE)
 ;+		(allowed-classes Description)
 ;+		(cardinality 0 1)
@@ -283,7 +297,27 @@
 		(default 0.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot unconfirmedDescription
+	(single-slot doubtfulDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot solutionDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot confirmedDescription
+		(type INSTANCE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot possibleSolution
+		(type INSTANCE)
+;+		(allowed-classes Taxon Case)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot contradictions
 		(type INSTANCE)
 ;+		(allowed-classes Description)
 ;+		(cardinality 0 1)
@@ -292,9 +326,9 @@
 (defclass ProposedSolution
 	(is-a Concept)
 	(role concrete)
-	(single-slot certaintyDegree
+	(single-slot state
 		(type SYMBOL)
-		(allowed-values Certain Doubtful Uncertain)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot evaluatedSolution
@@ -302,29 +336,29 @@
 ;+		(allowed-classes PossibleSolution)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot state
+	(single-slot certaintyDegree
 		(type SYMBOL)
-		(allowed-values FALSE TRUE)
+		(allowed-values Certain Doubtful Uncertain)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Hypothesis
 	(is-a Concept)
 	(role concrete)
-	(multislot possibleSolutions
+	(single-slot justification
 		(type INSTANCE)
-;+		(allowed-classes PossibleSolution)
-		(cardinality 1 ?VARIABLE)
+;+		(allowed-classes Description)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot description
 		(type INSTANCE)
 ;+		(allowed-classes Description)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot justification
+	(multislot possibleSolutions
 		(type INSTANCE)
-;+		(allowed-classes Description)
-;+		(cardinality 0 1)
+;+		(allowed-classes PossibleSolution)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(single-slot unmatchedDescription
 		(type INSTANCE)
@@ -353,6 +387,11 @@
 (defclass AreSimilarTo
 	(is-a Predicate)
 	(role concrete)
+	(single-slot problem
+		(type INSTANCE)
+;+		(allowed-classes Problem)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot successfulConflictSet
 		(type INSTANCE)
 ;+		(allowed-classes Hypothesis)
@@ -360,37 +399,63 @@
 	(multislot failureConflictSet
 		(type INSTANCE)
 ;+		(allowed-classes Hypothesis)
-		(create-accessor read-write))
-	(single-slot problem
-		(type INSTANCE)
-;+		(allowed-classes Problem)
-;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass AreReasonableSolutionsTo
 	(is-a Predicate)
 	(role concrete)
-	(multislot proposedSolutions
-		(type INSTANCE)
-;+		(allowed-classes ProposedSolution)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
 	(single-slot problem
 		(type INSTANCE)
 ;+		(allowed-classes Problem)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot proposedSolutions
+		(type INSTANCE)
+;+		(allowed-classes ProposedSolution)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write)))
 
 (defclass IsTheMostReasonableTo
 	(is-a Predicate)
 	(role concrete)
-	(single-slot proposedSolution
-		(type INSTANCE)
-;+		(allowed-classes ProposedSolution)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot problem
 		(type INSTANCE)
 ;+		(allowed-classes Problem)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proposedSolution
+		(type INSTANCE)
+;+		(allowed-classes ProposedSolution)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass AreEvaluatedSolutionsTo
+	(is-a Predicate)
+	(role concrete)
+	(single-slot to
+		(type INSTANCE)
+;+		(allowed-classes Problem)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot successfulConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(create-accessor read-write))
+	(multislot failureConflictSet
+		(type INSTANCE)
+;+		(allowed-classes Hypothesis)
+		(create-accessor read-write)))
+
+(defclass AreSelectedSolutionsTo
+	(is-a Predicate)
+	(role concrete)
+	(single-slot to
+		(type INSTANCE)
+;+		(allowed-classes Problem)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot proposedSolutions
+		(type INSTANCE)
+;+		(allowed-classes ProposedSolution)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write)))

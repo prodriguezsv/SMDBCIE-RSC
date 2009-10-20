@@ -10,7 +10,7 @@ import ontology.CBR.*;
 /**
 * Protege name: RangeValue
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultRangeValue implements RangeValue, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -42,15 +42,15 @@ public class DefaultRangeValue implements RangeValue, Serializable {
   }
 
    /**
-   * Protege name: measuringUnit
+   * Protege name: upperBound
    */
-   private String measuringUnit;
-   public void setMeasuringUnit(String value) { 
-     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
-    this.measuringUnit=value;
+   private float upperBound;
+   public void setUpperBound(float value) { 
+     pcs.firePropertyChange("upperBound", ""+this.upperBound, ""+value);
+    this.upperBound=value;
    }
-   public String getMeasuringUnit() {
-     return this.measuringUnit;
+   public float getUpperBound() {
+     return this.upperBound;
    }
 
    /**
@@ -63,18 +63,6 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    }
    public float getLowerBound() {
      return this.lowerBound;
-   }
-
-   /**
-   * Protege name: upperBound
-   */
-   private float upperBound;
-   public void setUpperBound(float value) { 
-     pcs.firePropertyChange("upperBound", ""+this.upperBound, ""+value);
-    this.upperBound=value;
-   }
-   public float getUpperBound() {
-     return this.upperBound;
    }
 
    /**
@@ -97,5 +85,17 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    public Iterator getAllDescribes() {return describes.iterator(); }
    public List getDescribes() {return describes; }
    public void setDescribes(List l) {describes = l; }
+
+   /**
+   * Protege name: measuringUnit
+   */
+   private String measuringUnit;
+   public void setMeasuringUnit(String value) { 
+     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
+    this.measuringUnit=value;
+   }
+   public String getMeasuringUnit() {
+     return this.measuringUnit;
+   }
 
 }

@@ -10,7 +10,7 @@ import jade.util.leap.*;
 * It's a subclass of a defined term
 * Protege name: Structure
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public interface Structure extends DefinedTerm, Serializable {
    // bean stuff

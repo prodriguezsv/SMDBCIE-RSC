@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: Case
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultCase implements Case, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultCase implements Case, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,15 +41,15 @@ public class DefaultCase implements Case, Serializable {
   }
 
    /**
-   * Protege name: solution
+   * Protege name: problem
    */
-   private Solution solution;
-   public void setSolution(Solution value) { 
-     pcs.firePropertyChange("solution", (this.solution==null?new Solution():this.solution), value);
-    this.solution=value;
+   private Problem problem;
+   public void setProblem(Problem value) { 
+     pcs.firePropertyChange("problem", (this.problem==null?new Problem():this.problem), value);
+    this.problem=value;
    }
-   public Solution getSolution() {
-     return this.solution;
+   public Problem getProblem() {
+     return this.problem;
    }
 
    /**
@@ -65,15 +65,15 @@ public class DefaultCase implements Case, Serializable {
    }
 
    /**
-   * Protege name: problem
+   * Protege name: solution
    */
-   private Problem problem;
-   public void setProblem(Problem value) { 
-     pcs.firePropertyChange("problem", (this.problem==null?new Problem():this.problem), value);
-    this.problem=value;
+   private Solution solution;
+   public void setSolution(Solution value) { 
+     pcs.firePropertyChange("solution", (this.solution==null?new Solution():this.solution), value);
+    this.solution=value;
    }
-   public Problem getProblem() {
-     return this.problem;
+   public Solution getSolution() {
+     return this.solution;
    }
 
 }

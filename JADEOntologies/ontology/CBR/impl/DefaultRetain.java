@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: Retain
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultRetain implements Retain, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultRetain implements Retain, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 

@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: SSCharacterDescriptor
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:44
+* @version 2009/10/17, 11:59:53
 */
 public class DefaultSSCharacterDescriptor implements SSCharacterDescriptor, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultSSCharacterDescriptor implements SSCharacterDescriptor, Seri
    }
 
 
-  private static final long serialVersionUID = 3978892154560758766L;
+  private static final long serialVersionUID = 8409500558378942440L;
 
   private String _internalInstanceName = null;
 
@@ -40,18 +40,6 @@ public class DefaultSSCharacterDescriptor implements SSCharacterDescriptor, Seri
   public String toString() {
     return _internalInstanceName;
   }
-
-   /**
-   * Protege name: attribute
-   */
-   private Attribute attribute;
-   public void setAttribute(Attribute value) { 
-     pcs.firePropertyChange("attribute", (this.attribute==null?new Attribute():this.attribute), value);
-    this.attribute=value;
-   }
-   public Attribute getAttribute() {
-     return this.attribute;
-   }
 
    /**
    * Protege name: score
@@ -84,6 +72,18 @@ public class DefaultSSCharacterDescriptor implements SSCharacterDescriptor, Seri
    }
    public Object getStructure() {
      return this.structure;
+   }
+
+   /**
+   * Protege name: attribute
+   */
+   private Attribute attribute;
+   public void setAttribute(Attribute value) { 
+     pcs.firePropertyChange("attribute", (this.attribute==null?new Attribute():this.attribute), value);
+    this.attribute=value;
+   }
+   public Attribute getAttribute() {
+     return this.attribute;
    }
 
 }

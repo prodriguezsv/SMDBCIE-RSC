@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: IsPredecessorTaxonOf
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:56
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultIsPredecessorTaxonOf implements IsPredecessorTaxonOf, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultIsPredecessorTaxonOf implements IsPredecessorTaxonOf, Serial
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,18 +41,6 @@ public class DefaultIsPredecessorTaxonOf implements IsPredecessorTaxonOf, Serial
   }
 
    /**
-   * Protege name: subjectTaxon
-   */
-   private Taxon subjectTaxon;
-   public void setSubjectTaxon(Taxon value) { 
-     pcs.firePropertyChange("subjectTaxon", (this.subjectTaxon==null?new Taxon():this.subjectTaxon), value);
-    this.subjectTaxon=value;
-   }
-   public Taxon getSubjectTaxon() {
-     return this.subjectTaxon;
-   }
-
-   /**
    * Protege name: objectTaxon
    */
    private Taxon objectTaxon;
@@ -62,6 +50,18 @@ public class DefaultIsPredecessorTaxonOf implements IsPredecessorTaxonOf, Serial
    }
    public Taxon getObjectTaxon() {
      return this.objectTaxon;
+   }
+
+   /**
+   * Protege name: subjectTaxon
+   */
+   private Taxon subjectTaxon;
+   public void setSubjectTaxon(Taxon value) { 
+     pcs.firePropertyChange("subjectTaxon", (this.subjectTaxon==null?new Taxon():this.subjectTaxon), value);
+    this.subjectTaxon=value;
+   }
+   public Taxon getSubjectTaxon() {
+     return this.subjectTaxon;
    }
 
 }

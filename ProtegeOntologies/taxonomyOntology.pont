@@ -1,4 +1,4 @@
-; Thu Oct 01 09:25:12 GMT-06:00 2009
+; Tue Oct 20 16:43:53 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -7,23 +7,17 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(multislot successors
+	(multislot weightedDescriptors
 		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(inverse-slot predecessor)
+;+		(allowed-classes WeightedDescriptor)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(single-slot predecessor
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(cardinality 0 1)
-;+		(inverse-slot successors)
-		(create-accessor read-write))
-	(single-slot weightedDescription
-		(type INSTANCE)
-;+		(allowed-classes WeightedDescription)
+	(single-slot level
+		(type SYMBOL)
+		(allowed-values Root Family Genus Species)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot attributeWeight
+	(single-slot structureWeight
 		(type FLOAT)
 		(range 0.0 1.0)
 		(default 1.0)
@@ -34,12 +28,7 @@
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot weightedDescriptors
-		(type INSTANCE)
-;+		(allowed-classes WeightedDescriptor)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot structureWeight
+	(single-slot attributeWeight
 		(type FLOAT)
 		(range 0.0 1.0)
 		(default 1.0)
@@ -51,63 +40,60 @@
 		(default 1.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot modifier
-		(type INSTANCE)
-;+		(allowed-classes Modifier)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot taxa
+	(single-slot subjectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
-		(cardinality 1 ?VARIABLE)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot descriptor
 		(type INSTANCE)
 ;+		(allowed-classes Descriptor)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot modifier
+		(type INSTANCE)
+;+		(allowed-classes Modifier)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot rootTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot successors
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(inverse-slot predecessor)
+		(create-accessor read-write))
+	(single-slot predecessor
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(cardinality 0 1)
+;+		(inverse-slot successors)
 		(create-accessor read-write))
 	(single-slot objectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot level
-		(type SYMBOL)
-		(allowed-values Root Family Genus Species)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot subjectTaxon
+	(single-slot weightedDescription
 		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass TaxonomicHierarchy
-	(is-a Concept)
-	(role concrete)
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot taxa
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot rootTaxon
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
+;+		(allowed-classes WeightedDescription)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Taxon
 	(is-a Concept)
 	(role concrete)
+	(single-slot level
+		(type SYMBOL)
+		(allowed-values Root Family Genus Species)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot successors
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
@@ -121,27 +107,18 @@
 		(type INSTANCE)
 ;+		(allowed-classes WeightedDescription)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot level
-		(type SYMBOL)
-		(allowed-values Root Family Genus Species)
-;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Modifier
 	(is-a Concept)
 	(role concrete)
-	(single-slot attributeWeight
+	(single-slot structureWeight
 		(type FLOAT)
 		(range 0.0 1.0)
 		(default 1.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot structureWeight
+	(single-slot attributeWeight
 		(type FLOAT)
 		(range 0.0 1.0)
 		(default 1.0)
@@ -180,12 +157,12 @@
 (defclass IsSuccessorTaxonOf
 	(is-a Predicate)
 	(role concrete)
-	(single-slot objectTaxon
+	(single-slot subjectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot subjectTaxon
+	(single-slot objectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
@@ -194,12 +171,12 @@
 (defclass IsPredecessorTaxonOf
 	(is-a Predicate)
 	(role concrete)
-	(single-slot objectTaxon
+	(single-slot subjectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot subjectTaxon
+	(single-slot objectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)

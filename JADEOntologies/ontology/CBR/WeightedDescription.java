@@ -9,7 +9,7 @@ import jade.util.leap.*;
 /**
 * Protege name: WeightedDescription
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public interface WeightedDescription extends jade.content.Concept, Serializable {
    // bean stuff

@@ -10,7 +10,7 @@ import jade.util.leap.*;
 * It's a subclass of a defined term
 * Protege name: State
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:45
+* @version 2009/10/17, 11:59:53
 */
 public interface State extends DefinedTerm, Serializable {
    // bean stuff

@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: PossibleSolution
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultPossibleSolution implements PossibleSolution, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultPossibleSolution implements PossibleSolution, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,63 +41,15 @@ public class DefaultPossibleSolution implements PossibleSolution, Serializable {
   }
 
    /**
-   * Protege name: confirmedDescription
+   * Protege name: unconfirmedDescription
    */
-   private Description confirmedDescription;
-   public void setConfirmedDescription(Description value) { 
-     pcs.firePropertyChange("confirmedDescription", (this.confirmedDescription==null?new Description():this.confirmedDescription), value);
-    this.confirmedDescription=value;
+   private Description unconfirmedDescription;
+   public void setUnconfirmedDescription(Description value) { 
+     pcs.firePropertyChange("unconfirmedDescription", (this.unconfirmedDescription==null?new Description():this.unconfirmedDescription), value);
+    this.unconfirmedDescription=value;
    }
-   public Description getConfirmedDescription() {
-     return this.confirmedDescription;
-   }
-
-   /**
-   * Protege name: contradictions
-   */
-   private Description contradictions;
-   public void setContradictions(Description value) { 
-     pcs.firePropertyChange("contradictions", (this.contradictions==null?new Description():this.contradictions), value);
-    this.contradictions=value;
-   }
-   public Description getContradictions() {
-     return this.contradictions;
-   }
-
-   /**
-   * Protege name: solutionDescription
-   */
-   private Description solutionDescription;
-   public void setSolutionDescription(Description value) { 
-     pcs.firePropertyChange("solutionDescription", (this.solutionDescription==null?new Description():this.solutionDescription), value);
-    this.solutionDescription=value;
-   }
-   public Description getSolutionDescription() {
-     return this.solutionDescription;
-   }
-
-   /**
-   * Protege name: possibleSolution
-   */
-   private Object possibleSolution;
-   public void setPossibleSolution(Object value) { 
-     pcs.firePropertyChange("possibleSolution", (this.possibleSolution==null?new Object():this.possibleSolution), value);
-    this.possibleSolution=value;
-   }
-   public Object getPossibleSolution() {
-     return this.possibleSolution;
-   }
-
-   /**
-   * Protege name: doubtfulDescription
-   */
-   private Description doubtfulDescription;
-   public void setDoubtfulDescription(Description value) { 
-     pcs.firePropertyChange("doubtfulDescription", (this.doubtfulDescription==null?new Description():this.doubtfulDescription), value);
-    this.doubtfulDescription=value;
-   }
-   public Description getDoubtfulDescription() {
-     return this.doubtfulDescription;
+   public Description getUnconfirmedDescription() {
+     return this.unconfirmedDescription;
    }
 
    /**
@@ -113,15 +65,63 @@ public class DefaultPossibleSolution implements PossibleSolution, Serializable {
    }
 
    /**
-   * Protege name: unconfirmedDescription
+   * Protege name: doubtfulDescription
    */
-   private Description unconfirmedDescription;
-   public void setUnconfirmedDescription(Description value) { 
-     pcs.firePropertyChange("unconfirmedDescription", (this.unconfirmedDescription==null?new Description():this.unconfirmedDescription), value);
-    this.unconfirmedDescription=value;
+   private Description doubtfulDescription;
+   public void setDoubtfulDescription(Description value) { 
+     pcs.firePropertyChange("doubtfulDescription", (this.doubtfulDescription==null?new Description():this.doubtfulDescription), value);
+    this.doubtfulDescription=value;
    }
-   public Description getUnconfirmedDescription() {
-     return this.unconfirmedDescription;
+   public Description getDoubtfulDescription() {
+     return this.doubtfulDescription;
+   }
+
+   /**
+   * Protege name: solutionDescription
+   */
+   private Description solutionDescription;
+   public void setSolutionDescription(Description value) { 
+     pcs.firePropertyChange("solutionDescription", (this.solutionDescription==null?new Description():this.solutionDescription), value);
+    this.solutionDescription=value;
+   }
+   public Description getSolutionDescription() {
+     return this.solutionDescription;
+   }
+
+   /**
+   * Protege name: confirmedDescription
+   */
+   private Description confirmedDescription;
+   public void setConfirmedDescription(Description value) { 
+     pcs.firePropertyChange("confirmedDescription", (this.confirmedDescription==null?new Description():this.confirmedDescription), value);
+    this.confirmedDescription=value;
+   }
+   public Description getConfirmedDescription() {
+     return this.confirmedDescription;
+   }
+
+   /**
+   * Protege name: possibleSolution
+   */
+   private Object possibleSolution;
+   public void setPossibleSolution(Object value) { 
+     pcs.firePropertyChange("possibleSolution", (this.possibleSolution==null?new Object():this.possibleSolution), value);
+    this.possibleSolution=value;
+   }
+   public Object getPossibleSolution() {
+     return this.possibleSolution;
+   }
+
+   /**
+   * Protege name: contradictions
+   */
+   private Description contradictions;
+   public void setContradictions(Description value) { 
+     pcs.firePropertyChange("contradictions", (this.contradictions==null?new Description():this.contradictions), value);
+    this.contradictions=value;
+   }
+   public Description getContradictions() {
+     return this.contradictions;
    }
 
 }

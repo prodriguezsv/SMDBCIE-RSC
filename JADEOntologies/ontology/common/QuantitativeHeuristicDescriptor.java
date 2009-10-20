@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: QuantitativeHeuristicDescriptor
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:44
+* @version 2009/10/17, 11:59:53
 */
 public interface QuantitativeHeuristicDescriptor extends HeuristicDescriptor, Serializable {
    // bean stuff

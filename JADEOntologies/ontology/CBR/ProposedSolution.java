@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: ProposedSolution
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public interface ProposedSolution extends jade.content.Concept, Serializable {
    // bean stuff
@@ -16,10 +16,10 @@ public interface ProposedSolution extends jade.content.Concept, Serializable {
    public void removePropertyChangeListener(PropertyChangeListener pcl);
 
    /**
-   * Protege name: certaintyDegree
+   * Protege name: state
    */
-   public void setCertaintyDegree(String value);
-   public String getCertaintyDegree();
+   public void setState(boolean value);
+   public boolean getState();
 
    /**
    * Protege name: evaluatedSolution
@@ -28,9 +28,9 @@ public interface ProposedSolution extends jade.content.Concept, Serializable {
    public PossibleSolution getEvaluatedSolution();
 
    /**
-   * Protege name: state
+   * Protege name: certaintyDegree
    */
-   public void setState(boolean value);
-   public boolean getState();
+   public void setCertaintyDegree(String value);
+   public String getCertaintyDegree();
 
 }

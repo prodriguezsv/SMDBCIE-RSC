@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: Owns
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:45
+* @version 2009/10/17, 11:59:53
 */
 public interface Owns extends jade.content.Predicate, Serializable {
    // bean stuff
@@ -16,15 +16,15 @@ public interface Owns extends jade.content.Predicate, Serializable {
    public void removePropertyChangeListener(PropertyChangeListener pcl);
 
    /**
-   * Protege name: attribute
-   */
-   public void setAttribute(Attribute value);
-   public Attribute getAttribute();
-
-   /**
    * Protege name: descriptiveElement
    */
    public void setDescriptiveElement(Object value);
    public Object getDescriptiveElement();
+
+   /**
+   * Protege name: attribute
+   */
+   public void setAttribute(Attribute value);
+   public Attribute getAttribute();
 
 }

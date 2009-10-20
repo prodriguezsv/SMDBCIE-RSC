@@ -10,7 +10,7 @@ import ontology.CBR.*;
 * Define the terms utilized in the taxonomic  hierarchy
 * Protege name: DefinedTerm
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultDefinedTerm implements DefinedTerm, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultDefinedTerm implements DefinedTerm, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 

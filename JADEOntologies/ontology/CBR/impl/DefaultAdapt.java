@@ -10,7 +10,7 @@ import ontology.CBR.*;
 /**
 * Protege name: Adapt
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultAdapt implements Adapt, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultAdapt implements Adapt, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,18 @@ public class DefaultAdapt implements Adapt, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: to
+   */
+   private Problem to;
+   public void setTo(Problem value) { 
+     pcs.firePropertyChange("to", (this.to==null?new Problem():this.to), value);
+    this.to=value;
+   }
+   public Problem getTo() {
+     return this.to;
+   }
 
    /**
    * Protege name: successfulConflictSet
@@ -82,17 +94,5 @@ public class DefaultAdapt implements Adapt, Serializable {
    public Iterator getAllFailureConflictSet() {return failureConflictSet.iterator(); }
    public List getFailureConflictSet() {return failureConflictSet; }
    public void setFailureConflictSet(List l) {failureConflictSet = l; }
-
-   /**
-   * Protege name: to
-   */
-   private Problem to;
-   public void setTo(Problem value) { 
-     pcs.firePropertyChange("to", (this.to==null?new Problem():this.to), value);
-    this.to=value;
-   }
-   public Problem getTo() {
-     return this.to;
-   }
 
 }

@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: Case
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public interface Case extends jade.content.Concept, Serializable {
    // bean stuff
@@ -16,10 +16,10 @@ public interface Case extends jade.content.Concept, Serializable {
    public void removePropertyChangeListener(PropertyChangeListener pcl);
 
    /**
-   * Protege name: solution
+   * Protege name: problem
    */
-   public void setSolution(Solution value);
-   public Solution getSolution();
+   public void setProblem(Problem value);
+   public Problem getProblem();
 
    /**
    * Protege name: state
@@ -28,9 +28,9 @@ public interface Case extends jade.content.Concept, Serializable {
    public boolean getState();
 
    /**
-   * Protege name: problem
+   * Protege name: solution
    */
-   public void setProblem(Problem value);
-   public Problem getProblem();
+   public void setSolution(Solution value);
+   public Solution getSolution();
 
 }

@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: RangeValue
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:43
+* @version 2009/10/17, 11:59:53
 */
 public interface RangeValue extends Value, Serializable {
    // bean stuff

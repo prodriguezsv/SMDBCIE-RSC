@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: QualitativeCharacterDescriptor
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:46
 */
 public interface QualitativeCharacterDescriptor extends CharacterDescriptor, Serializable {
    // bean stuff

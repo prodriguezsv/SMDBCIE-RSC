@@ -1,0 +1,40 @@
+digraph CBROntology {
+	node [label="\N"];
+	graph [bb="0,0,967,776"];
+	Problem [label="{Problem|{leastSimilarityDegree|Symbol|{Diferente|PocoSimilar|RelativamenteSimilar|...}}|{description|Instance|{Description}}|{goalRank\
+|Symbol|{Family|Genus|Species}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="285,113", rects="103.5,200.5,466.5,225.5 103.5,100.5,253.5,200.5 253.5,100.5,317.5,200.5 317.5,175.5,466.5,200.5 317.5,150.5,466.5,175.5 317.5,125.5\
+,466.5,150.5 317.5,100.5,466.5,125.5 103.5,75.5,228.5,100.5 228.5,75.5,338.5,100.5 338.5,75.5,466.5,100.5 103.5,0.5,229.5,75.5\
+ 229.5,0.5,345.5,75.5 345.5,50.5,466.5,75.5 345.5,25.5,466.5,50.5 345.5,0.5,466.5,25.5", width="5.0278", height="3.1389"];
+	Concept [label=Concept, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="475,758", width="0.97222", height="0.5"];
+	Adapt [label="{Adapt|{failureConflictSet|Instance*|{Hypothesis}}|{successfulConflictSet|Instance*|{Hypothesis}}|{to|Instance|{Problem}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="697,545", rects="539,570,855,595 539,545,673,570 673,545,758,570 758,545,855,570 539,520,693,545 693,520,768,545 768,520,855,545 539,495,616,520 \
+616,495,735,520 735,495,855,520", width="4.3889", height="1.4028"];
+	AgentAction [label=AgentAction, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="400,668", width="1.2778", height="0.5"];
+	Hypothesis [label="{Hypothesis|{justification|Instance|{Description}}|{unmatchedDescription|Instance|{Description}}|{description|Instance|{Description\
+}}|{possibleSolutions|Instance*|{PossibleSolution}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="804,343", rects="640.5,380.5,967.5,405.5 640.5,355.5,753.5,380.5 753.5,355.5,851.5,380.5 851.5,355.5,967.5,380.5 640.5,330.5,801.5,355.5 801.5,330.5\
+,875.5,355.5 875.5,330.5,967.5,355.5 640.5,305.5,753.5,330.5 753.5,305.5,851.5,330.5 851.5,305.5,967.5,330.5 640.5,280.5,769.5\
+,305.5 769.5,280.5,844.5,305.5 844.5,280.5,967.5,305.5", width="4.5278", height="1.75"];
+	Retrieve [label="{Retrieve|{similarTo|Instance|{Problem}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="335,450", rects="228,450,442,475 228,425,302,450 302,425,372,450 372,425,442,450", width="2.9722", height="0.70833"];
+	Case [label="{Case|{state|Boolean}|{solution|Instance|{Solution}}|{problem|Instance|{Problem}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="465,343", rects="360.5,368,569.5,393 360.5,343,453.5,368 453.5,343,569.5,368 360.5,318,427.5,343 427.5,318,499.5,343 499.5,318,569.5,343 360.5,293\
+,429.5,318 429.5,293,499.5,318 499.5,293,569.5,318", width="2.8889", height="1.4028"];
+	Retain [label="{Retain|{case|Instance|{Case}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="400,545", rects="316.5,545,483.5,570 316.5,520,363.5,545 363.5,520,433.5,545 433.5,520,483.5,545", width="2.3056", height="0.70833"];
+	Resolve [label="{Resolve|{problem|Instance|{Problem}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="119,450", rects="14.5,450,223.5,475 14.5,425,83.5,450 83.5,425,153.5,450 153.5,425,223.5,450", width="2.8889", height="0.70833"];
+	Concept -> Problem [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,439.69,755.05 429.46,754.14 310.57,743.47 0,711.44 0,668 0,668 0,668 0,343 0,276.72 47.263,226.28 103.29,189.77", lp="9,545"];
+	AgentAction -> Adapt [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,446.06,658.21 455.78,655.85 479.93,649.84 508.26,641.77 533,632 559.08,621.7 586.38,608.36 611.05,595.22", lp="579,623"];
+	Adapt -> Hypothesis [label="failureConflictSet*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,802.88,405.73 767.87,495 773.24,489.09 778.08,482.74 782,476 792.51,457.91 798.36,436.25 801.53,415.7", lp="856.5,450"];
+	Adapt -> Hypothesis [label="successfulConflictSet*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,649.43,405.72 644.81,494.62 640.87,488.71 637.48,482.47 635,476 626.73,454.42 622.69,443.56 635,424 637.34,420.28 639.9,416.73\
+ 642.66,413.34", lp="706.5,450"];
+	Adapt -> Problem [label=to, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,466.62,185.73 636.4,494.78 631.37,488.84 626.77,482.54 623,476 578.36,398.57 631.32,351.73 578,280 551.21,243.96 514.17,214.52\
+ 475.43,190.97", lp="610,343"];
+	AgentAction -> Retrieve [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,363,649.79 354.31,644.3 336.42,632.42 317.85,616.21 308,596 288.14,555.25 295.68,537.63 308,494 309.8,487.62 312.82,481.25 316.2\
+,475.42", lp="345,623"];
+	Retrieve -> Problem [label=similarTo, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,270.23,225.75 305.93,424.77 301.11,419.11 296.78,412.76 294,406 272.21,353.05 267.83,290.06 269.77,236.07", lp="323,343"];
+	Concept -> Hypothesis [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,510.2,752.37 520.37,750.46 599.81,735.04 765.06,692.85 864,596 921.16,540.04 953.54,495.16 917,424 913.64,417.45 909.47,411.31\
+ 904.74,405.58", lp="850,623"];
+	Concept -> AgentAction [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,459.82,739.79 453.35,732.02 441.12,717.34 426.13,699.35 415.15,686.19", lp="453,713"];
+	Concept -> Case [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,478.54,739.74 480.29,729.9 490.28,672.16 509.38,536.18 491,424 489.35,413.94 486.7,403.42 483.71,393.42", lp="503,623"];
+	Case -> Problem [label=problem, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,373.29,225.82 425.72,292.81 411.96,275.23 395.85,254.65 379.55,233.81", lp="422.5,253"];
+	AgentAction -> Retain [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,400,649.85 400,639.61 400,618.6 400,590.23 400,570.05", lp="409,623"];
+	Retain -> Case [label=case, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,461.4,393.16 419.11,519.73 427.69,507.19 437.17,491.45 443,476 451.67,453.01 456.93,426.52 460.11,403.25", lp="471.5,450"];
+	AgentAction -> Resolve [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,353.79,656.57 344.21,653.41 328.58,647.99 312.04,640.93 298,632 229.38,588.35 167.16,513.77 137.43,475.02", lp="307,623"];
+	Resolve -> Problem [label=problem, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,229.41,225.85 131.34,424.95 151.01,385.02 190.73,304.39 224.85,235.1", lp="228.5,343"];
+}

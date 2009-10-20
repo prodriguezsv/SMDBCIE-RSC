@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: Modifier
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultModifier implements Modifier, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultModifier implements Modifier, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -39,18 +39,6 @@ public class DefaultModifier implements Modifier, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
-
-   /**
-   * Protege name: scoreWeight
-   */
-   private float scoreWeight;
-   public void setScoreWeight(float value) { 
-     pcs.firePropertyChange("scoreWeight", ""+this.scoreWeight, ""+value);
-    this.scoreWeight=value;
-   }
-   public float getScoreWeight() {
-     return this.scoreWeight;
-   }
 
    /**
    * Protege name: structureWeight
@@ -74,6 +62,18 @@ public class DefaultModifier implements Modifier, Serializable {
    }
    public float getAttributeWeight() {
      return this.attributeWeight;
+   }
+
+   /**
+   * Protege name: scoreWeight
+   */
+   private float scoreWeight;
+   public void setScoreWeight(float value) { 
+     pcs.firePropertyChange("scoreWeight", ""+this.scoreWeight, ""+value);
+    this.scoreWeight=value;
+   }
+   public float getScoreWeight() {
+     return this.scoreWeight;
    }
 
 }

@@ -10,7 +10,7 @@ import ontology.CBR.*;
 /**
 * Protege name: DescribedBy
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:56
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultDescribedBy implements DescribedBy, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultDescribedBy implements DescribedBy, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,18 @@ public class DefaultDescribedBy implements DescribedBy, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: attribute
+   */
+   private Attribute attribute;
+   public void setAttribute(Attribute value) { 
+     pcs.firePropertyChange("attribute", (this.attribute==null?new Attribute():this.attribute), value);
+    this.attribute=value;
+   }
+   public Attribute getAttribute() {
+     return this.attribute;
+   }
 
    /**
    * Protege name: score
@@ -61,17 +73,5 @@ public class DefaultDescribedBy implements DescribedBy, Serializable {
    public Iterator getAllScore() {return score.iterator(); }
    public List getScore() {return score; }
    public void setScore(List l) {score = l; }
-
-   /**
-   * Protege name: attribute
-   */
-   private Attribute attribute;
-   public void setAttribute(Attribute value) { 
-     pcs.firePropertyChange("attribute", (this.attribute==null?new Attribute():this.attribute), value);
-    this.attribute=value;
-   }
-   public Attribute getAttribute() {
-     return this.attribute;
-   }
 
 }

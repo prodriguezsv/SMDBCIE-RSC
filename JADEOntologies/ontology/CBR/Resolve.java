@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: Resolve
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:46
 */
 public interface Resolve extends jade.content.AgentAction, Serializable {
    // bean stuff

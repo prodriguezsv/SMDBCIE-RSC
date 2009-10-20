@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: Description
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:45
+* @version 2009/10/17, 11:59:53
 */
 public class DefaultDescription implements Description, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultDescription implements Description, Serializable {
    }
 
 
-  private static final long serialVersionUID = 3978892154560758766L;
+  private static final long serialVersionUID = 8409500558378942440L;
 
   private String _internalInstanceName = null;
 

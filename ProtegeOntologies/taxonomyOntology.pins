@@ -1,4 +1,4 @@
-; Thu Oct 01 09:26:03 GMT-06:00 2009
+; Tue Oct 20 16:43:53 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -26,10 +26,6 @@
 ([Taxon] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
-
-([TaxonomicHierarchy] of  %3AJADE-CLASS
-
-	(%3AJADE-IGNORE TRUE))
 
 ([taxonomyOntology_Class0] of  Taxon
 
@@ -3917,10 +3913,6 @@
 		[taxonomyOntology_Instance_30010]
 		[taxonomyOntology_Instance_30035]
 		[taxonomyOntology_Instance_30036]))
-
-([taxonomyOntology_Instance_70046] of  TaxonomicHierarchy
-
-	(name "Moluscos"))
 
 ([WeightedDescription] of  %3AJADE-CLASS
 

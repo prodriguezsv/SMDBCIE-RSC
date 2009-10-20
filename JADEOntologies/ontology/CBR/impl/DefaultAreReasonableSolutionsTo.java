@@ -10,7 +10,7 @@ import ontology.CBR.*;
 /**
 * Protege name: AreReasonableSolutionsTo
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultAreReasonableSolutionsTo implements AreReasonableSolutionsTo, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultAreReasonableSolutionsTo implements AreReasonableSolutionsTo
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,18 @@ public class DefaultAreReasonableSolutionsTo implements AreReasonableSolutionsTo
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: problem
+   */
+   private Problem problem;
+   public void setProblem(Problem value) { 
+     pcs.firePropertyChange("problem", (this.problem==null?new Problem():this.problem), value);
+    this.problem=value;
+   }
+   public Problem getProblem() {
+     return this.problem;
+   }
 
    /**
    * Protege name: proposedSolutions
@@ -61,17 +73,5 @@ public class DefaultAreReasonableSolutionsTo implements AreReasonableSolutionsTo
    public Iterator getAllProposedSolutions() {return proposedSolutions.iterator(); }
    public List getProposedSolutions() {return proposedSolutions; }
    public void setProposedSolutions(List l) {proposedSolutions = l; }
-
-   /**
-   * Protege name: problem
-   */
-   private Problem problem;
-   public void setProblem(Problem value) { 
-     pcs.firePropertyChange("problem", (this.problem==null?new Problem():this.problem), value);
-    this.problem=value;
-   }
-   public Problem getProblem() {
-     return this.problem;
-   }
 
 }

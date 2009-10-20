@@ -1,4 +1,4 @@
-; Wed Sep 30 12:55:54 GMT-06:00 2009
+; Tue Oct 20 16:32:40 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -15,7 +15,7 @@
 
 	(%3AJADE-IGNORE TRUE))
 
-([ApliesTo] of  %3AJADE-CLASS
+([AppliesTo] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -1982,6 +1982,10 @@
 	(%3AJADE-IGNORE FALSE))
 
 ([HeuristicDescriptor] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([IsDescriptiveElement] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

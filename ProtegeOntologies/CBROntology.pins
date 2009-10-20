@@ -1,4 +1,4 @@
-; Wed Oct 07 21:56:04 GMT-06:00 2009
+; Tue Oct 20 12:07:28 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -7,7 +7,15 @@
 
 	(%3AJADE-IGNORE FALSE))
 
+([AreEvaluatedSolutionsTo] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([AreReasonableSolutionsTo] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([AreSelectedSolutionsTo] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -16,6 +24,10 @@
 	(%3AJADE-IGNORE FALSE))
 
 ([Case] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Evaluate] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
@@ -56,6 +68,10 @@
 	(%3AJADE-IGNORE FALSE))
 
 ([Retrieve] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Select] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

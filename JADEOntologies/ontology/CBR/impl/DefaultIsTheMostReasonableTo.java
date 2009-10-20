@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: IsTheMostReasonableTo
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultIsTheMostReasonableTo implements IsTheMostReasonableTo, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultIsTheMostReasonableTo implements IsTheMostReasonableTo, Seri
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,18 +41,6 @@ public class DefaultIsTheMostReasonableTo implements IsTheMostReasonableTo, Seri
   }
 
    /**
-   * Protege name: proposedSolution
-   */
-   private ProposedSolution proposedSolution;
-   public void setProposedSolution(ProposedSolution value) { 
-     pcs.firePropertyChange("proposedSolution", (this.proposedSolution==null?new ProposedSolution():this.proposedSolution), value);
-    this.proposedSolution=value;
-   }
-   public ProposedSolution getProposedSolution() {
-     return this.proposedSolution;
-   }
-
-   /**
    * Protege name: problem
    */
    private Problem problem;
@@ -62,6 +50,18 @@ public class DefaultIsTheMostReasonableTo implements IsTheMostReasonableTo, Seri
    }
    public Problem getProblem() {
      return this.problem;
+   }
+
+   /**
+   * Protege name: proposedSolution
+   */
+   private ProposedSolution proposedSolution;
+   public void setProposedSolution(ProposedSolution value) { 
+     pcs.firePropertyChange("proposedSolution", (this.proposedSolution==null?new ProposedSolution():this.proposedSolution), value);
+    this.proposedSolution=value;
+   }
+   public ProposedSolution getProposedSolution() {
+     return this.proposedSolution;
    }
 
 }

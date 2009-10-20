@@ -10,7 +10,7 @@ import ontology.CBR.*;
 /**
 * Protege name: Hypothesis
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultHypothesis implements Hypothesis, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultHypothesis implements Hypothesis, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,30 @@ public class DefaultHypothesis implements Hypothesis, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: justification
+   */
+   private Description justification;
+   public void setJustification(Description value) { 
+     pcs.firePropertyChange("justification", (this.justification==null?new Description():this.justification), value);
+    this.justification=value;
+   }
+   public Description getJustification() {
+     return this.justification;
+   }
+
+   /**
+   * Protege name: description
+   */
+   private Description description;
+   public void setDescription(Description value) { 
+     pcs.firePropertyChange("description", (this.description==null?new Description():this.description), value);
+    this.description=value;
+   }
+   public Description getDescription() {
+     return this.description;
+   }
 
    /**
    * Protege name: possibleSolutions
@@ -61,30 +85,6 @@ public class DefaultHypothesis implements Hypothesis, Serializable {
    public Iterator getAllPossibleSolutions() {return possibleSolutions.iterator(); }
    public List getPossibleSolutions() {return possibleSolutions; }
    public void setPossibleSolutions(List l) {possibleSolutions = l; }
-
-   /**
-   * Protege name: description
-   */
-   private Description description;
-   public void setDescription(Description value) { 
-     pcs.firePropertyChange("description", (this.description==null?new Description():this.description), value);
-    this.description=value;
-   }
-   public Description getDescription() {
-     return this.description;
-   }
-
-   /**
-   * Protege name: justification
-   */
-   private Description justification;
-   public void setJustification(Description value) { 
-     pcs.firePropertyChange("justification", (this.justification==null?new Description():this.justification), value);
-    this.justification=value;
-   }
-   public Description getJustification() {
-     return this.justification;
-   }
 
    /**
    * Protege name: unmatchedDescription

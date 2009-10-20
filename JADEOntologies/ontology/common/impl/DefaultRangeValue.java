@@ -10,7 +10,7 @@ import ontology.common.*;
 /**
 * Protege name: RangeValue
 * @author ontology bean generator
-* @version 2009/09/30, 12:55:43
+* @version 2009/10/17, 11:59:53
 */
 public class DefaultRangeValue implements RangeValue, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    }
 
 
-  private static final long serialVersionUID = 3978892154560758766L;
+  private static final long serialVersionUID = 8409500558378942440L;
 
   private String _internalInstanceName = null;
 
@@ -40,6 +40,42 @@ public class DefaultRangeValue implements RangeValue, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: upperBound
+   */
+   private float upperBound;
+   public void setUpperBound(float value) { 
+     pcs.firePropertyChange("upperBound", ""+this.upperBound, ""+value);
+    this.upperBound=value;
+   }
+   public float getUpperBound() {
+     return this.upperBound;
+   }
+
+   /**
+   * Protege name: measuringUnit
+   */
+   private String measuringUnit;
+   public void setMeasuringUnit(String value) { 
+     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
+    this.measuringUnit=value;
+   }
+   public String getMeasuringUnit() {
+     return this.measuringUnit;
+   }
+
+   /**
+   * Protege name: lowerBound
+   */
+   private float lowerBound;
+   public void setLowerBound(float value) { 
+     pcs.firePropertyChange("lowerBound", ""+this.lowerBound, ""+value);
+    this.lowerBound=value;
+   }
+   public float getLowerBound() {
+     return this.lowerBound;
+   }
 
    /**
    * Protege name: describes
@@ -61,41 +97,5 @@ public class DefaultRangeValue implements RangeValue, Serializable {
    public Iterator getAllDescribes() {return describes.iterator(); }
    public List getDescribes() {return describes; }
    public void setDescribes(List l) {describes = l; }
-
-   /**
-   * Protege name: upperBound
-   */
-   private float upperBound;
-   public void setUpperBound(float value) { 
-     pcs.firePropertyChange("upperBound", ""+this.upperBound, ""+value);
-    this.upperBound=value;
-   }
-   public float getUpperBound() {
-     return this.upperBound;
-   }
-
-   /**
-   * Protege name: lowerBound
-   */
-   private float lowerBound;
-   public void setLowerBound(float value) { 
-     pcs.firePropertyChange("lowerBound", ""+this.lowerBound, ""+value);
-    this.lowerBound=value;
-   }
-   public float getLowerBound() {
-     return this.lowerBound;
-   }
-
-   /**
-   * Protege name: measuringUnit
-   */
-   private String measuringUnit;
-   public void setMeasuringUnit(String value) { 
-     pcs.firePropertyChange("measuringUnit", (this.measuringUnit==null?new String():this.measuringUnit), value);
-    this.measuringUnit=value;
-   }
-   public String getMeasuringUnit() {
-     return this.measuringUnit;
-   }
 
 }

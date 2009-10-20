@@ -9,12 +9,24 @@ import jade.util.leap.*;
 /**
 * Protege name: Hypothesis
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public interface Hypothesis extends jade.content.Concept, Serializable {
    // bean stuff
    public void addPropertyChangeListener(PropertyChangeListener pcl);
    public void removePropertyChangeListener(PropertyChangeListener pcl);
+
+   /**
+   * Protege name: justification
+   */
+   public void setJustification(Description value);
+   public Description getJustification();
+
+   /**
+   * Protege name: description
+   */
+   public void setDescription(Description value);
+   public Description getDescription();
 
    /**
    * Protege name: possibleSolutions
@@ -25,18 +37,6 @@ public interface Hypothesis extends jade.content.Concept, Serializable {
    public Iterator getAllPossibleSolutions();
    public List getPossibleSolutions();
    public void setPossibleSolutions(List l);
-
-   /**
-   * Protege name: description
-   */
-   public void setDescription(Description value);
-   public Description getDescription();
-
-   /**
-   * Protege name: justification
-   */
-   public void setJustification(Description value);
-   public Description getJustification();
 
    /**
    * Protege name: unmatchedDescription

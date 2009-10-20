@@ -11,7 +11,7 @@ import ontology.CBR.*;
 * It's a subclass of a defined term
 * Protege name: Structure
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultStructure implements Structure, Serializable {
    // bean stuff
@@ -26,7 +26,7 @@ public class DefaultStructure implements Structure, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,18 +41,6 @@ public class DefaultStructure implements Structure, Serializable {
   public String toString() {
     return _internalInstanceName;
   }
-
-   /**
-   * Protege name: definition
-   */
-   private String definition;
-   public void setDefinition(String value) { 
-     pcs.firePropertyChange("definition", (this.definition==null?new String():this.definition), value);
-    this.definition=value;
-   }
-   public String getDefinition() {
-     return this.definition;
-   }
 
    /**
    * Protege name: owns
@@ -74,6 +62,18 @@ public class DefaultStructure implements Structure, Serializable {
    public Iterator getAllOwns() {return owns.iterator(); }
    public List getOwns() {return owns; }
    public void setOwns(List l) {owns = l; }
+
+   /**
+   * Protege name: definition
+   */
+   private String definition;
+   public void setDefinition(String value) { 
+     pcs.firePropertyChange("definition", (this.definition==null?new String():this.definition), value);
+    this.definition=value;
+   }
+   public String getDefinition() {
+     return this.definition;
+   }
 
    /**
    * Protege name: term

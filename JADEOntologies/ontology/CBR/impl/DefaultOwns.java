@@ -9,7 +9,7 @@ import ontology.CBR.*;
 /**
 * Protege name: Owns
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:56
+* @version 2009/10/17, 19:00:46
 */
 public class DefaultOwns implements Owns, Serializable {
    // bean stuff
@@ -24,7 +24,7 @@ public class DefaultOwns implements Owns, Serializable {
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -41,18 +41,6 @@ public class DefaultOwns implements Owns, Serializable {
   }
 
    /**
-   * Protege name: descriptiveElement
-   */
-   private Object descriptiveElement;
-   public void setDescriptiveElement(Object value) { 
-     pcs.firePropertyChange("descriptiveElement", (this.descriptiveElement==null?new Object():this.descriptiveElement), value);
-    this.descriptiveElement=value;
-   }
-   public Object getDescriptiveElement() {
-     return this.descriptiveElement;
-   }
-
-   /**
    * Protege name: attribute
    */
    private Attribute attribute;
@@ -62,6 +50,18 @@ public class DefaultOwns implements Owns, Serializable {
    }
    public Attribute getAttribute() {
      return this.attribute;
+   }
+
+   /**
+   * Protege name: descriptiveElement
+   */
+   private Object descriptiveElement;
+   public void setDescriptiveElement(Object value) { 
+     pcs.firePropertyChange("descriptiveElement", (this.descriptiveElement==null?new Object():this.descriptiveElement), value);
+    this.descriptiveElement=value;
+   }
+   public Object getDescriptiveElement() {
+     return this.descriptiveElement;
    }
 
 }

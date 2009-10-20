@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TOUCHGRAPH_LB [
+
+<!ELEMENT TOUCHGRAPH_LB (NODESET, EDGESET, PARAMETERS)>
+<!ELEMENT NODESET (NODE+)>
+<!ELEMENT EDGESET (EDGE*)>
+<!ELEMENT PARAMETERS (PARAM*)>
+
+<!ELEMENT NODE (NODE_LOCATION?, NODE_LABEL?, NODE_URL?, NODE_HINT?)>
+
+<!ELEMENT NODE_LABEL EMPTY>
+<!ELEMENT NODE_URL EMPTY>
+<!ELEMENT NODE_HINT EMPTY>
+
+<!ATTLIST TOUCHGRAPH_LB
+  version CDATA #REQUIRED >
+
+<!ATTLIST NODE
+  nodeID CDATA #REQUIRED >
+
+<!ATTLIST NODE_LOCATION
+  visible CDATA #IMPLIED
+  x CDATA #IMPLIED
+  y CDATA #IMPLIED >
+
+<!ATTLIST NODE_LABEL
+  label CDATA #REQUIRED 
+  shape CDATA #IMPLIED
+  backColor CDATA #IMPLIED 
+  textColor CDATA #IMPLIED
+  fontSize CDATA #IMPLIED >
+
+<!ATTLIST NODE_URL 
+  url CDATA #REQUIRED 
+  urlIsLocal CDATA #IMPLIED 
+  urlIsXML CDATA #IMPLIED >
+
+<!ATTLIST NODE_HINT 
+  hint CDATA #REQUIRED 
+  height CDATA #IMPLIED 
+  width CDATA #IMPLIED 
+  isHTML CDATA #IMPLIED >  
+
+<!ELEMENT EDGE EMPTY>
+
+<!ATTLIST EDGE
+  fromID CDATA #REQUIRED
+  toID CDATA #REQUIRED 
+  length CDATA #IMPLIED 
+  color CDATA #IMPLIED 
+  type CDATA #IMPLIED
+  visible CDATA #IMPLIED >
+
+<!ELEMENT PARAM EMPTY>
+
+<!ATTLIST PARAM
+  name CDATA #REQUIRED
+  value CDATA #REQUIRED >
+]>
+<TOUCHGRAPH_LB version="1.20">
+    <NODESET>
+        <NODE nodeID="Concept">
+            <NODE_LOCATION x="-125" y="-85" visible="true"/>
+            <NODE_LABEL label="Concept" tlabel="Concept" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="AID">
+            <NODE_LOCATION x="-106" y="-222" visible="false"/>
+            <NODE_LABEL label="AID" tlabel="AID" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="AgentAction">
+            <NODE_LOCATION x="-162" y="-238" visible="false"/>
+            <NODE_LABEL label="AgentAction" tlabel="AgentAction" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="DefinedTerm">
+            <NODE_LOCATION x="10" y="1" visible="false"/>
+            <NODE_LABEL label="DefinedTerm" tlabel="DefinedTerm" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Value">
+            <NODE_LOCATION x="-85" y="96" visible="false"/>
+            <NODE_LABEL label="Value" tlabel="Value" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Descriptor">
+            <NODE_LOCATION x="-223" y="-92" visible="true"/>
+            <NODE_LABEL label="Descriptor" tlabel="Descriptor" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Description">
+            <NODE_LOCATION x="-231" y="-137" visible="false"/>
+            <NODE_LABEL label="Description" tlabel="Description" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Taxon">
+            <NODE_LOCATION x="-6" y="-39" visible="true"/>
+            <NODE_LABEL label="Taxon" tlabel="Taxon" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Modifier">
+            <NODE_LOCATION x="-171" y="-153" visible="true"/>
+            <NODE_LABEL label="Modifier" tlabel="Modifier" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="WeightedDescriptor">
+            <NODE_LOCATION x="-181" y="-66" visible="true"/>
+            <NODE_LABEL label="WeightedDescriptor" tlabel="WeightedDescriptor" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="WeightedDescription">
+            <NODE_LOCATION x="-116" y="-28" visible="true"/>
+            <NODE_LABEL label="WeightedDescription" tlabel="WeightedDescription" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Structure">
+            <NODE_LOCATION x="-146" y="14" visible="false"/>
+            <NODE_LABEL label="Structure" tlabel="Structure" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Attribute">
+            <NODE_LOCATION x="-132" y="24" visible="false"/>
+            <NODE_LABEL label="Attribute" tlabel="Attribute" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="State">
+            <NODE_LOCATION x="-132" y="64" visible="false"/>
+            <NODE_LABEL label="State" tlabel="State" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="EnvironmentalCategory">
+            <NODE_LOCATION x="-124" y="73" visible="false"/>
+            <NODE_LABEL label="EnvironmentalCategory" tlabel="EnvironmentalCategory" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Owns">
+            <NODE_LOCATION x="0" y="0" visible="false"/>
+            <NODE_LABEL label="Owns" tlabel="Owns" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="AppliesTo">
+            <NODE_LOCATION x="0" y="0" visible="false"/>
+            <NODE_LABEL label="AppliesTo" tlabel="AppliesTo" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="DescribedBy">
+            <NODE_LOCATION x="-287" y="45" visible="false"/>
+            <NODE_LABEL label="DescribedBy" tlabel="DescribedBy" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Describes">
+            <NODE_LOCATION x="-266" y="80" visible="false"/>
+            <NODE_LABEL label="Describes" tlabel="Describes" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="CharacterDescriptor">
+            <NODE_LOCATION x="-227" y="-153" visible="false"/>
+            <NODE_LABEL label="CharacterDescriptor" tlabel="CharacterDescriptor" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="HeuristicDescriptor">
+            <NODE_LOCATION x="-269" y="-122" visible="false"/>
+            <NODE_LABEL label="HeuristicDescriptor" tlabel="HeuristicDescriptor" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="Predicate">
+            <NODE_LOCATION x="0" y="0" visible="false"/>
+            <NODE_LABEL label="Predicate" tlabel="Predicate" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="SingleValue">
+            <NODE_LOCATION x="-26" y="196" visible="false"/>
+            <NODE_LABEL label="SingleValue" tlabel="SingleValue" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="RangeValue">
+            <NODE_LOCATION x="-91" y="219" visible="false"/>
+            <NODE_LABEL label="RangeValue" tlabel="RangeValue" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="IsRootTaxon">
+            <NODE_LOCATION x="124" y="-61" visible="true"/>
+            <NODE_LABEL label="IsRootTaxon" tlabel="IsRootTaxon" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="IsSheetTaxon">
+            <NODE_LOCATION x="13" y="87" visible="true"/>
+            <NODE_LABEL label="IsSheetTaxon" tlabel="IsSheetTaxon" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="IsSuccessorTaxonOf">
+            <NODE_LOCATION x="61" y="9" visible="true"/>
+            <NODE_LABEL label="IsSuccessorTaxonOf" tlabel="IsSuccessorTaxonOf" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+        <NODE nodeID="IsPredecessorTaxonOf">
+            <NODE_LOCATION x="39" y="-112" visible="true"/>
+            <NODE_LABEL label="IsPredecessorTaxonOf" tlabel="IsPredecessorTaxonOf" shape="1" backColor="FFFFFF" textColor="654E09" fontSize="12" fontBold="true" fontItalic="false"/>
+        </NODE>
+    </NODESET>
+    <EDGESET>
+        <EDGE fromID="Concept" toID="AID" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="AgentAction" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="DefinedTerm" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="Value" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="Descriptor" name="sub" tlabel="sub" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="Description" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="Taxon" name="sub" tlabel="sub" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="Modifier" name="sub" tlabel="sub" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="WeightedDescriptor" name="sub" tlabel="sub" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Concept" toID="WeightedDescription" name="sub" tlabel="sub" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AID" toID="Concept" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AID" toID="AID" name="resolvers" tlabel="resolvers" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AgentAction" toID="Concept" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DefinedTerm" toID="Concept" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DefinedTerm" toID="Structure" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DefinedTerm" toID="Attribute" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DefinedTerm" toID="State" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DefinedTerm" toID="EnvironmentalCategory" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Structure" toID="DefinedTerm" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Structure" toID="Attribute" name="owns" tlabel="owns" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Structure" name="apliesTo" tlabel="apliesTo" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="Structure" name="structure" tlabel="structure" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Owns" toID="Structure" name="descriptiveElement" tlabel="descriptiveElement" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AppliesTo" toID="Structure" name="descriptiveElement" tlabel="descriptiveElement" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="DefinedTerm" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="State" name="describedBy" tlabel="describedBy" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Value" name="describedBy" tlabel="describedBy" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="EnvironmentalCategory" name="apliesTo" tlabel="apliesTo" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Structure" name="owns" tlabel="owns" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="EnvironmentalCategory" name="owns" tlabel="owns" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="State" name="describes" tlabel="describes" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Value" name="describes" tlabel="describes" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Descriptor" name="attribute" tlabel="attribute" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Owns" name="attribute" tlabel="attribute" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="AppliesTo" name="attribute" tlabel="attribute" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="DescribedBy" name="attribute" tlabel="attribute" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Attribute" toID="Describes" name="attribute" tlabel="attribute" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="Concept" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="CharacterDescriptor" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="HeuristicDescriptor" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="Attribute" name="attribute" tlabel="attribute" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="EnvironmentalCategory" name="structure" tlabel="structure" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="State" name="score" tlabel="score" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="Value" name="score" tlabel="score" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="Description" name="descriptors" tlabel="descriptors" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Descriptor" toID="WeightedDescriptor" name="descriptor" tlabel="descriptor" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Owns" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Owns" toID="Attribute" name="attribute" tlabel="attribute" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Owns" toID="EnvironmentalCategory" name="descriptiveElement" tlabel="descriptiveElement" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AppliesTo" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AppliesTo" toID="Attribute" name="attribute" tlabel="attribute" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="AppliesTo" toID="EnvironmentalCategory" name="descriptiveElement" tlabel="descriptiveElement" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="State" toID="DefinedTerm" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="State" toID="Attribute" name="describes" tlabel="describes" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DescribedBy" toID="State" name="score" tlabel="score" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Describes" toID="State" name="score" tlabel="score" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="EnvironmentalCategory" toID="DefinedTerm" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="EnvironmentalCategory" toID="Attribute" name="owns" tlabel="owns" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Value" toID="Concept" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Value" toID="SingleValue" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Value" toID="RangeValue" name="sub" tlabel="sub" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Value" toID="Attribute" name="describes" tlabel="describes" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DescribedBy" toID="Value" name="score" tlabel="score" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Describes" toID="Value" name="score" tlabel="score" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="SingleValue" toID="Value" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="RangeValue" toID="Value" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DescribedBy" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="DescribedBy" toID="Attribute" name="attribute" tlabel="attribute" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Describes" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Describes" toID="Attribute" name="attribute" tlabel="attribute" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Description" toID="Concept" name="super" tlabel="super" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Description" toID="Descriptor" name="descriptors" tlabel="descriptors" length="40" visible="false" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Taxon" toID="Concept" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Taxon" toID="WeightedDescription" name="weightedDescription" tlabel="weightedDescription" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Taxon" toID="Taxon" name="successors" tlabel="successors" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Taxon" toID="Taxon" name="predecessor" tlabel="predecessor" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsRootTaxon" toID="Taxon" name="taxon" tlabel="taxon" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsSheetTaxon" toID="Taxon" name="taxon" tlabel="taxon" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsSuccessorTaxonOf" toID="Taxon" name="subjectTaxon" tlabel="subjectTaxon" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsPredecessorTaxonOf" toID="Taxon" name="subjectTaxon" tlabel="subjectTaxon" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsSuccessorTaxonOf" toID="Taxon" name="objectTaxon" tlabel="objectTaxon" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsPredecessorTaxonOf" toID="Taxon" name="objectTaxon" tlabel="objectTaxon" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="WeightedDescription" toID="Concept" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="WeightedDescription" toID="WeightedDescriptor" name="weightedDescriptors" tlabel="weightedDescriptors" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="WeightedDescriptor" toID="Concept" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="WeightedDescriptor" toID="Modifier" name="modifier" tlabel="modifier" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="WeightedDescriptor" toID="Descriptor" name="descriptor" tlabel="descriptor" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="WeightedDescriptor" toID="WeightedDescription" name="weightedDescriptors" tlabel="weightedDescriptors" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsRootTaxon" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsSheetTaxon" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsSuccessorTaxonOf" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="IsPredecessorTaxonOf" toID="Predicate" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+        <EDGE fromID="Modifier" toID="Concept" name="super" tlabel="super" length="40" visible="true" color="0000B0" fontSize="10" fontBold="true" fontItalic="false"/>
+    </EDGESET>
+    <PARAMETERS>
+        <PARAM name="CLS:::IsSheetTaxon:::Color" value="-1"/>
+        <PARAM name="CLS:::QualitativeHeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS:::DefinedTerm:::Color" value="-1"/>
+        <PARAM name="CLS:::RVCharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS:::AID:::Color" value="-1"/>
+        <PARAM name="SLOT:::owns:::Color" value="-16777040"/>
+        <PARAM name="edgTXT" value="false"/>
+        <PARAM name="CLS:::RVHeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::EnvironmentalCategory:::Color" value="-1"/>
+        <PARAM name="SLOT:::apliesTo:::Changed" value="false"/>
+        <PARAM name="SLOT:::agente:::Changed" value="false"/>
+        <PARAM name="clsFS" value="12"/>
+        <PARAM name="maxEdgIndex" value="3"/>
+        <PARAM name="selectedNode" value="Concept"/>
+        <PARAM name="SLOT:::modifier:::Changed" value="false"/>
+        <PARAM name="SLOT:::weightedDescriptors:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::describes:::Show" value="true"/>
+        <PARAM name="CLS:::QualitativeCharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="SLOT:::descriptors:::Changed" value="false"/>
+        <PARAM name="SLOT:::apliesTo:::Show" value="true"/>
+        <PARAM name="CLS:::State:::Color" value="-1"/>
+        <PARAM name="CLS:::HeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::DescribedBy:::Color" value="-1"/>
+        <PARAM name="SLOT:::taxon:::Color" value="-16777040"/>
+        <PARAM name="CLS:::Taxon:::Color" value="-1"/>
+        <PARAM name="CLS:::AgentAction:::Color" value="-1"/>
+        <PARAM name="edgITLC" value="false"/>
+        <PARAM name="SLOT:::descriptiveElement:::Color" value="-16777040"/>
+        <PARAM name="CLS:::SVCharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="SLOT:::descriptiveElement:::Show" value="true"/>
+        <PARAM name="insBC" value="-1"/>
+        <PARAM name="edgBOLD" value="true"/>
+        <PARAM name="SLOT:::taxon:::Show" value="true"/>
+        <PARAM name="CLS:::QuantitativeCharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::Describes:::Color" value="-1"/>
+        <PARAM name="CLS:::QuantitativeCharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS::::JADE-SLOT:::Color" value="-1"/>
+        <PARAM name="CLS:::QuantitativeHeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="rotateSB" value="0"/>
+        <PARAM name="hyperSB" value="0"/>
+        <PARAM name="SLOT:::apliesTo:::Color" value="-16777040"/>
+        <PARAM name="CLS:::SSCharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="edgBC" value="-16777040"/>
+        <PARAM name="CLS:::Concept:::Changed" value="false"/>
+        <PARAM name="SLOT:::subjectTaxon:::Changed" value="false"/>
+        <PARAM name="CLS:::IsSuccessorTaxonOf:::Color" value="-1"/>
+        <PARAM name="SLOT:::attribute:::Changed" value="false"/>
+        <PARAM name="CLS:::QualitativeCharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="SLOT:::descriptors:::Show" value="true"/>
+        <PARAM name="SLOT:::score:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::objectTaxon:::Show" value="true"/>
+        <PARAM name="insLW" value="30"/>
+        <PARAM name="SLOT:::describes:::Color" value="-16777040"/>
+        <PARAM name="CLS:::Predicate:::Color" value="-1"/>
+        <PARAM name="SLOT:::successors:::Show" value="true"/>
+        <PARAM name="CLS:::Descriptor:::Color" value="-1"/>
+        <PARAM name="SLOT:::descriptors:::Color" value="-16777040"/>
+        <PARAM name="CLS:::SVHeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="insITLC" value="false"/>
+        <PARAM name="CLS:::IsSheetTaxon:::Changed" value="false"/>
+        <PARAM name="CLS:::DescribedBy:::Changed" value="false"/>
+        <PARAM name="SLOT:::agente:::Color" value="-16777040"/>
+        <PARAM name="CLS::::JADE-SLOT:::Changed" value="false"/>
+        <PARAM name="SLOT:::score:::Show" value="true"/>
+        <PARAM name="CLS:::QuantitativeHeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="insBOLD" value="true"/>
+        <PARAM name="ins" value="false"/>
+        <PARAM name="SLOT:::attribute:::Show" value="true"/>
+        <PARAM name="SLOT:::resolvers:::Changed" value="false"/>
+        <PARAM name="sys" value="false"/>
+        <PARAM name="CLS:::Describes:::Changed" value="false"/>
+        <PARAM name="edgLW" value="20"/>
+        <PARAM name="SLOT:::rootTaxon:::Show" value="true"/>
+        <PARAM name="clsslt" value="true"/>
+        <PARAM name="CLS:::SSHeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::Structure:::Changed" value="false"/>
+        <PARAM name="CLS:::SingleValue:::Changed" value="false"/>
+        <PARAM name="SLOT:::describedBy:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::weightedDescription:::Changed" value="false"/>
+        <PARAM name="CLS:::RangeValue:::Color" value="-1"/>
+        <PARAM name="clsBC" value="-1"/>
+        <PARAM name="CLS:::QualitativeHeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::Concept:::Color" value="-1"/>
+        <PARAM name="CLS:::Value:::Changed" value="false"/>
+        <PARAM name="CLS:::Descriptor:::Changed" value="false"/>
+        <PARAM name="SLOT::::JADE-INCLUDED-PROPERTIES:::Changed" value="false"/>
+        <PARAM name="CLS:::Value:::Color" value="-1"/>
+        <PARAM name="SLOT:::structure:::Show" value="true"/>
+        <PARAM name="SLOT::::JADE-INCLUDED-PROPERTIES:::Color" value="-16777040"/>
+        <PARAM name="CLS:::DefinedTerm:::Changed" value="false"/>
+        <PARAM name="radius" value="2"/>
+        <PARAM name="CLS::::PROJECT-ANNOTATION:::Changed" value="false"/>
+        <PARAM name="CLS:::RangeValue:::Changed" value="false"/>
+        <PARAM name="CLS:::IsPredecessorTaxonOf:::Changed" value="false"/>
+        <PARAM name="SlotsCheckBoxState" value="false"/>
+        <PARAM name="CLS:::Attribute:::Color" value="-1"/>
+        <PARAM name="SLOT:::objectTaxon:::Changed" value="false"/>
+        <PARAM name="SLOT:::objectTaxon:::Color" value="-16777040"/>
+        <PARAM name="CLS:::SSCharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS:::IsRootTaxon:::Changed" value="false"/>
+        <PARAM name="SLOT:::taxon:::Changed" value="false"/>
+        <PARAM name="CLS:::SSHeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="SLOT:::agente:::Show" value="true"/>
+        <PARAM name="SLOT:::describes:::Changed" value="false"/>
+        <PARAM name="cls" value="true"/>
+        <PARAM name="clsLW" value="35"/>
+        <PARAM name="SLOT:::successors:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::owns:::Show" value="true"/>
+        <PARAM name="SLOT:::structure:::Changed" value="false"/>
+        <PARAM name="SLOT:::predecessor:::Color" value="-16777040"/>
+        <PARAM name="selectedFrame" value="Concept"/>
+        <PARAM name="CLS:::Owns:::Changed" value="false"/>
+        <PARAM name="CLS:::Description:::Color" value="-1"/>
+        <PARAM name="CLS:::SingleValue:::Color" value="-1"/>
+        <PARAM name="CLS:::Modifier:::Color" value="-1"/>
+        <PARAM name="SLOT:::attribute:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::predecessor:::Show" value="true"/>
+        <PARAM name="maxExpEdgIndex" value="3"/>
+        <PARAM name="CLS:::IsRootTaxon:::Color" value="-1"/>
+        <PARAM name="CLS:::Predicate:::Changed" value="false"/>
+        <PARAM name="SLOT:::successors:::Changed" value="false"/>
+        <PARAM name="SLOT:::describedBy:::Show" value="true"/>
+        <PARAM name="CLS::::JADE-CLASS:::Changed" value="false"/>
+        <PARAM name="SLOT:::rootTaxon:::Changed" value="false"/>
+        <PARAM name="CLS:::IsSuccessorTaxonOf:::Changed" value="false"/>
+        <PARAM name="CLS:::WeightedDescriptor:::Color" value="-1"/>
+        <PARAM name="SLOT::::JADE-INCLUDED-PROPERTIES:::Show" value="true"/>
+        <PARAM name="CLS:::EnvironmentalCategory:::Changed" value="false"/>
+        <PARAM name="SLOT:::subjectTaxon:::Color" value="-16777040"/>
+        <PARAM name="CLS:::MSCharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="sup" value="true"/>
+        <PARAM name="CLS:::Modifier:::Changed" value="false"/>
+        <PARAM name="CLS:::AppliesTo:::Changed" value="false"/>
+        <PARAM name="SLOT:::descriptor:::Color" value="-16777040"/>
+        <PARAM name="insTC" value="-10092442"/>
+        <PARAM name="CLS:::MSCharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="sub" value="true"/>
+        <PARAM name="CLS:::MSHeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="SLOT:::owns:::Changed" value="false"/>
+        <PARAM name="SLOT:::predecessor:::Changed" value="false"/>
+        <PARAM name="CLS:::Taxon:::Changed" value="false"/>
+        <PARAM name="SLOT:::weightedDescription:::Color" value="-16777040"/>
+        <PARAM name="SLOT:::descriptiveElement:::Changed" value="false"/>
+        <PARAM name="CLS:::WeightedDescription:::Color" value="-1"/>
+        <PARAM name="edgTC" value="-16777040"/>
+        <PARAM name="SLOT:::score:::Changed" value="false"/>
+        <PARAM name="backlinks" value="true"/>
+        <PARAM name="insFS" value="12"/>
+        <PARAM name="SLOT:::modifier:::Show" value="true"/>
+        <PARAM name="zoomSB" value="-2"/>
+        <PARAM name="SLOT:::weightedDescription:::Show" value="true"/>
+        <PARAM name="SLOT:::weightedDescriptors:::Changed" value="false"/>
+        <PARAM name="CLS:::Owns:::Color" value="-1"/>
+        <PARAM name="CLS:::MSHeuristicDescriptor:::Changed" value="false"/>
+        <PARAM name="SLOT:::modifier:::Color" value="-16777040"/>
+        <PARAM name="sysslt" value="false"/>
+        <PARAM name="CLS:::State:::Changed" value="false"/>
+        <PARAM name="CLS:::WeightedDescription:::Changed" value="false"/>
+        <PARAM name="CLS::::JADE-CLASS:::Color" value="-1"/>
+        <PARAM name="edgFS" value="10"/>
+        <PARAM name="CLS:::IsPredecessorTaxonOf:::Color" value="-1"/>
+        <PARAM name="CLS:::AgentAction:::Changed" value="false"/>
+        <PARAM name="CLS:::Structure:::Color" value="-1"/>
+        <PARAM name="CLS:::HeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS:::RVCharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="SLOT:::descriptor:::Show" value="true"/>
+        <PARAM name="clsITLC" value="false"/>
+        <PARAM name="SLOT:::weightedDescriptors:::Show" value="true"/>
+        <PARAM name="SLOT:::subjectTaxon:::Show" value="true"/>
+        <PARAM name="SLOT:::rootTaxon:::Color" value="-16777040"/>
+        <PARAM name="CLS:::WeightedDescriptor:::Changed" value="false"/>
+        <PARAM name="SLOT:::descriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::AID:::Changed" value="false"/>
+        <PARAM name="clsBOLD" value="true"/>
+        <PARAM name="CLS:::SVCharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS:::SVHeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="SLOT:::resolvers:::Show" value="true"/>
+        <PARAM name="CLS:::RVHeuristicDescriptor:::Color" value="-1"/>
+        <PARAM name="SLOT:::describedBy:::Changed" value="false"/>
+        <PARAM name="clsTC" value="-10138103"/>
+        <PARAM name="CLS:::Description:::Changed" value="false"/>
+        <PARAM name="CLS:::CharacterDescriptor:::Changed" value="false"/>
+        <PARAM name="CLS:::CharacterDescriptor:::Color" value="-1"/>
+        <PARAM name="CLS:::AppliesTo:::Color" value="-1"/>
+        <PARAM name="SLOT:::resolvers:::Color" value="-16777040"/>
+        <PARAM name="CLS::::PROJECT-ANNOTATION:::Color" value="-1"/>
+        <PARAM name="speed" value="2"/>
+        <PARAM name="sysclt" value="false"/>
+        <PARAM name="SLOT:::structure:::Color" value="-16777040"/>
+        <PARAM name="CLS:::Attribute:::Changed" value="false"/>
+    </PARAMETERS>
+</TOUCHGRAPH_LB>

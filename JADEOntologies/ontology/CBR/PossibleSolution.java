@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 /**
 * Protege name: PossibleSolution
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:54
+* @version 2009/10/17, 19:00:45
 */
 public interface PossibleSolution extends jade.content.Concept, Serializable {
    // bean stuff
@@ -16,34 +16,10 @@ public interface PossibleSolution extends jade.content.Concept, Serializable {
    public void removePropertyChangeListener(PropertyChangeListener pcl);
 
    /**
-   * Protege name: confirmedDescription
+   * Protege name: unconfirmedDescription
    */
-   public void setConfirmedDescription(Description value);
-   public Description getConfirmedDescription();
-
-   /**
-   * Protege name: contradictions
-   */
-   public void setContradictions(Description value);
-   public Description getContradictions();
-
-   /**
-   * Protege name: solutionDescription
-   */
-   public void setSolutionDescription(Description value);
-   public Description getSolutionDescription();
-
-   /**
-   * Protege name: possibleSolution
-   */
-   public void setPossibleSolution(Object value);
-   public Object getPossibleSolution();
-
-   /**
-   * Protege name: doubtfulDescription
-   */
-   public void setDoubtfulDescription(Description value);
-   public Description getDoubtfulDescription();
+   public void setUnconfirmedDescription(Description value);
+   public Description getUnconfirmedDescription();
 
    /**
    * Protege name: points
@@ -52,9 +28,33 @@ public interface PossibleSolution extends jade.content.Concept, Serializable {
    public float getPoints();
 
    /**
-   * Protege name: unconfirmedDescription
+   * Protege name: doubtfulDescription
    */
-   public void setUnconfirmedDescription(Description value);
-   public Description getUnconfirmedDescription();
+   public void setDoubtfulDescription(Description value);
+   public Description getDoubtfulDescription();
+
+   /**
+   * Protege name: solutionDescription
+   */
+   public void setSolutionDescription(Description value);
+   public Description getSolutionDescription();
+
+   /**
+   * Protege name: confirmedDescription
+   */
+   public void setConfirmedDescription(Description value);
+   public Description getConfirmedDescription();
+
+   /**
+   * Protege name: possibleSolution
+   */
+   public void setPossibleSolution(Object value);
+   public Object getPossibleSolution();
+
+   /**
+   * Protege name: contradictions
+   */
+   public void setContradictions(Description value);
+   public Description getContradictions();
 
 }

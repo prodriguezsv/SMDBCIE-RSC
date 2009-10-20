@@ -10,7 +10,7 @@ import ontology.CBR.*;
 /**
 * Protege name: QuantitativeCharacterDescriptor
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:55
+* @version 2009/10/17, 19:00:45
 */
 public class DefaultQuantitativeCharacterDescriptor implements QuantitativeCharacterDescriptor, Serializable {
    // bean stuff
@@ -25,7 +25,7 @@ public class DefaultQuantitativeCharacterDescriptor implements QuantitativeChara
    }
 
 
-  private static final long serialVersionUID = -192457562360579226L;
+  private static final long serialVersionUID = 1907932705116471396L;
 
   private String _internalInstanceName = null;
 
@@ -40,27 +40,6 @@ public class DefaultQuantitativeCharacterDescriptor implements QuantitativeChara
   public String toString() {
     return _internalInstanceName;
   }
-
-   /**
-   * Protege name: score
-   */
-   private List score = new ArrayList();
-   public void addScore(Object elem) { 
-     score.add(elem);
-     pcs.firePropertyChange("score", oldList, this.score);
-   }
-   public boolean removeScore(Object elem) {
-     boolean result = score.remove(elem);
-     pcs.firePropertyChange("score", oldList, this.score);
-     return result;
-   }
-   public void clearAllScore() {
-     score.clear();
-     pcs.firePropertyChange("score", oldList, this.score);
-   }
-   public Iterator getAllScore() {return score.iterator(); }
-   public List getScore() {return score; }
-   public void setScore(List l) {score = l; }
 
    /**
    * Protege name: attribute
@@ -85,5 +64,26 @@ public class DefaultQuantitativeCharacterDescriptor implements QuantitativeChara
    public Object getStructure() {
      return this.structure;
    }
+
+   /**
+   * Protege name: score
+   */
+   private List score = new ArrayList();
+   public void addScore(Object elem) { 
+     score.add(elem);
+     pcs.firePropertyChange("score", oldList, this.score);
+   }
+   public boolean removeScore(Object elem) {
+     boolean result = score.remove(elem);
+     pcs.firePropertyChange("score", oldList, this.score);
+     return result;
+   }
+   public void clearAllScore() {
+     score.clear();
+     pcs.firePropertyChange("score", oldList, this.score);
+   }
+   public Iterator getAllScore() {return score.iterator(); }
+   public List getScore() {return score; }
+   public void setScore(List l) {score = l; }
 
 }

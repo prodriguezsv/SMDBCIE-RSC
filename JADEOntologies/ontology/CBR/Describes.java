@@ -9,12 +9,18 @@ import jade.util.leap.*;
 /**
 * Protege name: Describes
 * @author ontology bean generator
-* @version 2009/10/7, 18:01:56
+* @version 2009/10/17, 19:00:46
 */
 public interface Describes extends jade.content.Predicate, Serializable {
    // bean stuff
    public void addPropertyChangeListener(PropertyChangeListener pcl);
    public void removePropertyChangeListener(PropertyChangeListener pcl);
+
+   /**
+   * Protege name: attribute
+   */
+   public void setAttribute(Attribute value);
+   public Attribute getAttribute();
 
    /**
    * Protege name: score
@@ -25,11 +31,5 @@ public interface Describes extends jade.content.Predicate, Serializable {
    public Iterator getAllScore();
    public List getScore();
    public void setScore(List l);
-
-   /**
-   * Protege name: attribute
-   */
-   public void setAttribute(Attribute value);
-   public Attribute getAttribute();
 
 }
