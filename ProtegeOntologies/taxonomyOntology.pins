@@ -1,4 +1,4 @@
-; Tue Oct 20 16:43:53 GMT-06:00 2009
+; Mon Oct 26 15:44:39 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -3819,7 +3819,9 @@
 	(successors
 		[taxonomyOntology_Class0]
 		[taxonomyOntology_Instance_20100]
-		[taxonomyOntology_Instance_30026])
+		[taxonomyOntology_Instance_30026]
+		[taxonomyOntology_Class10178]
+		[taxonomyOntology_Class10177])
 	(weightedDescription [taxonomyOntology_Instance_10000]))
 
 ([taxonomyOntology_Instance_50000] of  WeightedDescription

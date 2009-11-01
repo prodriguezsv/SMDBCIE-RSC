@@ -1,4 +1,4 @@
-; Tue Oct 20 12:07:28 GMT-06:00 2009
+; Tue Oct 27 00:00:37 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -20,14 +20,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 )
 
-([CBROntology_ProjectKB_Instance_1045] of  Map_Entry
+([CBROntology_ProjectKB_Instance_1013] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([CBROntology_ProjectKB_Instance_1046] of  Map_Entry
+([CBROntology_ProjectKB_Instance_1014] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -361,8 +361,8 @@
 ([CBROntology_ProjectKB_Instance_1202] of  Map
 
 	(entries
-		[CBROntology_ProjectKB_Instance_1045]
-		[CBROntology_ProjectKB_Instance_1046]))
+		[CBROntology_ProjectKB_Instance_1013]
+		[CBROntology_ProjectKB_Instance_1014]))
 
 ([CBROntology_ProjectKB_Instance_98] of  String
 
@@ -407,7 +407,7 @@
 
 ([INSTANCES_TAB] of  Widget
 
-	(is_hidden TRUE)
+	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
 ([KB_785371_Instance_0] of  String
@@ -610,9 +610,7 @@
 	(tabs
 		[CLSES_TAB]
 		[SLOTS_TAB]
-		[CBROntology_ProjectKB_Instance_1076]
-		[CBROntology_ProjectKB_Instance_1128]
-		[CBROntology_ProjectKB_Instance_1098]
+		[CBROntology_ProjectKB_Instance_1088]
 		[CBROntology_ProjectKB_Instance_1100]
 		[CBROntology_ProjectKB_Instance_1118]
 		[CBROntology_ProjectKB_Instance_1130]
@@ -623,10 +621,11 @@
 		[FORMS_TAB]
 		[INSTANCES_TAB]
 		[CBROntology_ProjectKB_Instance_1078]
+		[CBROntology_ProjectKB_Instance_1076]
 		[CBROntology_ProjectKB_Instance_1062]
 		[CBROntology_ProjectKB_Instance_1104]
 		[CBROntology_ProjectKB_Instance_1124]
-		[CBROntology_ProjectKB_Instance_1088]
+		[CBROntology_ProjectKB_Instance_1128]
 		[CBROntology_ProjectKB_Instance_1084]
 		[CBROntology_ProjectKB_Instance_1114]
 		[CBROntology_ProjectKB_Instance_1080]
@@ -635,6 +634,7 @@
 		[CBROntology_ProjectKB_Instance_1116]
 		[QUERIES_TAB]
 		[CBROntology_ProjectKB_Instance_1112]
+		[CBROntology_ProjectKB_Instance_1098]
 		[CBROntology_ProjectKB_Instance_1094]
 		[CBROntology_ProjectKB_Instance_1074]
 		[CBROntology_ProjectKB_Instance_1106]
