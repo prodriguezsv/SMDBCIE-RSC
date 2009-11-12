@@ -1,4 +1,4 @@
-; Mon Oct 26 15:44:39 GMT-06:00 2009
+; Thu Nov 12 09:10:14 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -773,12 +773,6 @@
 
 	(attribute [commonOntology_Instance_40019])
 	(score [commonOntology_Instance_50015])
-	(structure [commonOntology_Instance_40018]))
-
-([taxonomyOntology_Class10130] of  RVCharacterDescriptor
-
-	(attribute [commonOntology_Instance_40035])
-	(score [commonOntology_Instance_40036])
 	(structure [commonOntology_Instance_40018]))
 
 ([taxonomyOntology_Class10131] of  SSCharacterDescriptor
@@ -1993,7 +1987,6 @@
 
 ([taxonomyOntology_Class20223] of  WeightedDescriptor
 
-	(descriptor [taxonomyOntology_Class10130])
 	(modifier [taxonomyOntology_Class54]))
 
 ([taxonomyOntology_Class20224] of  WeightedDescriptor
@@ -2450,8 +2443,8 @@
 		[taxonomyOntology_Class20122]
 		[taxonomyOntology_Class20129]
 		[taxonomyOntology_Class20219]
-		[taxonomyOntology_Class20223]
-		[taxonomyOntology_Class20231]))
+		[taxonomyOntology_Class20231]
+		[taxonomyOntology_Instance_30002]))
 
 ([taxonomyOntology_Class30062] of  WeightedDescription
 
@@ -3648,6 +3641,23 @@
 	(attribute [commonOntology_Instance_30000])
 	(score [commonOntology_Instance_30001])
 	(structure [commonOntology_Instance_10017]))
+
+([taxonomyOntology_Instance_30002] of  WeightedDescriptor
+
+	(descriptor [taxonomyOntology_Instance_30003])
+	(modifier [taxonomyOntology_Class54]))
+
+([taxonomyOntology_Instance_30003] of  SVCharacterDescriptor
+
+	(attribute [commonOntology_Instance_40035])
+	(score [taxonomyOntology_Instance_30004])
+	(structure [commonOntology_Instance_40018]))
+
+([taxonomyOntology_Instance_30004] of  SingleValue
+
+	(describes [commonOntology_Instance_40035])
+	(measuringUnit count)
+	(value 2.0))
 
 ([taxonomyOntology_Instance_30005] of  SSCharacterDescriptor
 

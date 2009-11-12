@@ -1,4 +1,4 @@
-; Tue Oct 27 00:00:37 GMT-06:00 2009
+; Tue Nov 10 15:02:50 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -18,16 +18,41 @@
 	(y 0))
 
 ([BROWSER_SLOT_NAMES] of  Property_List
-)
 
-([CBROntology_ProjectKB_Instance_1013] of  Map_Entry
+	(properties
+		[CBROntology_ProjectKB_Instance_1045]
+		[CBROntology_ProjectKB_Instance_1046]
+		[CBROntology_ProjectKB_Instance_1047]
+		[CBROntology_ProjectKB_Instance_1048]))
+
+([CBROntology_ProjectKB_Instance_1045] of  String
+
+	(name "Description")
+	(string_value "descriptors"))
+
+([CBROntology_ProjectKB_Instance_1046] of  String
+
+	(name "Solution")
+	(string_value "name"))
+
+([CBROntology_ProjectKB_Instance_1047] of  String
+
+	(name "Problem")
+	(string_value "description"))
+
+([CBROntology_ProjectKB_Instance_1048] of  String
+
+	(name "Case")
+	(string_value "problem"))
+
+([CBROntology_ProjectKB_Instance_1049] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([CBROntology_ProjectKB_Instance_1014] of  Map_Entry
+([CBROntology_ProjectKB_Instance_1050] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -153,7 +178,7 @@
 
 ([CBROntology_ProjectKB_Instance_1088] of  Widget
 
-	(is_hidden FALSE)
+	(is_hidden TRUE)
 	(property_list [CBROntology_ProjectKB_Instance_1089])
 	(widget_class_name "nl.uva.psy.swi.beangenerator.OntologyBeanGeneratorTab"))
 
@@ -229,8 +254,110 @@
 	(property_list [CBROntology_ProjectKB_Instance_1105])
 	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
 
+([CBROntology_ProjectKB_Instance_11045] of  Widget
+
+	(is_hidden FALSE)
+	(name "Case")
+	(property_list [CBROntology_ProjectKB_Instance_11046])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([CBROntology_ProjectKB_Instance_11046] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11047]
+		[CBROntology_ProjectKB_Instance_11048]
+		[CBROntology_ProjectKB_Instance_11052]
+		[CBROntology_ProjectKB_Instance_11056]))
+
+([CBROntology_ProjectKB_Instance_11047] of  Property_List
+
+	(name "layout properties"))
+
+([CBROntology_ProjectKB_Instance_11048] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "solution")
+	(property_list [CBROntology_ProjectKB_Instance_11049])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 80))
+
+([CBROntology_ProjectKB_Instance_11049] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11050]
+		[CBROntology_ProjectKB_Instance_11051]))
+
 ([CBROntology_ProjectKB_Instance_1105] of  Property_List
 )
+
+([CBROntology_ProjectKB_Instance_11050] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([CBROntology_ProjectKB_Instance_11051] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([CBROntology_ProjectKB_Instance_11052] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "problem")
+	(property_list [CBROntology_ProjectKB_Instance_11053])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 10))
+
+([CBROntology_ProjectKB_Instance_11053] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11054]
+		[CBROntology_ProjectKB_Instance_11055]))
+
+([CBROntology_ProjectKB_Instance_11054] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([CBROntology_ProjectKB_Instance_11055] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([CBROntology_ProjectKB_Instance_11056] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "state")
+	(property_list [CBROntology_ProjectKB_Instance_11057])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 150))
+
+([CBROntology_ProjectKB_Instance_11057] of  Property_List
+)
+
+([CBROntology_ProjectKB_Instance_11058] of  Widget
+
+	(is_hidden FALSE)
+	(name "Solution")
+	(property_list [CBROntology_ProjectKB_Instance_11059])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([CBROntology_ProjectKB_Instance_11059] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11060]
+		[CBROntology_ProjectKB_Instance_11061]
+		[CBROntology_ProjectKB_Instance_11063]
+		[CBROntology_ProjectKB_Instance_11065]))
 
 ([CBROntology_ProjectKB_Instance_1106] of  Widget
 
@@ -238,7 +365,140 @@
 	(property_list [CBROntology_ProjectKB_Instance_1107])
 	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
+([CBROntology_ProjectKB_Instance_11060] of  Property_List
+
+	(name "layout properties"))
+
+([CBROntology_ProjectKB_Instance_11061] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [CBROntology_ProjectKB_Instance_11062])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([CBROntology_ProjectKB_Instance_11062] of  Property_List
+)
+
+([CBROntology_ProjectKB_Instance_11063] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rank")
+	(property_list [CBROntology_ProjectKB_Instance_11064])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([CBROntology_ProjectKB_Instance_11064] of  Property_List
+)
+
+([CBROntology_ProjectKB_Instance_11065] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "justification")
+	(property_list [CBROntology_ProjectKB_Instance_11066])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([CBROntology_ProjectKB_Instance_11066] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11067]
+		[CBROntology_ProjectKB_Instance_11068]))
+
+([CBROntology_ProjectKB_Instance_11067] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([CBROntology_ProjectKB_Instance_11068] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([CBROntology_ProjectKB_Instance_11069] of  Widget
+
+	(is_hidden FALSE)
+	(name "Problem")
+	(property_list [CBROntology_ProjectKB_Instance_11070])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
 ([CBROntology_ProjectKB_Instance_1107] of  Property_List
+)
+
+([CBROntology_ProjectKB_Instance_11070] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11071]
+		[CBROntology_ProjectKB_Instance_11072]
+		[CBROntology_ProjectKB_Instance_11074]
+		[CBROntology_ProjectKB_Instance_11078]))
+
+([CBROntology_ProjectKB_Instance_11071] of  Property_List
+
+	(name "layout properties"))
+
+([CBROntology_ProjectKB_Instance_11072] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "goalRank")
+	(property_list [CBROntology_ProjectKB_Instance_11073])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([CBROntology_ProjectKB_Instance_11073] of  Property_List
+)
+
+([CBROntology_ProjectKB_Instance_11074] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "description")
+	(property_list [CBROntology_ProjectKB_Instance_11075])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 130))
+
+([CBROntology_ProjectKB_Instance_11075] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_11076]
+		[CBROntology_ProjectKB_Instance_11077]))
+
+([CBROntology_ProjectKB_Instance_11076] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([CBROntology_ProjectKB_Instance_11077] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([CBROntology_ProjectKB_Instance_11078] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "leastSimilarityDegree")
+	(property_list [CBROntology_ProjectKB_Instance_11079])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 200)
+	(x 0)
+	(y 70))
+
+([CBROntology_ProjectKB_Instance_11079] of  Property_List
 )
 
 ([CBROntology_ProjectKB_Instance_1108] of  Widget
@@ -361,8 +621,52 @@
 ([CBROntology_ProjectKB_Instance_1202] of  Map
 
 	(entries
-		[CBROntology_ProjectKB_Instance_1013]
-		[CBROntology_ProjectKB_Instance_1014]))
+		[CBROntology_ProjectKB_Instance_1049]
+		[CBROntology_ProjectKB_Instance_1050]))
+
+([CBROntology_ProjectKB_Instance_21045] of  Widget
+
+	(is_hidden FALSE)
+	(name "Description")
+	(property_list [CBROntology_ProjectKB_Instance_21046])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([CBROntology_ProjectKB_Instance_21046] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_21047]
+		[CBROntology_ProjectKB_Instance_21048]))
+
+([CBROntology_ProjectKB_Instance_21047] of  Property_List
+
+	(name "layout properties"))
+
+([CBROntology_ProjectKB_Instance_21048] of  Widget
+
+	(height 390)
+	(is_hidden FALSE)
+	(name "descriptors")
+	(property_list [CBROntology_ProjectKB_Instance_21049])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 360)
+	(x 0)
+	(y 0))
+
+([CBROntology_ProjectKB_Instance_21049] of  Property_List
+
+	(properties
+		[CBROntology_ProjectKB_Instance_21050]
+		[CBROntology_ProjectKB_Instance_21051]))
+
+([CBROntology_ProjectKB_Instance_21050] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([CBROntology_ProjectKB_Instance_21051] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
 ([CBROntology_ProjectKB_Instance_98] of  String
 
@@ -383,7 +687,7 @@
 
 ([FORMS_TAB] of  Widget
 
-	(is_hidden TRUE)
+	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
 
 ([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
@@ -594,7 +898,11 @@
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
-		[STANDARD_FACET_FORM_WIDGET])
+		[CBROntology_ProjectKB_Instance_11058]
+		[STANDARD_FACET_FORM_WIDGET]
+		[CBROntology_ProjectKB_Instance_21045]
+		[CBROntology_ProjectKB_Instance_11069]
+		[CBROntology_ProjectKB_Instance_11045])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -611,6 +919,7 @@
 		[CLSES_TAB]
 		[SLOTS_TAB]
 		[CBROntology_ProjectKB_Instance_1088]
+		[INSTANCES_TAB]
 		[CBROntology_ProjectKB_Instance_1100]
 		[CBROntology_ProjectKB_Instance_1118]
 		[CBROntology_ProjectKB_Instance_1130]
@@ -619,7 +928,6 @@
 		[CBROntology_ProjectKB_Instance_1070]
 		[CBROntology_ProjectKB_Instance_1122]
 		[FORMS_TAB]
-		[INSTANCES_TAB]
 		[CBROntology_ProjectKB_Instance_1078]
 		[CBROntology_ProjectKB_Instance_1076]
 		[CBROntology_ProjectKB_Instance_1062]

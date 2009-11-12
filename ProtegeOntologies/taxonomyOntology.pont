@@ -1,4 +1,4 @@
-; Mon Oct 26 15:44:39 GMT-06:00 2009
+; Thu Nov 12 09:10:14 GMT-06:00 2009
 ; 
 ;+ (version "3.3")
 ;+ (build "Build 418")
@@ -7,6 +7,43 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(single-slot rootTaxon
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot predecessor
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(cardinality 0 1)
+;+		(inverse-slot successors)
+		(create-accessor read-write))
+	(multislot weightedDescriptors
+		(type INSTANCE)
+;+		(allowed-classes WeightedDescriptor)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot level
+		(type SYMBOL)
+		(allowed-values Root Family Genus Species)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot subjectTaxon
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot scoreWeight
+		(type FLOAT)
+		(range 0.0 1.0)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot successors
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
+;+		(inverse-slot predecessor)
+		(create-accessor read-write))
 	(single-slot descriptor
 		(type INSTANCE)
 ;+		(allowed-classes Descriptor)
@@ -17,42 +54,15 @@
 ;+		(allowed-classes Modifier)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot scoreWeight
-		(type FLOAT)
-		(range 0.0 1.0)
-		(default 1.0)
+	(single-slot weightedDescription
+		(type INSTANCE)
+;+		(allowed-classes WeightedDescription)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot subjectTaxon
+	(single-slot objectTaxon
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot successors
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(inverse-slot predecessor)
-		(create-accessor read-write))
-	(single-slot predecessor
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(cardinality 0 1)
-;+		(inverse-slot successors)
-		(create-accessor read-write))
-	(single-slot rootTaxon
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot level
-		(type SYMBOL)
-		(allowed-values Root Family Genus Species)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot weightedDescriptors
-		(type INSTANCE)
-;+		(allowed-classes WeightedDescriptor)
-		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(single-slot attributeWeight
 		(type FLOAT)
@@ -70,25 +80,11 @@
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot weightedDescription
-		(type INSTANCE)
-;+		(allowed-classes WeightedDescription)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot objectTaxon
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Taxon
 	(is-a Concept)
 	(role concrete)
-	(multislot successors
-		(type INSTANCE)
-;+		(allowed-classes Taxon)
-		(create-accessor read-write))
 	(single-slot predecessor
 		(type INSTANCE)
 ;+		(allowed-classes Taxon)
@@ -102,6 +98,10 @@
 		(type SYMBOL)
 		(allowed-values Root Family Genus Species)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot successors
+		(type INSTANCE)
+;+		(allowed-classes Taxon)
 		(create-accessor read-write))
 	(single-slot weightedDescription
 		(type INSTANCE)
